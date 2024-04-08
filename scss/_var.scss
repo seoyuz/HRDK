@@ -1,0 +1,31 @@
+// 변수선언
+$mainColor: #3f6ece;
+$scroll-bg: #ddd;
+$scroll-button: #aaa;
+$common: "../images/common/";
+$main: "../images/main/";
+$sub: "../images/sub/";
+$contents: "../images/contents/";
+$dohyeon: "BMDOHYEON";
+$gmarket: "Gmarket Sans";
+$fontSize: 16px;
+
+// font color 
+$fontColor: #333;
+$fontColor2: #666;
+// $pointColor: #06828f;
+$pointColor: #003586;
+$pointColor2: #397b83;
+$pointColor3: #3f6ecb;
+
+// btn color
+$btnColor1: #3c05a5;
+$btnColor2: #7f7f7f;
+
+
+
+
+// @mixin morebtn { width: 140px; height: 140px; border-radius: 100px;  text-indent: -99999px; border: 1px solid #333; box-sizing: border-box; background: url($main + "ico_more.png") no-repeat 0 0; display: inline-block; transition: .5s ease;
+
+//     &:hover {background-position: 0 bottom; background-color: #333 !important;}
+// }

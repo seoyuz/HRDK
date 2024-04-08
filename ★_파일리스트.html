@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="description" content="File List">
+  <meta name="author" content="Nana">
+  <title>HRDK 미래교육원 | 퍼블리싱 파일 목록</title>
+  <style>
+    
+    @font-face {font-family: 'Pretendard';font-weight: 800;font-display: swap;src: local('PretendardStd ExtraBold'), url('font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('font/Pretendard-ExtraBold.subset.woff') format('woff'), url("font/Pretendard-ExtraBold.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 700;font-display: swap;src: local('Pretendard Bold'), url('font/Pretendard-Bold.subset.woff2') format('woff2'), url('font/Pretendard-Bold.subset.woff') format('woff'), url("font/Pretendard-Bold.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 600;font-display: swap;src: local('Pretendard SemiBold'), url('font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('font/Pretendard-SemiBold.subset.woff') format('woff'), url("font/Pretendard-SemiBold.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 500;font-display: swap;src: local('Pretendard Medium'), url('font/Pretendard-Medium.subset.woff2') format('woff2'), url('font/Pretendard-Medium.subset.woff') format('woff'), url("font/Pretendard-Medium.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 400;font-display: swap;src: local('Pretendard Regular'), url('font/Pretendard-Regular.subset.woff2') format('woff2'), url('font/Pretendard-Regular.subset.woff') format('woff'), url("font/Pretendard-Regular.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 300;font-display: swap;src: local('Pretendard Light'), url('font/Pretendard-Light.subset.woff2') format('woff2'), url('font/Pretendard-Light.subset.woff') format('woff'), url("font/Pretendard-Light.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 200;font-display: swap;src: local('Pretendard ExtraLight'), url('font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('font/Pretendard-ExtraLight.subset.woff') format('woff'), url("font/Pretendard-ExtraLight.ttf") format("truetype");}
+    @font-face {font-family: 'Pretendard';font-weight: 100;font-display: swap;src: local('Pretendard Thin'), url('font/Pretendard-Thin.subset.woff2') format('woff2'), url('font/Pretendard-Thin.subset.woff') format('woff'), url("font/Pretendard-Thin.ttf") format("truetype");}
+
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        box-sizing: border-box;
+        font-family: 'Pretendard', 'Noto Sans KR', monospace;
+      }
+
+      html {
+        font-size: 62.5%
+      }
+
+      body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #f2f2f2;
+      }
+
+      #wrap {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px;
+        min-width: 800px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      hr {
+        width: 90%;
+        margin: 110px auto 80px;
+        border: 0;
+        border-bottom: 2px solid #666;
+      }
+
+      caption {
+        display: none;
+      }
+
+      table {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        font-size: 1.5rem;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 50px 80px -50px rgba(50, 50, 50, 0.12), 0 50px 50px -30px rgba(20, 20, 20, 0.1);
+        color: #555;
+      }
+
+      th {
+        padding: 12px;
+        font-size: 1.6rem;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        border: 0;
+        background-color: #383654;
+      }
+
+      table.first th {
+        background-color: #383654;
+      }
+
+      td {
+        padding: 14px 20px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-top: 1px solid #ededed;
+        background-color: #fff;
+        border: 1px solid #ededed;
+      }
+
+      tr>td:first-child {
+        font-weight: 500;
+        color: #000;
+        border-left: 0;
+        letter-spacing: -0.03em;
+      }
+
+      td[rowspan] {
+        /* font-size: 15px; */
+        letter-spacing: 1.5px;
+        text-align: center;
+      }
+
+      .link {
+        letter-spacing: 0.03em;
+        font-weight: 600;
+      }
+
+      a {
+        color: #333;
+      }
+
+      a:hover,
+      a:focus {
+        color: #383654;
+        outline: 0;
+      }
+
+      .first a:hover {
+        color: #383654;
+      }
+
+      .first a:hover {
+        color: #383654;
+      }
+
+      h1 {
+        display: none;
+      }
+
+      h2 {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 2.8rem;
+        letter-spacing: -0.06rem;
+        color: #a6cebf;
+        font-weight: bold;
+      }
+
+      .horizon {
+        width: 80%;
+        height: 1px;
+        margin: 40px auto;
+        background-color: #aaa;
+      }
+
+      .update {
+        color: #000;
+        display: inline-block;
+        margin: 18px 0 30px 0;
+        padding: 18px 26px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.95rem;
+        border: 1px solid #888;
+        background: #fff;
+      }
+
+      .update small {
+        display: block;
+        margin-top: 4px;
+        font-size: 70%;
+        color: #666;
+        font-weight: 400;
+      }
+
+      .update .version1 {
+        display: inline-block;
+        width: 20px;
+        height: 10px;
+        background-color: rgba(255, 180, 182, 0.4);
+      }
+
+      .rmks {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .borderTop {
+        border-top: 2px solid #e4e4e4;
+      }
+
+      .borderTop2 {
+        border-top: 2px solid #d3d3d3;
+      }
+
+      @media screen and (max-width: 800px) {
+        html {
+          font-size: 55%;
+        }
+
+        #wrap {
+          min-width: 320px;
+        }
+
+        thead>tr>th:first-child,
+        thead>tr>th:nth-child(4),
+        thead>tr>th:nth-child(5) {
+          display: none;
+        }
+
+        td[rowspan] {
+          display: none;
+        }
+
+        .desc,
+        .rmks {
+          display: none;
+        }
+
+      }
+
+      .new td {
+        background-color: rgba(214, 255, 180, 0.2);
+      }
+
+      .new td[rowspan] {
+        background-color: #fff;
+      }
+
+      .notyet {
+        color: gray;
+        text-decoration: line-through;
+        pointer-events: none;
+      }
+      .right-info { position: absolute; right: 20px; top: 50px; font-size: 13px; line-height: 145%; background-color: transparent; padding: 15px; border: 2px dashed #ddd;}
+      .right-info strong { display: block; font-size: 16px; margin-bottom: 10px;}
+      .c_red { color: #da4431; font-weight: 500;}
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <p class="update">HRDK 미래교육원 퍼블리싱 파일 리스트<br><small style="margin-top:10px">Last Update: 24-03-29</small><small>LEE EUN JI</small></p>
+    <div class="right-info">
+        <strong>[작업예정]</strong>
+        <!-- 
+        퍼블리싱 가이드, 이미지 최적화<br>
+        반응형 -->
+    </div>
+    <table>
+      <colgroup>
+        <col style="width:120px" />
+        <col style="width:220px" />
+        <col style="width:400px" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>그룹</th>
+          <th>파일명(LINK)</th>
+          <th>화면 내용</th>
+          <th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td style="text-align: center;">
+            <strong>메인화면</strong>
+          </td>
+          <td>
+            <a class="link" href="html/main/index.html" target="_blank">index</a>
+          </td>
+          <td>메인</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td class="borderTop2" style="text-align: center;">
+            <strong>공통</strong>
+          </td>
+          <td class="borderTop2">
+            <a class="link" href="html/0.layout/sub_layout.html" target="_blank">sub_layout</a>
+          </td>
+          <td class="borderTop2">서브페이지 레이아웃</td>
+          <td class="borderTop2 rmks">작업 중</td>
+        </tr>
+        <tr>
+          <td rowspan="15" class="borderTop2">
+            <strong>콘텐츠</strong>
+          </td>
+          <td class="borderTop2">
+            <a class="link" href="html/sub/20_시설안내.html" target="_blank">20_시설안내</a>
+          </td>
+          <td class="borderTop2">시설안내</td>
+          <td class="borderTop2 rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/30_알림마당_공지사항.html" target="_blank">30_알림마당_공지사항</a>
+          </td>
+          <td>알림마당 > 공지사항 목록</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/31_알림마당_공지사항_상세.html" target="_blank">31_알림마당_공지사항_상세</a>
+          </td>
+          <td>알림마당 > 공지사항 상세</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/32_알림마당_자주하는_질문.html" target="_blank">32_알림마당_자주하는_질문</a>
+          </td>
+          <td>알림마당 > 자주하는 질문</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/33_알림마당_자료실.html" target="_blank">33_알림마당_자료실</a>
+          </td>
+          <td>알림마당 > 자료실 목록</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/34_알림마당_자료실_상세.html" target="_blank">34_알림마당_자료실_상세</a>
+          </td>
+          <td>알림마당 > 자료실 상세</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/35_알림마당_고객문의_글작성.html" target="_blank">35_알림마당_고객문의_글작성</a>
+          </td>
+          <td>알림마당 > 고객문의 글작성</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/40_전체교육과정.html" target="_blank">40_전체교육과정</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/40_전체교육과정_검색팝업.html" target="_blank">40_전체교육과정_검색팝업</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정(검색 팝업)</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/41_교육과정상세.html" target="_blank">41_교육과정상세</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정 > 교육과정 상세</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/41_교육과정상세_팝업.html" target="_blank">41_교육과정상세_팝업</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정 > 교육과정 상세(팝업)</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/41_교육과정상세(오프라인).html" target="_blank">41_교육과정상세(오프라인)</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정 > 교육과정 상세(오프라인)</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/42_교육과정상세(온라인).html" target="_blank">42_교육과정상세(온라인)</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정 > 교육과정 상세(온라인)</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/42_교육과정상세(혼합).html" target="_blank">42_교육과정상세(혼합)</a>
+          </td>
+          <td>교육과정 안내 > 전체 교육과정 > 교육과정 상세(혼합)</td>
+          <td class="rmks"></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link" href="html/sub/44_교육과정신청정보.html" target="_blank">44_교육과정신청정보</a>
+          </td>
+          <td>교육과정 안내 > 교육과정 신청정보</td>
+          <td class="rmks"></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HRDK 미래교육원</title>
+        <link rel="shortcut icon" href="../../images/common/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <script src="../../js/jquery.easing.min.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <script src="../../js/ScrollMagic.min.js"></script>
+        <script src="../../js/animation.gsap.js"></script>
+        <script src="../../js/jquery.bpopup.min.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <!-- main -->
+        <link type="text/css" rel="stylesheet" href="../../css/main.css">
+        <script src="../../js/main.js"></script>
+    </head>
+    <body>
+        <div class="skiptoContent">
+            <a href="#container">본문내용 바로가기</a>
+            <a href="#gnbA1">메인메뉴 바로가기</a>
+        </div>
+        <div id="wrap" class="main">
+            <!--............. header .............-->
+            <header id="header" class="header">
+                <div class="hd-bottom">
+                    <h1 id="logo"><a href="#none">HRDK 미래교육원</a></h1>
+                    <nav id="gnb" class="gnb">
+                        <ul>
+                            <li class="gnbA gnbA1"><a href="#none" id="gnbA1">소개</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                            <li><a href="#none">조직현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA2"><a href="#none" id="gnbA2">시설안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">시설정보</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">대관신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA3"><a href="#none" id="gnbA3">알림마당</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">FAQ</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA4"><a href="#none" id="gnbA4">교육과정 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">전체 교육과정</a></li>
+                                    <li><a href="#none">집합 교육과정</a></li>
+                                    <li><a href="#none">온라인 교육과정</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA5"><a href="#none" id="gnbA5">나의 강의실</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">교육신청</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청내역</a></li>
+                                            <li><a href="#none">취소내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">학습현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">학습중</a></li>
+                                            <li><a href="#none">대기중</a></li>
+                                            <li><a href="#none">학습완료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">수료증 출력</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA6"><a href="#none" id="gnbA6">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">회원정보 수정</a></li>
+                                            <li><a href="#none">회원탈퇴</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">대관신청 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청현황</a></li>
+                                            <li><a href="#none">신청취소 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">결제/환불 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">결제현황</a></li>
+                                            <li><a href="#none">환불현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">나의문의 현황</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-list">
+                        <ul>
+                            <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                            <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                            <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                            <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="mobile-menu" title="전체메뉴 열기">
+                        <span class="ico">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </button>
+                    <div class="hd-bottom-dim"></div>
+                </div>
+                <ul class="right-btn-box">
+                    <li><a href="#none" class="join">회원가입</a></li>
+                    <li><a href="#none" class="login">로그인</a></li>
+                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                </ul>
+                <!-- mobile -->
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb">
+                        <div class="quick-list">
+                            <ul>
+                                <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                                <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                                <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                                <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                            </ul>
+                        </div>
+                        <nav class="gnb">
+                            <ul>
+                                <li class="gnbA gnbA1"><a href="#none">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">미래교육원 소개</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">교육원 소개</a></li>
+                                                <li><a href="#none">인사말</a></li>
+                                                <li><a href="#none">비전</a></li>
+                                                <li><a href="#none">조직현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA2"><a href="#none">시설안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">시설정보</a></li>
+                                        <li><a href="#none">이용안내</a></li>
+                                        <li><a href="#none">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA3"><a href="#none">알림마당</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">자료실</a></li>
+                                        <li><a href="#none">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA4"><a href="#none">교육과정 안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">전체 교육과정</a></li>
+                                        <li><a href="#none">집합 교육과정</a></li>
+                                        <li><a href="#none">온라인 교육과정</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA5"><a href="#none">나의 강의실</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">나의 강의실</a></li>
+                                        <li><a href="#none">교육신청</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청내역</a></li>
+                                                <li><a href="#none">취소내역</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">학습현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">학습중</a></li>
+                                                <li><a href="#none">대기중</a></li>
+                                                <li><a href="#none">학습완료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">수료증 출력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA6"><a href="#none">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">회원정보 수정</a></li>
+                                                <li><a href="#none">회원탈퇴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">대관신청 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청현황</a></li>
+                                                <li><a href="#none">신청취소 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">결제/환불 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">결제현황</a></li>
+                                                <li><a href="#none">환불현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">나의문의 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="right-btn-box">
+                            <li><a href="#none" class="join">회원가입</a></li>
+                            <li><a href="#none" class="login">로그인</a></li>
+                            <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                        </ul>
+                        <!-- <button type="button" class="gnb-close">메뉴 닫기</button> -->
+                    </div>
+                </div>
+                <!-- //mobile -->
+            </header>
+            <!--.............//header .............-->
+            <!-- main container -->
+            <div id="container">
+                <!-- visual -->
+                <div class="main-vis section1" id="section1">
+                    <div class="vis-swiper-wrap">
+                        <div class="swiper-container visual-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="slide1 swiper-slide">
+                                    <div class="bg bg1"></div>
+                                    <!-- <div class="inner">
+                                        <div class="txt-box" data-swiper-parallax-x="-90%">
+                                            <p class="t1">임직원 전문역량 함양과 <br>디지털 핵심 인재 육성을 위한</p>
+                                            <p class="t2">전문 교육 훈련 센터</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="slide2 swiper-slide">
+                                    <div class="bg bg2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vis-top-layer">
+                        <div class="inner">
+                            <div class="left-btn-box">
+                                <a href="#none" class="btn">교육원 소개</a>
+                                <a href="#none" class="btn">대관신청</a>
+                            </div>
+                            <div class="vis-bottom-box">
+                                <div class="txt-box" data-swiper-parallax-x="-90%">
+                                    <p class="t1">임직원 전문역량 함양과 <br>디지털 핵심 인재 육성을 위한</p>
+                                    <p class="t2">전문 교육 훈련 센터</p>
+                                </div>
+                                <div class="vis-control-box">
+                                    <div class="stop-btn">
+                                        <div class="donut-timer">
+                                            <svg class="donut-chart" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="donut-ring" cx="50" cy="50" r="40"></circle>
+                                                <circle class="donut-segment animate" cx="50" cy="50" r="40"></circle>
+                                            </svg>
+                                        </div>
+                                        <button type="button" class="stop">슬라이드 정지</button>
+                                        <button type="button" class="play">슬라이드 재생</button>
+                                    </div>
+                                    <div class="paging">
+                                        <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                        <div class="swiper-pagination"></div>
+                                        <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vis-calendar-wrap">
+                                <div class="tit-box">
+                                    <span class="tit">미래교육원 일정</span>
+                                </div>
+                                <div class="calendar-box">
+                                    <div class="calendar">
+                                        <div class="current-sel">
+                                            <button type="button" class="prev"><span class="hidden">이전달 보기</span></button>
+                                            <p><span>2024</span>년 <span>05</span>월</p>
+                                            <button type="button" class="next"><span class="hidden">다음달 보기</span></button>
+                                        </div>
+                                        <!-- calendar -->
+                                        <div class="calendar-tbl">
+                                            <div class="thead">
+                                                <div class="tr">
+                                                    <div class="th sunday"><span>일</span></div>
+                                                    <div class="th"><span>월</span></div>
+                                                    <div class="th"><span>화</span></div>
+                                                    <div class="th"><span>수</span></div>
+                                                    <div class="th"><span>목</span></div>
+                                                    <div class="th"><span>금</span></div>
+                                                    <div class="th saturday"><span>토</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="tbody">
+                                                <div class="tr">
+                                                    <div class="td sunday"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td saturday"><button type="button">1</button></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td sunday"><button type="button">2</button></div>
+                                                    <div class="td"><button type="button">3</button></div>
+                                                    <div class="td"><button type="button">4</button></div>
+                                                    <div class="td"><button type="button">5</button></div>
+                                                    <div class="td"><button type="button">6</button></div>
+                                                    <div class="td"><button type="button">7</button></div>
+                                                    <div class="td saturday"><button type="button">8</button></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td sunday"><button type="button">9</button></div>
+                                                    <div class="td"><button type="button">10</button></div>
+                                                    <div class="td"><button type="button">11</button></div>
+                                                    <div class="td selected"><button type="button">12</button></div>
+                                                    <div class="td selected"><button type="button">13</button></div>
+                                                    <div class="td selected"><button type="button">14</button></div>
+                                                    <div class="td saturday"><button type="button">15</button></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td sunday"><button type="button">16</button></div>
+                                                    <div class="td"><button type="button">17</button></div>
+                                                    <div class="td"><button type="button">18</button></div>
+                                                    <div class="td"><button type="button">19</button></div>
+                                                    <div class="td"><button type="button">20</button></div>
+                                                    <div class="td"><button type="button">21</button></div>
+                                                    <div class="td saturday"><button type="button">22</button></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td sunday"><button type="button">23</button></div>
+                                                    <div class="td"><button type="button">24</button></div>
+                                                    <div class="td"><button type="button">25</button></div>
+                                                    <div class="td selected"><button type="button">26</button></div>
+                                                    <div class="td"><button type="button">27</button></div>
+                                                    <div class="td"><button type="button">28</button></div>
+                                                    <div class="td saturday"><button type="button">29</button></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td sunday"><button type="button">30</button></div>
+                                                    <div class="td"><button type="button">31</button></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td"></div>
+                                                    <div class="td saturday"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- // calendar -->
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-scroll">
+                                            <div class="item">
+                                                <span class="date">05-06 ~ 07</span>
+                                                <span class="txt">강원지사 사무행정(회계실무및자재관리)직무향상과정</span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="date">05-11 ~ 15</span>
+                                                <span class="txt">사무행정 (회계실무 및 자재관리)</span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="date">05-11 ~ 15</span>
+                                                <span class="txt">사무행정 (회계실무 및 자재관리)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#none" class="more-btn"><span class="hidden">미래교육원 일정 </span>더보기</a>
+                            </div>
+                            <!-- scroll -->
+                            <div class="ico-scroll">
+                                <span class="txt">scroll</span>
+                                <span class="ico">
+                                    <i class="ball"></i>
+                                </span>
+                            </div>
+                            <!-- // scroll -->
+                        </div>
+                    </div>
+                </div>
+                <!-- // visual -->
+                <!-- contents -->
+                <div class="main-cont-wrap">
+                    <section class="section section2">
+                        <div class="sec2-swiper-wrap">
+                            <!-- bg swiper: 갯수 추가될 때마다 txt swiper slide 갯수도 동일하게 추가해줘야함. -->
+                            <div class="bg-swiper-wrap">
+                                <div class="inner title-inner">
+                                    <div class="sec-tit-box">
+                                        <h2 class="section-tit">시설안내</h2>
+                                        <p class="section-txt">HRDK미래교육원은 디지털 핵심인재 육성 등 전문 교육과정을 위한 교육훈련 센터입니다.</p>
+                                    </div>
+                                    <a href="#none" class="more-btn"><span class="hidden">시설안내 </span>더보기</a>
+                                </div>
+                                <div class="swiper-container bg-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="bg bg1" data-swiper-parallax-x="90%"></div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg bg2" data-swiper-parallax-x="90%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="swiper-pagination"></div> -->
+                                </div>
+                            </div>
+                            <!-- // bg swiper -->
+                            <!-- txt swiper -->
+                            <div class="txt-swiper-wrap">
+                                <div class="swiper-container txt-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="inner">
+                                                <div class="slide-txt-wrap">
+                                                    <p class="tit">강의실 안내</p>
+                                                    <p class="txt">대강의실과 소강의실로 구성되어 있으며 <br>강사와 학생이 자유롭게 수업을 진행할 수 있는 쾌적한 학습시설을 제공합니다.</p>
+                                                    <div class="bottom-btn">
+                                                        <a href="#none" class="btn btn1">상세소개</a>
+                                                        <a href="#none" class="btn btn2">대관신청</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slide-bg bg1"></div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="inner">
+                                                <div class="slide-txt-wrap">
+                                                    <p class="tit">시설안내 타이틀</p>
+                                                    <p class="txt">시설을 설명하는 문구를 입력해주세요.</p>
+                                                    <div class="bottom-btn">
+                                                        <a href="#none" class="btn btn1">상세소개</a>
+                                                        <a href="#none" class="btn btn2">대관신청</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slide-bg bg2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="inner paging-inner">
+                                        <div class="paging">
+                                            <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                            <div class="swiper-pagination"></div>
+                                            <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //txt swiper -->
+                        </div>
+                    </section>
+                    <section class="section section3 tab-section bg-white">
+                        <div class="inner">
+                            <div class="sec-tit-box type2">
+                                <h2 class="section-tit">교육과정 안내</h2>
+                                <p class="section-txt">HRDK미래교육원은 디지털 핵심인재 육성 등 전문 교육과정을 위한 교육훈련 센터입니다.
+                                </p>
+                            </div>
+                            <!-- 탭메뉴 제목 -->
+                            <ul class="tit-list">
+                                <li class="tab active"><a href="#con2-1" title="선택됨">전체</a></li>
+                                <li class="tab"><a href="#con2-2">집합교육</a></li>
+                                <li class="tab"><a href="#con2-3">온라인 교육</a></li>
+                            </ul>
+                            <!-- 탭메뉴 컨텐츠 -->
+                            <div class="tab-con">
+                                <!-- tab cont -->
+                                <div id="con2-1" class="tab-list active">
+                                    <div class="slider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample1.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample2.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">슬라이드 제목입니다. 3줄 이상일 경우 말줄임 효과 적용됩니다. 슬라이드 제목</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample3.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample4.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <!-- 이미지 없을 때 -->
+                                                        <div class="img"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="paging">
+                                            <button type="button" class="swiper-prev swiper-btn">이전 슬라이드</button>
+                                            <div class="swiper-pagination"></div>
+                                            <button type="button" class="swiper-next swiper-btn">다음 슬라이드</button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-inner">
+                                        <a href="#none" class="more-btn type2"><span class="hidden">교육과정 전체 목록</span>더보기</a>
+                                    </div>
+                                </div>
+                                <!-- tab cont -->
+                                <div id="con2-2" class="tab-list">
+                                    <div class="slider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample2.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample3.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample4.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="paging">
+                                            <button type="button" class="swiper-prev swiper-btn">이전 슬라이드</button>
+                                            <div class="swiper-pagination"></div>
+                                            <button type="button" class="swiper-next swiper-btn">다음 슬라이드</button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-inner">
+                                        <a href="#none" class="more-btn type2"><span class="hidden">교육과정 집합교육 목록</span>더보기</a>
+                                    </div>
+                                </div>
+                                <div id="con2-3" class="tab-list">
+                                    <div class="slider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample1.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample2.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample3.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#none" tabindex="-1">
+                                                    <div class="img-wrap">
+                                                        <div class="img"><img src="../../images/main/thumb_sample4.jpg" alt="[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)"></div>
+                                                    </div>
+                                                    <div class="txt-box">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit">[핵심리더 양성 코스] 협업 소통 리더십 (우리 부서 오지라퍼)</div>
+                                                            <div class="ico-group">
+                                                                <span class="ico-type collective">집체</span>
+                                                                <span class="ico-type nonface">비대면</span>
+                                                                <span class="ico-type online">온라인</span>
+                                                            </div>
+                                                        </div>
+                                                        <span class="date">2023. 12. 07</span>
+                                                        <div class="txt">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</div>
+                                                        <span class="view-btn">교육신청하기</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="paging">
+                                            <button type="button" class="swiper-prev swiper-btn">이전 슬라이드</button>
+                                            <div class="swiper-pagination"></div>
+                                            <button type="button" class="swiper-next swiper-btn">다음 슬라이드</button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-inner">
+                                        <a href="#none" class="more-btn type2"><span class="hidden">교육과정 온라인 교육 목록</span>더보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section section4">
+                        <div class="bg"></div>
+                        <div class="bg-layer"></div>
+                        <div class="inner">
+                            <div class="left-txt-box">
+                                <h2 class="tit">미래교육원 소개</h2>
+                                <p class="txt">HRDK미래교육원은 2024년 01월에 개소 되어 <br>HRD 종합 인프라 제공과 임직원들의 전문역량 함양과 <br>디지털 핵심 인재 육성 등 전문 교육과정을 위한 <br>교육훈련 센터입니다.</p>
+                                <a href="#none" class="view-btn">미래교육원 소개</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section section5 tab-section bg-white">
+                        <div class="inner">
+                            <div class="left-box">
+                                <div class="sec-tit-box type2">
+                                    <h2 class="section-tit">미래교육원<br>소식</h2>
+                                    <p class="section-txt">HRDK미래교육원과 관련된 주요 소식을 확인하세요!</p>
+                                </div>
+                                <!-- 탭메뉴 제목 -->
+                                <ul class="tit-list">
+                                    <li class="tab active"><a href="#con3-1" title="선택됨">전체</a></li>
+                                    <li class="tab"><a href="#con3-2">공지사항</a></li>
+                                    <li class="tab"><a href="#con3-3">FAQ</a></li>
+                                    <li class="tab"><a href="#con3-4">자료실</a></li>
+                                    <li class="tab"><a href="#con3-5">고객문의</a></li>
+                                </ul>
+                            </div>
+                            <!-- 탭메뉴 컨텐츠 -->
+                            <div class="tab-con">
+                                <!-- tab cont -->
+                                <div id="con3-1" class="tab-list active">
+                                    <div class="board-card-box">
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <!-- 이미지 없음 -->
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">07</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">HRD 교육훈련센터 만족도 조사</span>
+                                                        <span class="txt">한국산업인력공단은 운영중인 정보시스템의 품질만족도 조사를 위해 개인정보보호법 제26조, 시행령 제28조에 따라 아래와 같이 다음과 같이 개인정보를 위탁하고 있음을 고지 드립니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <!-- 이미지 있을 때 -->
+                                                    <div class="img"><img src="../../images/main/board_thumb1.jpg" alt="2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고"></div>
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">12</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <!-- 이미지 있을 때 -->
+                                                    <div class="img"><img src="../../images/main/board_thumb2.jpg" alt="2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고"></div>
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다.</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="more-btn type2"><span class="hidden">미래교육원 소식 전체 목록 </span>더보기</a>
+                                </div>
+                                <div id="con3-2" class="tab-list">
+                                    <div class="board-card-box">
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <div class="img"><img src="../../images/main/thumb_sample2.jpg" alt="2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고"></div>
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">11</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">제목입니다...</span>
+                                                        <span class="txt">한국산업인력공단은 운영중인 정보시스템의 품질만족도 조사를 위해 개인정보보호법 제26조, 시행령 제28조에 따라 아래와 같이 다음과 같이 개인정보를 위탁하고 있음을 고지 드립니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <!-- 이미지 있을 때 -->
+                                                    <div class="img"><img src="../../images/main/thumb_sample1.jpg" alt="2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고"></div>
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">12</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap">
+                                                    <!-- 이미지 있을 때 -->
+                                                    <div class="img"><img src="../../images/main/board_thumb2.jpg" alt="2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고"></div>
+                                                </div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">공지사항</span>
+                                                        <span class="tit">제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다.</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="more-btn type2"><span class="hidden">미래교육원 소식 공지사항 목록 </span>더보기</a>
+                                </div>
+                                <div id="con3-3" class="tab-list">
+                                    <div class="board-card-box">
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">FAQ</span>
+                                                        <span class="tit">제목입니다...</span>
+                                                        <span class="txt">한국산업인력공단은 운영중인 정보시스템의 품질만족도 조사를 위해 개인정보보호법 제26조, 시행령 제28조에 따라 아래와 같이 다음과 같이 개인정보를 위탁하고 있음을 고지 드립니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">FAQ</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">FAQ</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">FAQ</span>
+                                                        <span class="tit">제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다.</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="more-btn type2"><span class="hidden">미래교육원 소식 FAQ 목록 </span>더보기</a>
+                                </div>
+                                <div id="con3-4" class="tab-list">
+                                    <div class="board-card-box">
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">자료실</span>
+                                                        <span class="tit">제목입니다...</span>
+                                                        <span class="txt">한국산업인력공단은 운영중인 정보시스템의 품질만족도 조사를 위해 개인정보보호법 제26조, 시행령 제28조에 따라 아래와 같이 다음과 같이 개인정보를 위탁하고 있음을 고지 드립니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">자료실</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">자료실</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">자료실</span>
+                                                        <span class="tit">제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다.</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="more-btn type2"><span class="hidden">미래교육원 소식 자료실 목록 </span>더보기</a>
+                                </div>
+                                <div id="con3-5" class="tab-list">
+                                    <div class="board-card-box">
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">고객문의</span>
+                                                        <span class="tit">제목입니다...</span>
+                                                        <span class="txt">한국산업인력공단은 운영중인 정보시스템의 품질만족도 조사를 위해 개인정보보호법 제26조, 시행령 제28조에 따라 아래와 같이 다음과 같이 개인정보를 위탁하고 있음을 고지 드립니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">고객문의</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">08</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">고객문의</span>
+                                                        <span class="tit">2024년 민간숙련기술자단체 지원사업 참여기관 모집 공고</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#none">
+                                                <div class="img-wrap"></div>
+                                                <div class="txt-wrap">
+                                                    <div class="top">
+                                                        <span class="day">01</span>
+                                                        <span class="month">2024. 04.</span>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="type">고객문의</span>
+                                                        <span class="tit">제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다. 제목은 두 줄까지 들어갑니다.</span>
+                                                        <span class="txt">숙련기술장려법 제17조에 따라 민간숙련기술자단체가 숙련기술 장려를 위하여 수행하는 사업을 지원하고자 2024년 민간숙련기술자단체 지원사업 참여기관 모집계획을 붙임과 같이 공고합니다.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cover">
+                                                    <span class="view-btn">더보기</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="more-btn type2"><span class="hidden">미래교육원 소식 고객문의 목록 </span>더보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <!-- // contents -->
+            </div>
+            <!-- // main container -->
+            <!--............. footer .............-->
+            <footer id="footer">
+                <div class="foot-banner-wrap">
+                    <div class="inner">
+                        <!-- banner slide -->
+                        <div class="banner">
+                            <div class="foot-paging">
+                                <span class="paging-tit">배너존</span>
+                                <div class="swiper-btn-wrap">
+                                    <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                    <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                </div>
+                            </div>
+                            <div class="swiper-container banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://www.moel.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_moel.png" alt="고용노동부"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.hrdkorea.or.kr/" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_hrdkorea.png" alt="한국산업인력공단"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.work.go.kr/seekWantedMain.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_worknet.png" alt="워크넷"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ei.png" alt="고용보험"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ncs.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ncs.png" alt="국가직무능력표준"></a></div>
+                                    <div class="swiper-slide"><a href="https://c.q-net.or.kr/cmn/com/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_cq.png" alt="CQ넷"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // banner slide -->
+                    </div>
+                </div>
+                <div class="foot-txt-wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="foot-logo"><img src="../../images/common/foot_logo.png" alt="HRDK 미래교육원"></div>
+                        </div>
+                        <div class="right">
+                            <ul class="link-list">
+                                <li><a href="#none" class="privcy">개인정보처리방침</a></li>
+                                <li><a href="#none">저작권보호정책</a></li>
+                                <li><a href="#none">이메일무단수집거부</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">시설 대관 규정</a></li>
+                                <li><a href="#none">도움말</a></li>
+                            </ul>
+                            <div class="txt-box">
+                                <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
+                                </address>
+                                <p>TEL : 033-000-0000    FAX : 033-000-0000</p>
+                                <p>운영시간 일 09 : 00 ~ 18 : 00</p>
+                                <p class="copy">Copyright©2024 All rights reserved. Human Resources Development Service of Korea</p>
+                            </div>
+                        </div>
+                        <div class="family-site">
+                            <button type="button" class="family-btn" title="열기">Family Site</button>
+                            <ul class="list">
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--............. //footer .............-->
+        </div>
+    </body>
+</html>

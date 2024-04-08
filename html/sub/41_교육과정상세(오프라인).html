@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HRDK 미래교육원</title>
+        <link rel="shortcut icon" href="../../images/common/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <script src="../../js/jquery.easing.min.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <script src="../../js/ScrollMagic.min.js"></script>
+        <script src="../../js/animation.gsap.js"></script>
+        <script src="../../js/jquery.bpopup.min.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <!-- sub -->
+        <link type="text/css" rel="stylesheet" href="../../css/sub.css">
+        <link type="text/css" rel="stylesheet" href="../../css/contents.css">
+        <script src="../../js/contents.js"></script>
+    </head>
+    <body>
+        <div class="skiptoContent">
+            <a href="#container">본문내용 바로가기</a>
+            <a href="#gnbA1">메인메뉴 바로가기</a>
+        </div>
+        <div id="wrap" class="sub">
+            <!--............. header .............-->
+            <header id="header" class="header">
+                <div class="hd-bottom">
+                    <h1 id="logo"><a href="#none">HRDK 미래교육원</a></h1>
+                    <nav id="gnb" class="gnb">
+                        <ul>
+                            <li class="gnbA gnbA1"><a href="#none" id="gnbA1">소개</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                            <li><a href="#none">조직현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA2"><a href="#none" id="gnbA2">시설안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">시설정보</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">대관신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA3"><a href="#none" id="gnbA3">알림마당</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">FAQ</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA4"><a href="#none" id="gnbA4">교육과정 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">전체 교육과정</a></li>
+                                    <li><a href="#none">집합 교육과정</a></li>
+                                    <li><a href="#none">온라인 교육과정</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA5"><a href="#none" id="gnbA5">나의 강의실</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">교육신청</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청내역</a></li>
+                                            <li><a href="#none">취소내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">학습현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">학습중</a></li>
+                                            <li><a href="#none">대기중</a></li>
+                                            <li><a href="#none">학습완료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">수료증 출력</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA6"><a href="#none" id="gnbA6">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">회원정보 수정</a></li>
+                                            <li><a href="#none">회원탈퇴</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">대관신청 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청현황</a></li>
+                                            <li><a href="#none">신청취소 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">결제/환불 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">결제현황</a></li>
+                                            <li><a href="#none">환불현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">나의문의 현황</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-list">
+                        <ul>
+                            <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                            <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                            <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                            <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="mobile-menu" title="전체메뉴 열기">
+                        <span class="ico">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </button>
+                    <div class="hd-bottom-dim"></div>
+                </div>
+                <ul class="right-btn-box">
+                    <li><a href="#none" class="join">회원가입</a></li>
+                    <li><a href="#none" class="login">로그인</a></li>
+                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                </ul>
+                <!-- mobile -->
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb">
+                        <div class="quick-list">
+                            <ul>
+                                <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                                <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                                <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                                <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                            </ul>
+                        </div>
+                        <nav class="gnb">
+                            <ul>
+                                <li class="gnbA gnbA1"><a href="#none">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">미래교육원 소개</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">교육원 소개</a></li>
+                                                <li><a href="#none">인사말</a></li>
+                                                <li><a href="#none">비전</a></li>
+                                                <li><a href="#none">조직현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA2"><a href="#none">시설안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">시설정보</a></li>
+                                        <li><a href="#none">이용안내</a></li>
+                                        <li><a href="#none">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA3"><a href="#none">알림마당</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">자료실</a></li>
+                                        <li><a href="#none">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA4"><a href="#none">교육과정 안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">전체 교육과정</a></li>
+                                        <li><a href="#none">집합 교육과정</a></li>
+                                        <li><a href="#none">온라인 교육과정</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA5"><a href="#none">나의 강의실</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">나의 강의실</a></li>
+                                        <li><a href="#none">교육신청</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청내역</a></li>
+                                                <li><a href="#none">취소내역</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">학습현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">학습중</a></li>
+                                                <li><a href="#none">대기중</a></li>
+                                                <li><a href="#none">학습완료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">수료증 출력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA6"><a href="#none">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">회원정보 수정</a></li>
+                                                <li><a href="#none">회원탈퇴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">대관신청 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청현황</a></li>
+                                                <li><a href="#none">신청취소 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">결제/환불 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">결제현황</a></li>
+                                                <li><a href="#none">환불현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">나의문의 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="right-btn-box">
+                            <li><a href="#none" class="join">회원가입</a></li>
+                            <li><a href="#none" class="login">로그인</a></li>
+                            <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                        </ul>
+                        <!-- <button type="button" class="gnb-close">메뉴 닫기</button> -->
+                    </div>
+                </div>
+                <!-- //mobile -->
+            </header>
+            <!--.............//header .............-->
+            <div id="container">
+                <!-- subpage title -->
+                <div class="breadcrumb-wrap">
+                    <div class="inner">
+                        <div class="breadcrumb-box">
+                            <a href="#none" class="home">메인으로 바로가기</a>
+                            <div class="bc-depth depth1">
+                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <ul class="depth2-list">
+                                    <li><a href="#none">소개</a></li>
+                                    <li><a href="#none">시설안내</a></li>
+                                    <li><a href="#none">알림마당</a></li>
+                                    <li><a href="#none" class="active" title="선택됨">교육과정 안내</a></li>
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">마이페이지</a></li>
+                                </ul>
+                            </div>
+                            <div class="bc-depth depth2">
+                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // subpage title -->
+                <!-- contents -->
+                <div class="contents" id="contents">
+                    <div class="sub-tit-box">
+                        <div class="inner">
+                            <div class="title-box">
+                                <h2 class="subpage-tit">교육과정 상세/신청</h2>
+                                <!-- <p class="subpage-txt">HRDK미래교육원은 전문 교육과정을 위한 <br>최적화된 교육지원 서비스를 제공합니다.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 교육과정 상세/신청 -->
+                    <div class="page-edu">
+                        <div class="inner">
+                            <!-- [상세보기] -->
+                            <div class="edu-view-wrap">
+                                <div class="edu-tit-box">
+                                    <span class="tit-point">직급별 의무교육</span>
+                                    <span class="txt">직무 별 협업소통 리더십</span>
+                                    <div class="ico-box"><span class="i-type gather">집합</span><span class="i-type online">온라인</span><span class="i-type mix">혼합</span></div>
+                                </div>
+                                <p class="tit-sub-txt">직무 별 협업 리더십 기본과정</p>
+                                <div class="info-summary">
+                                    <div class="a-box">
+                                        <p class="t1">교육목표</p>
+                                        <p class="t2">중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다.</p>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="../../images/contents/thumb/img_edu_thumb4.jpg" alt="직급별 의무교육 직무 별 협업소통 리더십">
+                                    </div>
+                                    <div class="b-box">
+                                        <div class="info-list col">
+                                            <div class="item">
+                                                <span class="tit">교육대상</span>
+                                                <div class="txt">산업인력공단 전체 임직원 근무자 </div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">신청기간</span>
+                                                <div class="txt">2024. 00. 00 ~ 2024. 00. 00</div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">교육기간</span>
+                                                <div class="txt">2024. 00. 00 ~ 2024. 00. 00</div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">신청인원/정원</span>
+                                                <div class="txt">- / 00 명</div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">교육시간</span>
+                                                <div class="txt">00시간</div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">교육장소</span>
+                                                <div class="txt">미래교육원 대회의실</div>
+                                            </div>
+                                            <div class="item">
+                                                <span class="tit">숙박여부</span>
+                                                <div class="txt">
+                                                    <div class="srh-check-box">
+                                                        <span class="radio">
+                                                            <input type="radio" id="srchChk10" name="srchChk10">
+                                                            <label for="srchChk10">숙박</label>
+                                                        </span>
+                                                        <span class="radio">
+                                                            <input type="radio" id="srchChk11" name="srchChk10">
+                                                            <label for="srchChk11">미숙박</label>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn btn1">수강 신청</button>
+                                    </div>
+                                </div>
+
+                                <!-- 제출서류 있을 때 -->
+                                <h3>제출서류</h3>
+                                <div class="info-papers">
+                                    <div class="col-item">
+                                        <span class="left-tit">제출서류 양식 다운로드</span>
+                                        <div class="right-txt">
+                                            <div class="file-list">
+                                                <span class="item"><a href="#none" title="새 창 다운로드" target="_blank" class="btn file1">제출서류01.DOCX</a></span>
+                                                <span class="item"><a href="#none" title="새 창 다운로드" target="_blank" class="btn file1">제출서류02.DOCX</a></span>
+                                                <span class="item"><a href="#none" title="새 창 다운로드" target="_blank" class="btn file1">제출서류03.DOCX</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-item">
+                                        <span class="left-tit">파일 업로드</span>
+                                        <div class="right-txt">
+                                            <div class="filebox">
+                                                <span class="file-inp inp">첨부파일</span>
+                                                <label for="fileSmp1" class="file-btn">파일선택</label> 
+                                                <input type="file" id="fileSmp1" class="change-file">
+                                            </div>
+                                            <div class="filebox">
+                                                <span class="file-inp inp">첨부파일</span>
+                                                <label for="fileSmp2" class="file-btn">파일선택</label> 
+                                                <input type="file" id="fileSmp2" class="change-file">
+                                                <button type="button" class="btn cancel">파일삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //제출서류 있을 때 -->
+                                <!-- 제출서류 없을 때 -->
+                                <h3>제출서류</h3>
+                                <div class="info-papers">
+                                    <div class="col-item">
+                                        <span class="left-tit">제출서류 없음</span>
+                                    </div>
+                                </div>
+                                <!-- //제출서류 없을 때 -->
+                                <h3>교육과정 소개</h3>
+                                <div class="b-box">
+                                    <div class="inner-txt">
+                                    과정명 : 직무 별 협업소통 리더십 <br>
+                                        교육일시 : 2024. 00. 00 ~ 2024. 00. 00 <br>
+                                        내용 : 중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다. <br>
+                                        교육대상 : 산업인력공단 임직원 <br>
+                                        과정명 : 직무 별 협업소통 리더십 <br>
+                                        교육일시 : 2024. 00. 00 ~ 2024. 00. 00 <br>
+                                        내용 : 중간관리자로서 브릿지 리더십과 협업 소통의 중요성을 이해하고 현장에서 발생하는 부서간, 상하간 갈등사례에 따른 협업소통 방법을 학습하고 효과적인 전략을 모색한다. <br>
+                                        교육대상 : 산업인력공단 임직원</div>
+                                </div>
+                                <h3>집합교육 과정 구성</h3>
+                                <div class="process-list">
+                                    <div class="item">
+                                        <div class="left">
+                                            <span class="tit">직무별 협업소통 리더십</span>
+                                            <span class="date">2024. 00. 00</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="time">00시간</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <span class="tit">직무별 협업소통 리더십</span>
+                                            <span class="date">2024. 00. 00</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="time">00시간</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <span class="tit">직무별 협업소통 리더십</span>
+                                            <span class="date">2024. 00. 00</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="time">00시간</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <span class="tit">직무별 협업소통 리더십</span>
+                                            <span class="date">2024. 00. 00</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="time">00시간</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>수료 기준</h3>
+                                <div class="col-tb-wrap">
+                                    <div class="col-item">
+                                        <div class="tb-tit">출석</div>
+                                        <div class="tb-txt">00점</div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="tb-tit">교과목</div>
+                                        <div class="tb-txt">00점</div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="tb-tit">과제</div>
+                                        <div class="tb-txt">00점</div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="tb-tit">토론</div>
+                                        <div class="tb-txt">00점</div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="tb-tit">설문</div>
+                                        <div class="tb-txt">00점</div>
+                                    </div>
+                                    <div class="col-item">
+                                        <div class="tb-tit">수료기준점수</div>
+                                        <div class="tb-txt">00점 이상</div>
+                                    </div>
+                                </div>
+                                <h3>추천 교육과정</h3>
+                                <!-- 추천 교육과정 리스트 목록 -->
+                                <div class="edu-list-wrap card">
+                                    <!-- 이미지 없을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="ico-box"><span class="i-type gather">집합</span><span class="i-type online">온라인</span><span class="i-type mix">혼합</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 이미지 없을 때 -->
+                                    <!-- 이미지 있을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb2.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 이미지 없을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb2.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb3.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 추천 교육과정 리스트 목록 -->
+                            </div>
+                            <!-- // [상세보기] -->
+                            <div class="btn-box">
+                                <button type="button" class="btn btn2">목록</button>
+                                <button type="button" class="btn btn1">수강신청</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- // 교육과정 상세/신청 -->
+                </div>
+                <!-- // contents -->
+            </div>
+            <!--............. footer .............-->
+            <footer id="footer">
+                <div class="foot-banner-wrap">
+                    <div class="inner">
+                        <!-- banner slide -->
+                        <div class="banner">
+                            <div class="foot-paging">
+                                <span class="paging-tit">배너존</span>
+                                <div class="swiper-btn-wrap">
+                                    <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                    <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                </div>
+                            </div>
+                            <div class="swiper-container banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://www.moel.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_moel.png" alt="고용노동부"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.hrdkorea.or.kr/" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_hrdkorea.png" alt="한국산업인력공단"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.work.go.kr/seekWantedMain.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_worknet.png" alt="워크넷"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ei.png" alt="고용보험"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ncs.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ncs.png" alt="국가직무능력표준"></a></div>
+                                    <div class="swiper-slide"><a href="https://c.q-net.or.kr/cmn/com/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_cq.png" alt="CQ넷"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // banner slide -->
+                    </div>
+                </div>
+                <div class="foot-txt-wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="foot-logo"><img src="../../images/common/foot_logo.png" alt="HRDK 미래교육원"></div>
+                        </div>
+                        <div class="right">
+                            <ul class="link-list">
+                                <li><a href="#none" class="privcy">개인정보처리방침</a></li>
+                                <li><a href="#none">저작권보호정책</a></li>
+                                <li><a href="#none">이메일무단수집거부</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">시설 대관 규정</a></li>
+                                <li><a href="#none">도움말</a></li>
+                            </ul>
+                            <div class="txt-box">
+                                <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
+                                </address>
+                                <p>TEL : 033-000-0000    FAX : 033-000-0000</p>
+                                <p>운영시간 일 09 : 00 ~ 18 : 00</p>
+                                <p class="copy">Copyright©2024 All rights reserved. Human Resources Development Service of Korea</p>
+                            </div>
+                        </div>
+                        <div class="family-site">
+                            <button type="button" class="family-btn" title="열기">Family Site</button>
+                            <ul class="list">
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--............. //footer .............-->
+
+            
+            <!-- modal-popup -->
+            <!-- 1. 대상 사업자(PG사,일반 사업자) 비밀번호 찾기 -->
+            <div id="pw_popup" class="modal-wrap">
+                <div class="modal-head">
+                    <h2>대상 사업자(PG사,일반 사업자) 비밀번호 찾기</h2>
+                </div>
+                <div class="modal-cont-wrap">
+                    <!-- cont -->
+                    <div class="modal-cont">
+                        
+                        <div class="contbox">
+                            <div class="inp-box mat0">
+                                <label for="businessNum2_1">사업자번호</label>
+                                <div class="inp-group">
+                                    <input type="tel" id="businessNum2_1" class="inp" title="사업자등록번호 앞자리">
+                                    <span class="mg">-</span>
+                                    <input type="tel" id="businessNum2_2" class="inp" title="사업자등록번호 중간자리">
+                                    <span class="mg">-</span>
+                                    <input type="tel" id="businessNum2_3" class="inp" title="사업자등록번호 뒷자리">
+                                </div>
+                            </div>
+                            <div class="inp-box">
+                                <label for="searchEmail1">담당자 이메일</label>
+                                <input type="email" id="searchEmail1" class="inp">
+                            </div>
+                            <div class="btn-box mat30">
+                                <a href="#none" class="btn btn1">취소</a>
+                                <button type="button" class="btn btn2">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <button type="button" class="modal-close b-close">닫기</button>
+            </div>
+            <!-- // modal-popup -->
+
+        </div>
+    </body>
+</html>
