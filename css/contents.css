@@ -60,12 +60,6 @@ h3.type2::before, .h3.type2::before { display: none; }
 
 .inline-block { display: inline-block; }
 
-.title-wrap { margin-top: 90px; }
-
-.title-wrap .tit { display: inline-block; vertical-align: middle; margin-top: 0; color: #333; }
-
-.title-wrap .sub-txt { display: inline-block; vertical-align: middle; font-size: 20px; color: #666; margin-left: 18px; }
-
 h4 { margin-top: 45px; font-size: 20px; text-align: left; padding-left: 20px; position: relative; font-weight: 700; color: #333; }
 
 h4::before { content: ''; display: inline-block; border-radius: 100px; width: 7px; height: 7px; background-color: #333; position: absolute; left: 0; top: 8px; }
@@ -73,6 +67,14 @@ h4::before { content: ''; display: inline-block; border-radius: 100px; width: 7p
 h4.type3 { display: inline-block; position: relative; text-align: center; font-size: 24px; font-weight: 700; color: #25426c; background-color: #eef0f5; padding-left: 0; min-width: 240px; display: inline-block; border-radius: 5px; padding: 11px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position: relative; }
+
+.title-wrap { margin-top: 95px; position: relative; }
+
+.title-wrap .tit, .title-wrap h3, .title-wrap h4 { display: inline-block; vertical-align: middle; margin-top: 0; }
+
+.title-wrap .sub-txt { display: inline-block; vertical-align: middle; font-size: 20px; color: #666; margin-left: 18px; }
+
+.title-wrap .btn, .title-wrap .more-btn, .title-wrap .more-btn.type2 { position: absolute; right: 0; }
 
 .f_wrapper .touch { display: none; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 10px; position: absolute; top: 0; left: 0; color: #666; border: 1px dotted #ddd; background: #fff url("../images/sub/ico_flicking.png") no-repeat 5px; padding: 10px 10px 10px 40px; }
 
@@ -126,11 +128,17 @@ h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position:
 
 .btn.btn4:hover { border: 0; }
 
+.btn.btn5 { border: 1px solid #333; background-color: #fff; }
+
+.btn.btn5:hover { background-color: #f2f2f2; }
+
 .btn.btn6 { background-color: #666; color: #fff; width: 100%; }
+
+.btn.btn6:hover { background: #fff; color: #767676; border-color: #767676; }
 
 .btn.btn8 { border-radius: 100px; background-color: #003586; color: #fff; }
 
-.btn.small { font-size: 14px; height: auto; padding: 9px 15px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px; }
+.btn.small { font-size: 14px; height: auto; padding: 9px 15px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px; min-height: 42px; }
 
 .btn.middle { font-size: 14px; height: auto; padding: 2px 16px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px; }
 
@@ -253,6 +261,18 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px; margi
 .bottm-btn-box .btn { margin: 0 0 0 10px; display: inline-block; font-size: 14px; padding: 7px 15px; min-width: 150px; height: 40px; line-height: 25px; }
 
 .bottm-btn-box .btn.write { line-height: 21px; }
+
+.more-btn { background: transparent; color: #fff; -webkit-transition: .3s ease; transition: .3s ease; font-size: 18px; padding-right: 25px; vertical-align: middle; font-weight: 500; position: relative; padding-left: 0; padding-bottom: 0; }
+
+.more-btn::before { content: ''; display: inline-block; position: absolute; right: 3px; top: 50%; -webkit-transition: .3s ease; transition: .3s ease; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url("../images/main/ico_morebtn.png") no-repeat center; width: 12px; height: 17px; }
+
+.more-btn:hover::before { right: 0; }
+
+.more-btn.type2 { color: #333; -webkit-transition: .3s ease; transition: .3s ease; font-size: 18px; padding-right: 25px; font-weight: 500; position: relative; }
+
+.more-btn.type2::before { background: url("../images/main/ico_morebtn2.png") no-repeat center; }
+
+.more-btn.type2:hover::before { right: 0; }
 
 /* ================ contents ================ */
 .sub-tit-wrap { position: relative; margin-bottom: 30px; text-align: center; }
@@ -454,6 +474,8 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px; margi
 
 .edu-tit-box { padding-right: 60px; position: relative; border-bottom: 1px solid #333; padding-bottom: 10px; }
 
+.edu-tit-box .right { position: absolute; right: 0; top: 4px; }
+
 .tit-point { font-size: 24px; margin-right: 5px; vertical-align: middle; }
 
 .edu-tit-box .txt { font-size: 24px; font-weight: 600; vertical-align: middle; color: #333; }
@@ -565,6 +587,100 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px; margi
 .facilities-swiper-wrap.right .info-box { right: auto; left: -224px; }
 
 .facilities-swiper-wrap.right .swiper-paging { right: auto; left: -224px; }
+
+.mypage-profile-box { border: 10px solid #eee; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f5f5f5; box-sizing: border-box; padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.mypage-profile-box .profile-img { min-width: 150px; height: 150px; background: url("../images/sub/img_profile_sample.jpg") no-repeat center; margin-right: 23px; }
+
+.mypage-profile-box .profile-info { padding-top: 35px; font-size: 16px; margin-right: 20px; }
+
+.mypage-profile-box .info-txt .item { font-size: 0; margin-top: 15px; }
+
+.mypage-profile-box .info-txt .item:first-child { margin-top: 0; }
+
+.mypage-profile-box .info-txt .item .left { font-size: 16px; font-weight: 600; color: #333; padding-right: 9px; border-right: 1px solid #333; margin-right: 9px; vertical-align: middle; }
+
+.mypage-profile-box .info-txt .item .right { font-size: 16px; color: #666; font-weight: 300; vertical-align: middle; }
+
+.mypage-profile-box .info-btn-box { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 20px -5px 0; }
+
+.mypage-profile-box .info-btn-box .btn { min-width: 120px; margin: 0 5px; width: 100%; height: 36px; font-size: 18px; padding: 6px; }
+
+.col-dotted-box { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 -10px; width: 100%; }
+
+.col-dotted-box .item { display: inline-block; width: calc(100% - 20px); margin: 0 10px; background-color: #fff; border: 1px dashed #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px; text-align: center; }
+
+.col-dotted-box .tit { font-size: 18px; font-weight: 600; color: #333; }
+
+.col-dotted-box .txt { word-break: keep-all; letter-spacing: -1px; font-size: 14px; margin-top: 12px; }
+
+.col-dotted-box .txt span { display: inline-block; font-weight: 300; }
+
+.col-dotted-box .txt span::after { content: '/'; margin: 0 4px; display: inline-block; }
+
+.col-dotted-box .txt span:last-child::after { display: none; }
+
+.col-dotted-box .btn-box { margin-top: 20px; }
+
+.col-dotted-box .btn-box .btn { height: 36px; padding: 6px; }
+
+.col-dotted-box .point { color: #ff3939; }
+
+.mypage-profile-box + .edu-tit-box { border-bottom-width: 2px; margin-top: 80px; padding-right: 0; }
+
+.mypage-profile-box ~ .edu-list-wrap.card { margin-top: 30px; }
+
+.learning-vdo-tit { color: #fff; background-color: #333; font-size: 18px; font-weight: 500; padding: 14px 0 14px 20px; margin-top: 20px; }
+
+.learning-vdo-wrap { margin-top: 20px; font-size: 0; }
+
+.learning-vdo-wrap > * { font-size: 16px; }
+
+.learning-vdo-wrap .vdo-box { display: inline-block; vertical-align: top; position: relative; max-width: 66%; width: 100%; }
+
+.learning-vdo-wrap .middle { height: 0; position: relative; padding-bottom: 52%; width: 100%; }
+
+.learning-vdo-wrap iframe { height: 100%; position: absolute; left: 0; top: 0; background-color: #ddd; width: 100%; }
+
+.learning-vdo-wrap .vdo-list-wrap { width: calc(34% - 30px); margin-left: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: top; border: 1px solid #ddd; min-height: 500px; height: 80vh; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box-tit { height: 80px; border-bottom: 1px solid #ddd; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 20px; font-weight: 600; padding-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #333; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box { height: calc(100% - 80px); overflow: auto; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box button { -webkit-transition: .3s ease; transition: .3s ease; padding: 30px 80px 30px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; background-color: transparent; text-align: left; font-size: 14px; color: #666; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box .time { display: block; text-align: right; font-weight: 500; margin-top: 15px; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li { border-bottom: 1px solid #ddd; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > .unit > .section { margin-right: 3px; font-size: 20px; font-weight: 600; color: #333; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > .unit > .tit { font-size: 18px; font-weight: 500; color: #333; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li:last-child .unit { border-bottom: 0; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box .child { display: none; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li { background-color: #f7f7f7; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit { border-bottom: 1px solid #fff; font-size: 0; padding: 18px 80px 18px 80px; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit:hover { background-color: #e8e8e8; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit > * { font-size: 14px; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit > .section { font-size: 20px; font-weight: 600; color: #333; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit > .tit { width: calc(100% - 52px); display: inline-block; font-size: 14px; font-weight: 500; color: #666; }
+
+.learning-vdo-wrap .vdo-list-wrap .list-box > ul > li > ul > li > .unit > .time { margin-top: 0; width: 52px; text-align: right; display: inline-block; }
+
+.learning-vdo-wrap .bttom-btn-box { margin-top: 20px; }
+
+.learning-vdo-wrap .bttom-btn-box .txt { vertical-align: middle; margin-right: 14px; }
+
+.learning-vdo-wrap .bttom-btn-box .btn { font-size: 14px; padding: 10px 15px; max-width: none; width: auto; min-width: 80px; vertical-align: middle; margin: 0 5px; }
 
 /* ================ responsive 반응형 ================ */
 @media screen and (max-width: 1600px) { .vision-cont .txt-box { left: 10vw; top: 190px !important; }

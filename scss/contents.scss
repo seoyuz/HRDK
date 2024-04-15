@@ -61,11 +61,6 @@ h3, .h3 { margin-top: 95px; font-size: 24px; font-weight: 600; color: #191919; p
 
 .inline-block { display: inline-block;}
 
-.title-wrap { margin-top: 90px;
-    
-    .tit { display: inline-block; vertical-align: middle; margin-top: 0; color: #333;}
-    .sub-txt { display: inline-block; vertical-align: middle; font-size: 20px; color: #666; margin-left: 18px;}
-}
 
 h4 { margin-top: 45px; font-size: 20px; text-align: left; padding-left: 20px;  position: relative;  font-weight: 700; color: #333;
     &::before {content: ''; display: inline-block; border-radius: 100px; width: 7px; height: 7px; background-color: #333; position: absolute; left: 0; top: 8px; } 
@@ -74,6 +69,13 @@ h4 { margin-top: 45px; font-size: 20px; text-align: left; padding-left: 20px;  p
 }
 
 h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position: relative; }
+
+.title-wrap { margin-top: 95px; position: relative;
+    
+    .tit, h3, h4 { display: inline-block; vertical-align: middle; margin-top: 0;}
+    .sub-txt { display: inline-block; vertical-align: middle; font-size: 20px; color: #666; margin-left: 18px;}
+    .btn, .more-btn, .more-btn.type2 { position: absolute; right: 0;}
+}
 
 
 //flicking
@@ -138,12 +140,17 @@ h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position:
     
         &:hover { border: 0;}
     }
-    &.btn6 { background-color: #666; color: #fff; width: 100%;} //취소, 뒤로가기
+    &.btn5 { border: 1px solid #333; background-color: #fff;
+        &:hover {background-color: #f2f2f2;}
+    }
+    &.btn6 { background-color: #666; color: #fff; width: 100%;
+        &:hover {background: #fff; color: #767676; border-color: #767676;}
+    } //취소, 뒤로가기
     &.btn8 { border-radius: 100px; background-color: $pointColor; color: #fff;} // round btn
 
     
 
-    &.small { font-size: 14px; height: auto; padding: 9px 15px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px;}
+    &.small { font-size: 14px; height: auto; padding: 9px 15px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px; min-height: 42px;}
     &.middle { font-size: 14px; height: auto; padding: 2px 16px; display: inline-block; width: auto; vertical-align: middle; margin: 0 0 0 7px;}
     &.ma0 { margin: 0;}
 
@@ -263,6 +270,17 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
 
 
 
+// 화살표 더보기
+.more-btn {background: transparent; color: #fff; transition: .3s ease; font-size: 18px; padding-right: 25px; vertical-align: middle; font-weight: 500; position: relative; padding-left: 0; padding-bottom: 0;
+        
+    &::before { content: ''; display: inline-block; position: absolute; right: 3px; top: 50%; transition: .3s ease; transform: translateY(-50%); background: url($main + "ico_morebtn.png") no-repeat center; width: 12px; height: 17px;}
+    &:hover::before { right: 0;}
+}
+.more-btn.type2 { color: #333; transition: .3s ease; font-size: 18px; padding-right: 25px; font-weight: 500; position: relative;
+        
+    &::before { background: url($main + "ico_morebtn2.png") no-repeat center;}
+    &:hover::before { right: 0;}
+}
 
 
 /* ================ contents ================ */
@@ -279,8 +297,6 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
     &.type2 { margin-top: 95px;}
 }
 
-
-
 .inp-tip { margin-top: 5px; color: #767676;}
 .agree-btn-box { height: 120px; box-sizing: border-box; font-size: 0; width: 100%; position: relative;
 
@@ -292,11 +308,6 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
         input:checked + label { background-color: #f1f9fa; border-color: #008390; color: #008390;}
         input:checked + label::before {background: url($sub + "ico_check2.png") no-repeat 55%; border-color:#49aab5; }
     }
-    // .more-btn { display: inline-block; width: 85px; height: 100%; background: url($sub + "ico_morebtn.png") no-repeat center; font-size: 16px; text-indent: -99999px;vertical-align: top; transition: .3s ease; position: absolute; right: 0; top: 0;
-    
-    //     // &:hover { background-color: #f5f5f5;}
-    //     &:hover { background-position: 60% 50%;}
-    // }
     .more-btn { display: none;}
 }
 
@@ -455,7 +466,10 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
         }
     }
 }
-.edu-tit-box { padding-right: 60px; position: relative; border-bottom: 1px solid #333; padding-bottom: 10px;}
+.edu-tit-box { padding-right: 60px; position: relative; border-bottom: 1px solid #333; padding-bottom: 10px;
+
+    .right { position: absolute; right: 0; top: 4px;}
+}
 .tit-point { font-size: 24px; margin-right: 5px; vertical-align: middle;}
 .edu-tit-box .txt { font-size: 24px; font-weight: 600; vertical-align: middle; color: #333;}
 .info-list { display: flex; flex-wrap: wrap;
@@ -549,6 +563,86 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
 }
 
 
+// 나의 강의실
+.mypage-profile-box { border: 10px solid #eee; box-sizing: border-box; background-color: #f5f5f5; box-sizing: border-box; padding: 20px; display: flex;
+        
+    .profile-img { min-width: 150px; height: 150px; background:url($sub + "img_profile_sample.jpg") no-repeat center;  margin-right: 23px;}
+    .profile-info { padding-top: 35px; font-size: 16px; margin-right: 20px;}
+    .info-txt {
+
+        .item { font-size: 0; margin-top: 15px;}
+        .item:first-child { margin-top: 0;}
+        .item .left { font-size: 16px; font-weight: 600; color: #333; padding-right: 9px; border-right: 1px solid #333; margin-right: 9px; vertical-align: middle;}
+        .item .right { font-size: 16px; color: #666; font-weight: 300; vertical-align: middle;}
+    }
+    .info-btn-box {display: flex; margin: 20px -5px 0;
+    
+        .btn {min-width: 120px; margin: 0 5px; width: 100%; height: 36px; font-size: 18px; padding: 6px;}
+    }
+}
+.col-dotted-box { display: flex; margin: 0 -10px; width: 100%;
+    .item { display: inline-block; width: calc(100% - 20px); margin: 0 10px; background-color: #fff; border: 1px dashed #ccc; box-sizing: border-box; padding: 20px; text-align: center;}
+    .tit { font-size: 18px; font-weight: 600; color: #333;}
+    .txt { word-break: keep-all; letter-spacing: -1px; font-size: 14px; margin-top: 12px;}
+    .txt span {display: inline-block; font-weight: 300;}
+    .txt span::after { content: '/'; margin: 0 4px; display: inline-block; }
+    .txt span:last-child::after { display: none;}
+    .btn-box { margin-top: 20px;
+    
+        .btn { height: 36px; padding: 6px; }
+    }
+    .point { color: #ff3939;}
+}
+
+.mypage-profile-box + .edu-tit-box { border-bottom-width: 2px; margin-top: 80px; padding-right: 0;}
+.mypage-profile-box ~ .edu-list-wrap.card { margin-top: 30px;}
+
+
+// 학습하기
+.learning-vdo-tit {  color: #fff; background-color: #333; font-size: 18px; font-weight: 500; padding: 14px 0 14px 20px; margin-top: 20px;}
+.learning-vdo-wrap {  margin-top: 20px; font-size: 0;
+    > * { font-size: 16px;}
+    .vdo-box { display: inline-block; vertical-align: top; position: relative;  max-width: 66%; width: 100%;}
+    .middle { height: 0; position: relative; padding-bottom: 52%; width: 100%;}
+    iframe { height: 100%; position: absolute; left: 0; top: 0; background-color: #ddd; width: 100%;}
+    .vdo-list-wrap { width: calc(34% - 30px);  margin-left: 30px; box-sizing: border-box; display: inline-block; vertical-align: top; border: 1px solid #ddd; min-height: 500px; height: 80vh;
+    
+        .list-box-tit { height: 80px; border-bottom: 1px solid #ddd; box-sizing: border-box;font-size: 20px; font-weight: 600; padding-left: 30px; display: flex; align-items: center; color: #333;}
+        .list-box { height: calc(100% - 80px); overflow: auto;
+            
+            button { transition: .3s ease; padding: 30px 80px 30px 30px; box-sizing: border-box; width: 100%; background-color: transparent; text-align: left; font-size: 14px; color: #666;}
+            .time { display: block; text-align: right; font-weight: 500; margin-top: 15px; }
+
+            // parent
+            .parent { }
+            > ul > li { border-bottom: 1px solid #ddd;
+                > .unit { }
+                > .unit > .section { margin-right: 3px; font-size: 20px; font-weight: 600; color: #333; }
+                > .unit > .tit { font-size: 18px; font-weight: 500; color: #333;}
+                &:last-child .unit { border-bottom: 0;}
+            }
+            // child
+            .child { display: none; }
+            > ul > li > ul > li { background-color: #f7f7f7;
+                > .unit { border-bottom: 1px solid #fff; font-size: 0; padding: 18px 80px 18px 80px;}
+                > .unit:hover { background-color: #e8e8e8;}
+                > .unit > * { font-size: 14px;}
+                > .unit > .section { font-size: 20px; font-weight: 600; color: #333; }
+                > .unit > .tit { width: calc(100% - 52px); display: inline-block;font-size: 14px; font-weight: 500; color: #666;}
+                > .unit > .time { margin-top: 0; width: 52px; text-align: right; display: inline-block;}
+
+            }
+            
+
+            
+        }
+    }
+    .bttom-btn-box { margin-top: 20px;
+
+        .txt { vertical-align: middle; margin-right: 14px;}
+        .btn { font-size: 14px; padding: 10px 15px; max-width: none; width: auto; min-width: 80px; vertical-align: middle; margin: 0 5px;}
+    }
+}
 
 
 

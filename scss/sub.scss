@@ -684,13 +684,17 @@ table.board-list {margin-top: 20px; border-top: 2px solid #333;  border-bottom: 
     }
     .ico-notice { font-weight: 700; color: #333;}
     .ico.status { display: none;}
-
-
-
     colgroup .col-tit { width: 58%;} //공지사항
-
-
 }
+
+
+.board-list.mobile {
+
+    td .th { display: none;}
+    td .td {height: 100%; display: flex; align-items: center; justify-content: center;}
+    .btn { height: 100%;}
+}
+.learning { font-size: 18px; font-weight: 600; color: #333;}
 
 
 //공지사항 상세
@@ -711,7 +715,7 @@ table.board-list {margin-top: 20px; border-top: 2px solid #333;  border-bottom: 
         .left-link { color: #5e6dff;}
     }
     .board-tit { font-size: 30px; font-weight: 700; margin-top: 22px; text-align: center; padding: 0 30px; color: #444; word-break: break-all;}
-    .board-cont { margin-top: 68px; min-height: 330px; color: #444; padding: 0 35px 75px; border-bottom: 1px solid #d3d3d3; white-space: normal; font-size: 17px;}
+    .board-cont { margin-top: 68px; min-height: 330px; color: #444; padding: 0 35px 75px; white-space: normal; font-size: 17px;}
     .board-bottom {
         .writer { display: inline-block; font-size: 12px;}
         .writer span { font-weight: 600; color: #333;}
@@ -725,7 +729,7 @@ table.board-list {margin-top: 20px; border-top: 2px solid #333;  border-bottom: 
     .file-box + .file-box { margin-top: 0;}
 
 
-    .board-bottom { padding: 14px 0; text-align: right;}
+    .board-bottom { border-bottom: 1px solid #d3d3d3; padding: 14px 0; text-align: right;}
     .btn_file2 { margin-left: 5px; font-size: 14px; color: #444;}
     .btn_file2:first-child { margin-left: 0}
 }
@@ -977,7 +981,10 @@ h4 + .board-search, h3 + .board-search { margin-top: 40px;}
 
 
 //파일박스 커스텀
-.filebox { padding-top: 0; margin-top: 10px; display: flex; align-items: center;
+.filebox { padding-top: 0; margin-top: 10px; align-items: center; font-size: 0;
+    > * { font-size: 16px;}
+    > div { display: flex; width: 100%;}
+    > div + div { margin-top: 10px;}
 
     .file-inp { display: inline-block; border: 1px solid #ddd; height: 34px; width: 100%; background-color: transparent; font-size: 14px; color: #777; font-weight: 500; vertical-align: middle; line-height: 34px; padding-left: 15px; box-sizing: border-box;
     
@@ -1006,6 +1013,11 @@ h4 + .board-search, h3 + .board-search { margin-top: 40px;}
         .file-btn {padding: 17px 20px;}
         .inp {height: 50px; line-height: 100%; display: inline-flex;align-items: center;}
     }
+
+
+    >.file-btn { }
+    >.inp { width: calc(100% - 150px); }
+
 }
 .inp-box .input input:read-only:focus-visible, .inp-box .input textarea:read-only:focus-visible { outline: 2px solid #000;}
 

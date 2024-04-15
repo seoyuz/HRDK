@@ -288,6 +288,32 @@ function slider() {
 }
 
 
+// 학습안내 상세 페이지 우측 교육 리스트 버튼
+$(".vdo-list-wrap .parent > li > .unit").click(function() {
+	if(!$(this).hasClass("on")) {
+		$(".vdo-list-wrap .parent > li > .unit").removeClass("on");
+		$(".vdo-list-wrap .parent > li > .unit").attr("title", "열기");
+		$(".vdo-list-wrap .parent > li > .child").slideUp();
+		
+		$(this).addClass("on");
+		$(this).attr("title", "닫기");
+		$(this).siblings(".child").slideDown();
+	} else {
+		$(this).removeClass("on");
+		$(this).attr("title", "열기");
+		$(this).siblings(".child").slideUp();
+	}
+});
+
+$(".vdo-list-wrap .parent > li > .unit").each(function() {
+	if($(this).hasClass("on")) {
+		$(this).addClass("on");
+		$(this).attr("title", "닫기");
+		$(this).siblings(".child").slideDown();
+    }
+});
+
+
 /* [ Contents tweenMax ] s */
 
 
