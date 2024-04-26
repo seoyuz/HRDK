@@ -11,7 +11,7 @@
     .t1 { font-size: 18px; color: #333; font-weight: 500;}
     .t2 { font-size: 16px; color: #555; margin-top: 6px;}
 }
-.b-box { margin-top: 20px; box-sizing: border-box; padding: 10px 20px; border: 10px solid #f5f5f5; font-size: 14px;
+.b-box { margin-top: 20px; box-sizing: border-box; background-color: #fff; padding: 10px 20px; border: 10px solid #f5f5f5; font-size: 14px;
     .inner-txt { padding: 20px 10px;}
 }
 .c-box { margin-top: 40px; background: #f4f5ff; line-height: 24px; box-sizing: border-box; border-radius: 10px; border: 1px dashed #ccc; padding: 23px 30px; font-size: 16px;}
@@ -52,9 +52,10 @@ img.mobile { display: none; max-width: 100%;}
 h3, .h3 { margin-top: 95px; font-size: 24px; font-weight: 600; color: #191919; position: relative; padding-left: 17px;
     &::before { content: ''; width: 8px; height: 40px; background-color: #333; display: inline-block; position: absolute; left: 0; bottom: 0;}
 
+    &.type2 { margin-top: 45px;}
     &.tit-h3.type2 { margin-top: 90px;}
-    &.type2 { text-align: left; padding-left: 0; }
-    &.type2::before {display: none;}
+    &.bullet { text-align: left; padding-left: 23px; margin-top: 60px; } // 회원가입
+    &.bullet::before {width: 6px; height: 6px; color: #333; top: 10px;}
 }
 
 // h3:first-child { margin-top: 90px;}
@@ -75,7 +76,12 @@ h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position:
     .tit, h3, h4 { display: inline-block; vertical-align: middle; margin-top: 0;}
     .sub-txt { display: inline-block; vertical-align: middle; font-size: 20px; color: #666; margin-left: 18px;}
     .btn, .more-btn, .more-btn.type2 { position: absolute; right: 0;}
+    .right {float: right; margin-top: 4px;}
+
+    &.type2 { margin-top: 45px;}
 }
+
+.title-wrap + .col-dotted-box { margin-top: 30px; width: auto;} // 과정정보
 
 
 //flicking
@@ -207,6 +213,14 @@ h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position:
         &:hover::after { top: 0;}
     }
 
+    &.phone { @include btnSlideDown; border: 0;
+        
+        &::before { content: ''; display: inline-block; width: 17px; height: 22px;  background: url($sub + "ico_phone.png") no-repeat center; vertical-align: middle; margin-right: 8px; transition:.3s ease;}
+        &:hover::before { background-image: url($sub + "ico_phone2.png");}
+        &.type2 { background-color: #444;}
+        &::after { z-index: -2; background-color: transparent; }
+        &:hover::after { top: 0;}
+    }
     
     &.file1 { text-align: left; padding: 7px 0 2px 34px; font-size: 16px; background-color: transparent; margin: 0 15px; text-decoration: underline; position: relative; transition: .3s ease;
 
@@ -226,6 +240,10 @@ h5 { margin-top: 60px; font-size: 24px; font-weight: 700; color: #333; position:
 
     &.privcy { margin: 0 0 0 16px; font-size: 16px; color: #fff; background-color: #333; border-radius: 100px; padding: 3px 17px;} 
 }
+
+// 시험 게시판목록 아이콘파일
+.ico-file { display: inline-block; width: 25px; height: 30px; box-sizing: border-box; background:transparent url($sub + "ico_file2.png"); text-indent: -99999px;} 
+
 
 
 // 조회하기 버튼
@@ -385,7 +403,7 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
 
 
 
-.i-type {display: block; min-width: 55px; box-sizing: border-box;text-align: center; margin-top: 5px; line-height: 20px; height: 20px; font-size: 16px; color: #fff; font-weight: 600; background-color: #333; border-radius: 4px;}
+.i-type {display: inline-block; min-width: 55px; box-sizing: border-box;text-align: center; margin-top: 5px; line-height: 20px; height: 20px; font-size: 16px; color: #fff; font-weight: 600; background-color: #333; border-radius: 4px;}
 .i-type:first-child { margin-top: 0;}
 .i-type.online { background-color: #ef4d8e;} // 온라인
 .i-type.mix { background-color: #5e06c1;} // 혼합
@@ -472,6 +490,8 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
 }
 .tit-point { font-size: 24px; margin-right: 5px; vertical-align: middle;}
 .edu-tit-box .txt { font-size: 24px; font-weight: 600; vertical-align: middle; color: #333;}
+
+.board-list-wrap + .edu-tit-box { margin-top: 90px;} // 나의 강의실
 .info-list { display: flex; flex-wrap: wrap;
 
     .item { display: inline-block; width: 100%; font-size: 0; box-sizing: border-box; margin: 10px 0;}
@@ -482,7 +502,7 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
 .info-list.col {
     
     .item { width: auto; padding-right: 30px; min-width: 50%; }
-    .w100 { width: 100%;}
+    .w100 { width: 100%; padding-right: 0;}
 }
 
 .info-papers { margin-top: 20px; padding-left: 16px; box-sizing: border-box;
@@ -530,6 +550,11 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
     .left, .right {}
     .txt { width: 100%; font-size: 18px; font-weight: 600;}
     .radio, .checkbox { white-space: nowrap;}
+}
+
+// 동의하기 (우측정렬)
+.agree-box.type2 { padding: 0; text-align: right; color: #333; margin-top: 20px;
+    .radio, .checkbox { white-space: nowrap; margin: 0;}
 }
 
 
@@ -592,6 +617,12 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
         .btn { height: 36px; padding: 6px; }
     }
     .point { color: #ff3939;}
+    .txt p { margin-top: 4px;}
+}
+
+//과정정보
+.col-dotted-box.type2 { 
+
 }
 
 .mypage-profile-box + .edu-tit-box { border-bottom-width: 2px; margin-top: 80px; padding-right: 0;}
@@ -604,7 +635,7 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
     > * { font-size: 16px;}
     .vdo-box { display: inline-block; vertical-align: top; position: relative;  max-width: 66%; width: 100%;}
     .middle { height: 0; position: relative; padding-bottom: 52%; width: 100%;}
-    iframe { height: 100%; position: absolute; left: 0; top: 0; background-color: #ddd; width: 100%;}
+    iframe, video { height: 100%; position: absolute; left: 0; top: 0; background-color: #ddd; width: 100%;}
     .vdo-list-wrap { width: calc(34% - 30px);  margin-left: 30px; box-sizing: border-box; display: inline-block; vertical-align: top; border: 1px solid #ddd; min-height: 500px; height: 80vh;
     
         .list-box-tit { height: 80px; border-bottom: 1px solid #ddd; box-sizing: border-box;font-size: 20px; font-weight: 600; padding-left: 30px; display: flex; align-items: center; color: #333;}
@@ -625,11 +656,12 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
             .child { display: none; }
             > ul > li > ul > li { background-color: #f7f7f7;
                 > .unit { border-bottom: 1px solid #fff; font-size: 0; padding: 18px 80px 18px 80px;}
-                > .unit:hover { background-color: #e8e8e8;}
+                > .unit:hover { background-color: #f2f2f2;}
+                > .unit.on { background-color: #e8e8e8;}
                 > .unit > * { font-size: 14px;}
                 > .unit > .section { font-size: 20px; font-weight: 600; color: #333; }
-                > .unit > .tit { width: calc(100% - 52px); display: inline-block;font-size: 14px; font-weight: 500; color: #666;}
-                > .unit > .time { margin-top: 0; width: 52px; text-align: right; display: inline-block;}
+                > .unit > .tit { vertical-align: middle; width: calc(100% - 62px); display: inline-block;font-size: 14px; font-weight: 500; color: #666;}
+                > .unit > .time { vertical-align: middle; margin-top: 0; width: 62px; text-align: right; display: inline-block;}
 
             }
             
@@ -644,7 +676,196 @@ table td .btn { vertical-align: middle; font-size: 14px; padding: 3px 5px;  marg
     }
 }
 
+// 회원가입 - 신청
+.join-select-box { margin: 105px auto 0; text-align: center;
 
+    .item { max-width: 280px; margin: 0 105px; display: inline-block; width: 100%; text-align: center;}
+    .ico { width: 163px; height: 167px; margin: 0 auto; display: block;}
+    .txt { margin-top: 13px; font-size: 14px; color: #666; text-align: left; line-height: 150%; letter-spacing: 0.5px;}
+
+    .ico.ico1 { background: url($contents + "ico_join1.png") no-repeat center;}
+    .ico.ico2 { background: url($contents + "ico_join2.png") no-repeat center;}
+}
+
+.join-p-btn { border-radius: 2px; z-index: 1; position: relative; margin: 50px auto 0; font-size: 24px; font-weight: 600; color: #fff; background-color: #333; font-weight: 400; max-width: 100%; max-width: 280px; display: block;}
+.join-p-btn::before {content: ''; display: inline-block; width: 100%;height: 0; position: absolute; z-index: -1; left: 0; top: 0; transition: .3s ease; background-color: #111;}
+.join-p-btn:hover::before { height: 100%; right: 0; bottom: auto; top: 0;}
+
+
+// 회원가입 - 휴대폰 인증 
+.certify-ico-box { margin-top: 72px;
+ 
+    .ico { width: 196px; height: 257px;background: url($contents + "ico_join3.png") no-repeat center; margin: 0 auto; display: block; background-size: cover;}
+    .join-p-btn { margin-top: 0;}
+}
+
+
+// 회원가입 - 정보입력
+.join-tit-wrap { position: relative; border-bottom: 2px solid #333; padding-bottom: 8px;
+
+    .right { position: absolute; right: 0;top: 0;}
+}
+
+// 회원가입 - 신청완료
+.join-complete-box { background-color: #FAFAFA; border: 1px solid #e4e4e4; padding: 75px 0 60px; box-sizing: border-box; text-align: center; margin-top: 40px;
+
+    .tit { font-size: 32px; font-weight: 700; color: #333;}
+    .txt { margin-top: 40px; font-size: 18px; color: #666; line-height: 140%;}
+}
+
+// 로그인
+.login-wrap {max-width: 450px; margin: 0 auto; 
+    .btn-box { margin-top: 12px; 
+        .btn { max-width: 100%; width: 100%; font-size: 22px;}
+    }
+    .link-box { text-align: center; margin-top: 60px;
+        .link { transition: .3s ease; color: #999; position: relative;}
+        .link:hover { color: #333;}
+        .link::after { content: ''; display: inline-block; margin: 0 17px; box-sizing: border-box; height: 14px; width: 1px; background-color: #d9d9d9; }
+        .link:last-child::after { display: none;}
+    }
+}
+.focus-inp-box { position: relative;
+    .inp-item { margin-top: 12px; background-color: #fff; display: flex; flex-direction: row-reverse; height: 60px; align-items: center; position: relative; text-align: left; }
+    .inp-item:first-child { margin-top: 0;}
+    label { min-width: 113px; font-weight: 600; color: #333; box-sizing: border-box; padding-left: 30px; font-size: 18px;  border-right: 1px solid #ececec;}
+    .inp { background-color: transparent; position: relative; z-index: 1; border: 0; outline: none; width: 100%; font-size: 18px; padding: 0 0 0 20px; box-sizing: border-box;}
+    .inp + label::before { content: ''; transition: .3s ease; display: inline-block; width: 100%; height: 100%; width: 100%; height: 100%; border: 1px solid #ddd; position: absolute; left: 0; top: 0; box-sizing: border-box;}
+    .inp:focus + label::before { border-color: #333;}
+
+    // 아이디 비밀번호찾기 재전송버튼
+    .right { width: 80px; display: flex; align-items: center; position: absolute; right: 0; z-index: 1; height: 100%;}
+    .txt-btn { height: 100%; width: 100%; background: transparent;} // 재전송
+    .timer { width: 100%; text-align: center;} //타이머
+    
+    .inp-item + .btn { width: 80px;}
+    // e
+
+    // label 내용 길 때
+    .long { min-width:187px} // 비밀번호 찾기 팝업
+
+}
+
+
+
+// 아이디 비밀번호 찾기
+.login-col-box { display: block; text-align: center; font-size: 0;
+    .col-item { margin-bottom: 50px; display: inline-block; font-size: 16px; vertical-align: top;}
+    .login-wrap { margin: 0 45px; width: 495px; max-width: 100%;}
+    label { min-width: 132px;}
+    .btn-box .btn { font-size: 18px;}
+}
+.join-tit-wrap + .focus-inp-box { margin-top: 17px;}
+
+
+// 아이디 비밀번호 찾기 팝업
+.round-box { border: 1px solid #efefef; background-color: #fbfbfb; border-radius: 5px; box-sizing: border-box; font-size: 24px; color: #333; font-weight: 700; padding: 12px; text-align: center; max-width: 330px; width: 100%; margin: 20px auto 0;}
+.pop-idsearch { text-align: center;
+
+    .search-txt { font-size: 16px; line-height: 140%; color: #666; margin-top: 20px;}
+    .search-txt:first-child { margin-top: 0;}
+
+    .certifi-btn-box { margin-top: 30px;}
+    .certifi-box { margin-top: 30px;}
+    .btn {  margin: 0; }
+}
+.certifi-btn-box { margin-top: 30px; }
+
+
+// 55_나의강의실_출결(탭).html
+.tab-col-wrap { position: relative; border-bottom: 1px solid #ccc;
+    &::after { content: ''; display:block; clear: both;}
+
+    .tab-fixed-box { float: right;}
+}
+.tab-left-box { width: 100%;  display: inline-block; vertical-align: bottom; height: 60px;
+    ul { font-size: 0;}
+    li { display: inline-block; vertical-align: bottom; font-size: 18px;}
+    a, button { text-align: center; box-sizing: border-box; font-size: 18px; font-weight: 600; padding: 12px 20px; display: block; background:none;//초기화 
+        background-color: #f5f5f5; border: 1px solid #ccc; border-left: 0; border-bottom: 0; min-width: 80px; color: #333; transition: .3s ease; margin-top: 13px;
+    }
+    li:first-child a, li:first-child button { border-left: 1px solid #ccc;}
+    .on {background-color: #333;color: #fff; margin-top: 0; border-color: #333332; padding: 18px 20px;}
+    
+    .fixed {margin-top: 20px; float: right; vertical-align: bottom; margin-left: 10px;}
+    .fixed a {background-color: #ddd; color: #333; font-weight: 600; border: 0; border-radius: 17px 17px 0 0; padding: 9px 10px; margin-top: 0;}
+    .fixed a.on {background-color: #666; color: #fff;}
+}
+// .tab-fixed-box { 
+    
+//     ul { margin-top: 20px;}
+//     li { display: inline-block; vertical-align: bottom; margin-left: 10px;}
+//     a, button { font-size: 18px; font-weight: 600; padding: 0; display: inline-block;  transition: .3s ease;background:none;//초기화
+//         background-color: #ddd; color: #333; font-weight: 600; border-radius: 17px 17px 0 0; padding: 9px 10px;
+//     }
+//     li:first-child { margin-left: 0;}
+    
+// }
+
+// 55_나의강의실_출결
+.subject-box { margin-top: 60px; color: #fff; background-color: #333; font-size: 14px; padding: 14px 15px; min-height: 50px; box-sizing: border-box;
+
+    .ico-box { margin-right: 20px; vertical-align: middle; display: inline-block;}
+    .tit {display: inline-block; vertical-align: middle; font-size: 18px; font-weight: 600;}
+    .right { float: right; font-weight: 700; margin-top: 4px;}
+} 
+
+.subject-box + .subject-box { margin-top: 0; min-height: auto; padding: 0 15px 14px;}
+
+// 44_나의강의실_설문
+.question-div { margin-top: 34px; position: relative;
+    .q-tit { font-size: 0;}
+    .num {display: inline-block; vertical-align: middle; font-size: 24px; font-weight: 800; color: #003586; width: 32px;}
+    .tit {display: inline-block; font-size: 18px; font-weight: 800; color: #333; vertical-align: middle; width: calc(100% - 32px); padding-left: 10px; box-sizing: border-box;}
+
+    .q-txt { padding-left: 40px; font-weight: 600; font-size: 14px; box-sizing: border-box; margin-top: 20px;}
+
+
+    // 정답
+    &.correct, &.wrong { 
+        .q-tit::before { content: ''; position: absolute; left: -23px; top: 0; width: 120px; height: 80px;}
+    }
+    &.correct .q-tit::before { top:-16px; background: url($sub + "ico_correct.png") no-repeat center;}
+    &.wrong .q-tit::before { top:-24px; background: url($sub + "ico_wrong.png") no-repeat center;}
+
+    // 오답
+}
+
+.page-num {text-align: center; margin-top: 35px; box-sizing: border-box; font-size: 16px; color: #333;}
+
+// 설문
+.m-border { border-left:2px solid #5d5d5d; padding-left: 5px; margin-left: 5px;}
+.m-border:first-child { border-left:0; padding-left:0; margin-left:0;}
+
+// 과정정보
+.board-col-box { margin: 0 -15px; font-size: 0;
+
+    .col-item { display: inline-block; vertical-align: top; font-size: 16px; width: calc(50% - 30px); margin: 0 15px; }
+} 
+
+// 학습하기 퍼센트 바
+.progress-bar { width: 100%; font-size: 0;
+    > * { font-size: 16px;}
+    .bg { height: 18px; width: calc(100% - 80px); display: inline-block; vertical-align: middle; background-color: #ccc; position: relative;}
+    .bar { background-color: #206de1; height: 100%; position: absolute; left: 0; top: 0;}
+    .num { width: 80px; display: inline-block; text-align: right; vertical-align: middle; color: #555;}
+    .point { font-size: 20px; color: #eb3232; font-weight: 600;}
+}
+
+
+// 나의강의실_시험 팝업
+.timer-wrap { position: relative;  margin-top: 20px;
+    .right {float: right; margin-top: 10px;}
+}
+.timer-box { display: inline-block; border: 5px solid #ddd; box-sizing: border-box; padding: 9px 15px;
+
+    .timer-txt { display: inline-block; vertical-align: bottom; font-weight: 600; margin-right: 14px; padding-bottom: 2px;}
+    .timer { font-weight: 600; display: inline-block; vertical-align: bottom;
+        span { vertical-align: bottom;}
+        .minute, .second { min-width: 40px; display: inline-block; text-align: right; font-weight: 600; font-family: 'ds'; color: #e52727; line-height: 90%; font-size: 40px; }
+        .mg { font-size: 18px;}
+    }
+}
 
 
 /* ================ responsive 반응형 ================ */

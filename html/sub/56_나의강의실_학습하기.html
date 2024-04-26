@@ -246,7 +246,7 @@
                         <div class="breadcrumb-box">
                             <a href="#none" class="home">메인으로 바로가기</a>
                             <div class="bc-depth depth1">
-                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 강의실</button>
                                 <ul class="depth2-list">
                                     <li><a href="#none">소개</a></li>
                                     <li><a href="#none">시설안내</a></li>
@@ -257,7 +257,24 @@
                                 </ul>
                             </div>
                             <div class="bc-depth depth2">
-                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">학습현황</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                            <div class="bc-depth depth3">
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 학습실</button>
                                 <!-- depth2 -->
                                 <ul class="depth2-list">
                                     <li><a href="#none">미래교육원 소개</a>
@@ -282,238 +299,160 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">학습하기</h2>
+                                <h2 class="subpage-tit">나의 학습실</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- 나의 강의실 - home -->
-                    <div class="page-learning">
+                    <!-- 나의 강의실 - 학습 -->
+                    <div class="page-mypage">
                         <div class="inner">
-                            <div class="edu-tit-box">
-                                <p class="txt">직무 별 협업소통 리더십</p>
-                                <div class="right">
-                                    <a href="#none" class="more-btn type2">학습실 나가기</a>
+                            <div class="tab-col-wrap">
+                                <!-- 탭 버튼 -->
+                                <div class="tab-left-box">
+                                    <ul>
+                                        <li><a href="#none">과정정보</a></li>
+                                        <li><a href="#none">설문</a></li>
+                                        <li><a href="#none">출결</a></li>
+                                        <li><a href="#none" class="on" title="선택됨">학습</a></li>
+                                        <li><a href="#none">시험</a></li>
+                                        <li><a href="#none">과제</a></li>
+                                        <li><a href="#none">토론</a></li>
+                                        <li><a href="#none">비대면</a></li>
+                                        <li><a href="#none">만족도</a></li>
+                                                
+                                        <!-- 고정 버튼 -->
+                                        <li class="fixed"><a href="#none">과정 문의</a></li>
+                                        <li class="fixed"><a href="#none">과정 자료실</a></li>
+                                        <li class="fixed"><a href="#none">과정 공지</a></li>
+                                        <!-- // 고정 버튼 -->
+                                    </ul>
                                 </div>
+                                <!-- //탭 버튼 -->
                             </div>
-                            <div class="learning-vdo-tit">학습명: [일반과정일 경우는 콘텐츠명 | 조합과정일 경우는 콘텐츠 내용 조회]</div>
-                            <div class="learning-vdo-wrap">
-                                <div class="vdo-box">
-                                    <div class="middle">
-                                        <!-- 영상 -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/vcfvNTig8ps?si=A9mw9ivxyUJDYxtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                                        <video></video>
-                                        <!-- // 영상 -->
+                            <div class="tab-cont-wrap">
+                                <div class="subject-box">
+                                    <div class="ico-box">
+                                        <!-- <span class="i-type gather">집합</span> -->
+                                        <!-- <span class="i-type online">온라인</span> -->
+                                        <span class="i-type mix">혼합</span>
                                     </div>
-                                    <div class="bttom-btn-box">
-                                        <span class="txt">상호작용명</span>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
+                                    <p class="tit">[교육구분]실과정명</p>
+                                    <span class="right">학습기간 : YYYY-MM-DD ~ YYYY-MM-DD</span>
+                                </div>
+                                <div class="title-wrap type2">
+                                    <h3 class="tit">학습</h3>
+                                    <div class="right">
+                                        <span class="m-border">평가비율 : <i class="c_red">NN</i> % / 100% </span><span class="m-border">과락기준 : 전체 진도율 <i class="c_red">NN</i> %</span>
                                     </div>
                                 </div>
-                                <div class="vdo-list-wrap">
-                                    <div class="list-box-tit">차시 목록</div>
-                                    <div class="list-box">
-                                        <!-- parent -->
-                                        <ul class="parent">
-                                            <!-- 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit on" title="열기">
-                                                    <span class="section">1차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit on" title="선택됨">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <!-- // 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">2차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">3차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">4차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                        </ul>
-                                        <!-- // parent -->
+                                
+                                <!-- 퍼센테이지 -->
+                                <div class="b-box">
+                                    <div class="info-list col">
+                                        <div class="item w100">
+                                            <span class="tit">학습 콘텐츠</span>
+                                            <div class="txt">일반과정은 ‘콘텐츠명’ / 조합과정은 ‘콘텐츠 내용’ 조회</div>
+                                        </div>
+                                        <div class="item w100">
+                                            <span class="tit">학습 진도율</span>
+                                            <div class="txt">
+                                                <div class="progress-bar">
+                                                    <div class="bg"><span class="bar" style="width: 87%;"></span></div>
+                                                    <span class="num"><i class="point">87</i>%</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- //퍼센테이지 -->
+                                <table class="board-list flicking"> 
+                                    <caption>학습 목록을 안내하며 차시, 차시명, 페이지 수, 총 러닝타임, 총 학습시간, 학습 상태, 진도율, 파일, 학습하기 정보 제공</caption>
+                                    <colgroup>
+                                        <col style="width:10%">
+                                        <col>
+                                        <col style="width:9%">
+                                        <col style="width:9%">
+                                        <col style="width:9%">
+                                        <col style="width:9%">
+                                        <col style="width:9%">
+                                        <col style="width:9%">
+                                        <col style="width:12%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">차시</th>
+                                            <th scope="col">차시명</th>
+                                            <th scope="col">페이지 수</th>
+                                            <th scope="col">총 러닝타임</th>
+                                            <th scope="col">총 학습시간</th>
+                                            <th scope="col">학습 상태</th>
+                                            <th scope="col">진도율</th>
+                                            <th scope="col">파일</th>
+                                            <th scope="col">학습하기</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1차시</td>
+                                            <td>직무별 협업소통 리더십 이해</td>
+                                            <td>20</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td>학습전</td>
+                                            <td><span class="c_red">00</span>%</td>
+                                            <td><a href="#none" class="ico-file">파일 다운로드</a></td>
+                                            <td><button type="button" class="btn btn1">학습하기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2차시</td>
+                                            <td>직무별 협업소통 리더십 이해</td>
+                                            <td>20</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td>학습전</td>
+                                            <td><span class="c_red">00</span>%</td>
+                                            <td><a href="#none" class="ico-file">파일 다운로드</a></td>
+                                            <td><button type="button" class="btn btn1">학습하기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3차시</td>
+                                            <td>직무별 협업소통 리더십 이해</td>
+                                            <td>20</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td>학습전</td>
+                                            <td><span class="c_red">00</span>%</td>
+                                            <td><a href="#none" class="ico-file">파일 다운로드</a></td>
+                                            <td><button type="button" class="btn btn1">학습하기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4차시</td>
+                                            <td>직무별 협업소통 리더십 이해</td>
+                                            <td>20</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td>학습전</td>
+                                            <td><span class="c_red">00</span>%</td>
+                                            <td><a href="#none" class="ico-file">파일 다운로드</a></td>
+                                            <td><button type="button" class="btn btn1">학습하기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5차시</td>
+                                            <td>직무별 협업소통 리더십 이해</td>
+                                            <td>20</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td><span class="c_red">00</span>분 <span class="c_red">00</span>초</td>
+                                            <td>학습전</td>
+                                            <td><span class="c_red">00</span>%</td>
+                                            <td><a href="#none" class="ico-file">파일 다운로드</a></td>
+                                            <td><button type="button" class="btn btn1">학습하기</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <!-- // 나의 강의실 - home -->
+                    <!-- // 나의 강의실 - 학습 -->
                 </div>
                 <!-- // contents -->
             </div>
@@ -584,40 +523,88 @@
 
             
             <!-- modal-popup -->
-            <!-- 1. 대상 사업자(PG사,일반 사업자) 비밀번호 찾기 -->
-            <div id="pw_popup" class="modal-wrap">
+            <!-- 설문 참여 팝업 -->
+            <div id="surveyModal" class="modal-wrap">
                 <div class="modal-head">
-                    <h2>대상 사업자(PG사,일반 사업자) 비밀번호 찾기</h2>
+                    <h2>설문지</h2>
                 </div>
                 <div class="modal-cont-wrap">
                     <!-- cont -->
                     <div class="modal-cont">
-                        
-                        <div class="contbox">
-                            <div class="inp-box mat0">
-                                <label for="businessNum2_1">사업자번호</label>
-                                <div class="inp-group">
-                                    <input type="tel" id="businessNum2_1" class="inp" title="사업자등록번호 앞자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_2" class="inp" title="사업자등록번호 중간자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_3" class="inp" title="사업자등록번호 뒷자리">
+                        <form>
+                            <div class="survey-div-box">
+                                <div class="item">
+                                    <div class="inp-box">
+                                        <span class="search-label type2">만족도 안내</span>
+                                    </div>
                                 </div>
+                                <div class="b-box">
+                                    <div class="info-list col">
+                                        <div class="item">
+                                            <span class="tit">설문지명</span>
+                                            <div class="txt">교육만족도</div>
+                                        </div>
+                                        <div class="item">
+                                            <span class="tit">설문지 설명</span>
+                                            <div class="txt">교육만족도 조사</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- q -->
+                                <div class="question-div">
+                                    <div class="q-tit">
+                                        <span class="num">01</span>
+                                        <p class="tit">교육내용은 업무 또는 개인발전에 도움이 되었다. [5점척도]</p>
+                                    </div>
+                                    <div class="q-txt">
+                                        <div class="srh-check-box mat15">
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk1" name="surveyChk">
+                                                <label for="surveyChk1">1. 매우 그렇다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk2" name="surveyChk">
+                                                <label for="surveyChk2">2. 그렇다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk3" name="surveyChk">
+                                                <label for="surveyChk3">3. 보통이다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk4" name="surveyChk">
+                                                <label for="surveyChk4">4. 아니다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk5" name="surveyChk">
+                                                <label for="surveyChk5">5. 전혀 아니다.</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // q -->
+                                <!-- q -->
+                                <div class="question-div">
+                                    <div class="q-tit">
+                                        <span class="num">02</span>
+                                        <p class="tit">교육내용은 업무 또는 개인발전에 도움이 되었다. [서술형]</p>
+                                    </div>
+                                    <div class="q-txt">
+                                        <textarea title="서술형 입력" class="inp"></textarea>
+                                    </div>
+                                </div>
+                                <!-- // q -->
+                                <div class="btn-box">
+                                    <button type="button" class="btn btn4">완료</button>
+                                </div>
+                                <p class="page-num">-1 PAGE-</p>
                             </div>
-                            <div class="inp-box">
-                                <label for="searchEmail1">담당자 이메일</label>
-                                <input type="email" id="searchEmail1" class="inp">
-                            </div>
-                            <div class="btn-box mat30">
-                                <a href="#none" class="btn btn1">취소</a>
-                                <button type="button" class="btn btn2">확인</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <!-- //cont -->
                 </div>
-                <button type="button" class="modal-close b-close">닫기</button>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
             </div>
+            <!-- //설문 참여 팝업 -->
             <!-- // modal-popup -->
 
         </div>

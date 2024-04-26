@@ -242,11 +242,11 @@
             <div id="container">
                 <!-- subpage title -->
                 <div class="breadcrumb-wrap">
-                    <div class="inner">
+                    <div class="inner">                        
                         <div class="breadcrumb-box">
                             <a href="#none" class="home">메인으로 바로가기</a>
                             <div class="bc-depth depth1">
-                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 강의실</button>
                                 <ul class="depth2-list">
                                     <li><a href="#none">소개</a></li>
                                     <li><a href="#none">시설안내</a></li>
@@ -257,7 +257,24 @@
                                 </ul>
                             </div>
                             <div class="bc-depth depth2">
-                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">학습현황</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                            <div class="bc-depth depth3">
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 학습실</button>
                                 <!-- depth2 -->
                                 <ul class="depth2-list">
                                     <li><a href="#none">미래교육원 소개</a>
@@ -282,235 +299,285 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">학습하기</h2>
+                                <h2 class="subpage-tit">HOME</h2>
                             </div>
                         </div>
                     </div>
                     <!-- 나의 강의실 - home -->
-                    <div class="page-learning">
+                    <div class="page-mypage">
                         <div class="inner">
-                            <div class="edu-tit-box">
-                                <p class="txt">직무 별 협업소통 리더십</p>
-                                <div class="right">
-                                    <a href="#none" class="more-btn type2">학습실 나가기</a>
+                            <div class="mypage-list-wrap">
+                                <div class="mypage-profile-box">
+                                    <span class="profile-img">
+                                        <img src="../../images/sub/img_profile_sample.jpg" alt="프로필 샘플">
+                                    </span>
+                                    <div class="profile-info">
+                                        <div class="info-txt">
+                                            <div class="item">
+                                                <span class="left"><i class="big">김지수</i>님</span>
+                                                <span class="right">한국산업인력공단</span>
+                                            </div>
+                                            <div class="item">
+                                                <span class="left">해외취업기획부</span>
+                                                <span class="right">선임연구원</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-btn-box">
+                                            <a href="#none" class="btn btn5">회원정보수정</a>
+                                            <a href="#none" class="btn btn1">1:1문의</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-dotted-box">
+                                        <div class="item">
+                                            <p class="tit">신청/취소</p>
+                                            <div class="txt">
+                                                <span>신청 <i class="point">00</i>건</span>
+                                                <span>취소 <i class="point">00</i>건</span>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a href="#none" class="btn btn6">교육신청내역 바로가기</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <p class="tit">학습현황</p>
+                                            <div class="txt">
+                                                <span>학습 <i class="point">00</i>건</span>
+                                                <span>대기 <i class="point">00</i>건</span>
+                                                <span>종료 <i class="point">00</i>건</span>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a href="#none" class="btn btn6">학습현황내역 바로가기</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <p class="tit">학습종료</p>
+                                            <div class="txt">
+                                                <span>과제 <i class="point">00</i>건</span>
+                                                <span>토론 <i class="point">00</i>건</span>
+                                                <span>설문 <i class="point">00</i>건</span>
+                                            </div>
+                                            <div class="btn-box">
+                                                <a href="#none" class="btn btn6">학습현황내역 바로가기</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="board-list-wrap">
+                                    <div class="title-wrap">
+                                        <h3>교육신청 현황</h3>
+                                        <a href="#none" class="more-btn type2">더보기</a>
+                                    </div>
+                                    <table class="board-list mobile"> 
+                                        <caption>교육신청 현황 목록을 안내하며 번호, 제목, 작성일 정보 제공</caption>
+                                        <colgroup>
+                                            <col style="width:60px">
+                                            <col>
+                                            <col style="width:20%">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">교육구분</th>
+                                                <th scope="col">과정명</th>
+                                                <th scope="col">과정분류</th>
+                                                <th scope="col">신청기간</th>
+                                                <th scope="col">교육기간</th>
+                                                <th scope="col">상태</th>
+                                                <th scope="col">숙박여부</th>
+                                                <th scope="col">비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>집합교육</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td>법정의무교육</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청완료</td>
+                                                <td>숙박신청</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>온라인교육</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td>직무교육</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청완료</td>
+                                                <td>없음</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>혼합교육</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td>공통역량</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청취소완료</td>
+                                                <td>미신청</td>
+                                                <td><button type="button" class="btn btn6">재신청</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>온라인교육</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td>법정의무교육</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청취소완료</td>
+                                                <td>없음</td>
+                                                <td><button type="button" class="btn btn6">재신청</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>온라인교육</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td>법정의무교육</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청취소완료</td>
+                                                <td>없음</td>
+                                                <td><span class="learning">학습 중</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edu-tit-box">
+                                    <p class="txt">김지수<span class="small">님 추천 교육과정</span></p>
+                                </div>
+                                <!-- 추천 교육과정 리스트 목록 -->
+                                <div class="edu-list-wrap card">
+                                    <!-- 이미지 없을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="ico-box"><span class="i-type gather">집합</span><span class="i-type online">온라인</span><span class="i-type mix">혼합</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 이미지 없을 때 -->
+                                    <!-- 이미지 있을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb2.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- // 이미지 없을 때 -->
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb2.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#none">
+                                            <div class="imgbox">
+                                                <div class="middle"><img src="../../images/contents/thumb/img_edu_thumb3.jpg" alt="직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십"></div>
+                                                <div class="ico-box"><span class="i-type online">온라인</span></div>
+                                            </div>
+                                            <div class="txtbox">
+                                                <span class="tit">직무별 협업소통 리더십 직무별 협업소통 리더십 직무별 협업소통 리더십</span>
+                                                <div class="info">
+                                                    <div class="left">
+                                                        <div class="date">
+                                                            <span class="d-tit">신청기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span class="d-tit">교육기간</span>
+                                                            <span class="d-txt">2024. 00. 00 ~ 2024. 00. 00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span class="more">상세보기</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 추천 교육과정 리스트 목록 -->
                             </div>
-                            <div class="learning-vdo-tit">학습명: [일반과정일 경우는 콘텐츠명 | 조합과정일 경우는 콘텐츠 내용 조회]</div>
-                            <div class="learning-vdo-wrap">
-                                <div class="vdo-box">
-                                    <div class="middle">
-                                        <!-- 영상 -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/vcfvNTig8ps?si=A9mw9ivxyUJDYxtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                                        <video></video>
-                                        <!-- // 영상 -->
-                                    </div>
-                                    <div class="bttom-btn-box">
-                                        <span class="txt">상호작용명</span>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                    </div>
-                                </div>
-                                <div class="vdo-list-wrap">
-                                    <div class="list-box-tit">차시 목록</div>
-                                    <div class="list-box">
-                                        <!-- parent -->
-                                        <ul class="parent">
-                                            <!-- 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit on" title="열기">
-                                                    <span class="section">1차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit on" title="선택됨">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <!-- // 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">2차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">3차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">4차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                        </ul>
-                                        <!-- // parent -->
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <!-- // 나의 강의실 - home -->

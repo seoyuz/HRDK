@@ -246,7 +246,7 @@
                         <div class="breadcrumb-box">
                             <a href="#none" class="home">메인으로 바로가기</a>
                             <div class="bc-depth depth1">
-                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 강의실</button>
                                 <ul class="depth2-list">
                                     <li><a href="#none">소개</a></li>
                                     <li><a href="#none">시설안내</a></li>
@@ -257,7 +257,24 @@
                                 </ul>
                             </div>
                             <div class="bc-depth depth2">
-                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">학습현황</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                            <div class="bc-depth depth3">
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 학습실</button>
                                 <!-- depth2 -->
                                 <ul class="depth2-list">
                                     <li><a href="#none">미래교육원 소개</a>
@@ -282,238 +299,232 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">학습하기</h2>
+                                <h2 class="subpage-tit">교육신청 현황</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- 나의 강의실 - home -->
-                    <div class="page-learning">
+                    <!-- 나의 강의실 - 교육신청 현황 -->
+                    <div class="page-mypage">
                         <div class="inner">
-                            <div class="edu-tit-box">
-                                <p class="txt">직무 별 협업소통 리더십</p>
-                                <div class="right">
-                                    <a href="#none" class="more-btn type2">학습실 나가기</a>
-                                </div>
-                            </div>
-                            <div class="learning-vdo-tit">학습명: [일반과정일 경우는 콘텐츠명 | 조합과정일 경우는 콘텐츠 내용 조회]</div>
-                            <div class="learning-vdo-wrap">
-                                <div class="vdo-box">
-                                    <div class="middle">
-                                        <!-- 영상 -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/vcfvNTig8ps?si=A9mw9ivxyUJDYxtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                                        <video></video>
-                                        <!-- // 영상 -->
+                            <div class="mypage-list-wrap">
+                                <div class="board-list-wrap">
+                                    <!-- <div class="title-wrap">
+                                        <h3>교육신청 현황</h3>
+                                        <a href="#none" class="more-btn type2">더보기</a>
+                                    </div> -->
+                                    <div class="sort-wrap">
+                                        <p class="total">총 <span>222</span>건</p>
+                                        <div class="right">
+                                            <div class="sort-select-box">
+                                                <select title="교육방법 선택">
+                                                    <option value="">교육방법</option>
+                                                </select>
+                                                <select title="교육구분 선택">
+                                                    <option value="">교육구분</option>
+                                                </select>
+                                                <select title="상태 선택">
+                                                    <option value="">상태</option>
+                                                </select>
+                                                <select title="게시물 개수 선택">
+                                                    <option value="">10개</option>
+                                                </select>
+                                                <button type="button" class="sort-btn">확인</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bttom-btn-box">
-                                        <span class="txt">상호작용명</span>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                    </div>
-                                </div>
-                                <div class="vdo-list-wrap">
-                                    <div class="list-box-tit">차시 목록</div>
-                                    <div class="list-box">
-                                        <!-- parent -->
-                                        <ul class="parent">
-                                            <!-- 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit on" title="열기">
-                                                    <span class="section">1차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit on" title="선택됨">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <!-- // 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">2차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">3차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">4차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
+                                    <table class="board-list flicking"> 
+                                        <caption>교육신청 현황 목록을 안내하며 번호, 교육방법, 교육구분, 과정명, 교육기간, 신청기간, 취소기간, 상태, 비고 정보 제공</caption>
+                                        <colgroup>
+                                            <col style="width:60px">
+                                            <col>
+                                            <col>
+                                            <col style="width:20%">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">교육방법</th>
+                                                <th scope="col">과정구분</th>
+                                                <th scope="col">과정명</th>
+                                                <th scope="col">교육기간</th>
+                                                <th scope="col">신청기간</th>
+                                                <th scope="col">취소기간</th>
+                                                <th scope="col">상태</th>
+                                                <th scope="col">비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>승인</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>승인</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>취소</td>
+                                                <td><span class="learning">학습 중</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>반려</td>
+                                                <td><span class="learning">학습 중</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>승인</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>신청</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>반려</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>반려</td>
+                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>취소</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                    2024. 00. 00</span></td>
+                                                <td>취소</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- pagination -->
+                                    <div class="paging">
+                                        <a href="#none" class="p-prev">첫 페이지</a>
+                                        <a href="#none" class="prev">이전 페이지</a>
+                                        <ul>
+                                            <li><a href="#None">1</a></li>
+                                            <li><a href="#None" class="on">2</a></li>
+                                            <li><a href="#None">3</a></li>
+                                            <li><a href="#None">4</a></li>
+                                            <li><a href="#None">5</a></li>
+                                            <li><a href="#None">6</a></li>
+                                            <li><a href="#None">7</a></li>
                                         </ul>
-                                        <!-- // parent -->
+                                        <a href="#none" class="next">다음 페이지</a>
+                                        <a href="#none" class="n-next">마지막 페이지</a>
                                     </div>
+                                    <!-- pagination -->
                                 </div>
+
                             </div>
+                            
                         </div>
                     </div>
-                    <!-- // 나의 강의실 - home -->
+                    <!-- // 나의 강의실 - 교육신청 현황 -->
                 </div>
                 <!-- // contents -->
             </div>

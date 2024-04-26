@@ -284,10 +284,20 @@ $(document).ready(function(){
 
 
     /* ........... 정규식 ........... */
-    //휴대폰번호
-    $(document).on("keyup", "input.phone-num", function() { 
-        $(this).val( $(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/,"$1-$2-$3").replace("--", "-") );
-    });
+    //휴대폰번호(input 1개 - 자동 하이픈 생성)
+    // $(document).on("keyup", "input.phone-num", function() { 
+    //     $(this).val( $(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/,"$1-$2-$3").replace("--", "-") );
+    // });
+
+    //휴대폰번호(input 3개 - 자동 포커스 이동)
+    // $('.phone-num').keyup(function () {
+    //     var charLimit = $(this).attr("maxlength");
+    //     if (this.value.length >= charLimit) {
+    //         console.log(this.value.length);
+    //         $(this).next('.phone-num').focus();
+    //         return false;
+    //     }
+    // });
 
     //사업자등록번호
     $('input.bsnss-num').on('keyup', function(){
@@ -418,7 +428,7 @@ $(document).ready(function(){
 
             $btnUpload.on('focusin focusout', function(e) {
                 e.type == 'focusin' ?
-                $label.addClass('file-focus') : $label.removeClass('file-focus');
+                $(this).siblings('.file-btn').addClass('file-focus') : $(this).siblings('.file-btn').removeClass('file-focus'); // 240418 버튼 선택자 변경
             })
         })
     }

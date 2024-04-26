@@ -282,238 +282,279 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">학습하기</h2>
+                                <h2 class="subpage-tit">회원가입 신청</h2>
+                                <p class="subpage-txt">본인확인 이후 회원가입을 신청할 수 있습니다.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- 나의 강의실 - home -->
-                    <div class="page-learning">
+                    <!-- 회원가입 - 정보입력 -->
+                    <div class="page-joinus">
                         <div class="inner">
-                            <div class="edu-tit-box">
-                                <p class="txt">직무 별 협업소통 리더십</p>
-                                <div class="right">
-                                    <a href="#none" class="more-btn type2">학습실 나가기</a>
+                            <div class="step-list">
+                                <div class="item complete">
+                                    <span class="num">STEP 1</span>
+                                    <span class="txt">본인인증</span>
+                                </div>
+                                <div class="item complete">
+                                    <span class="num">STEP 2</span>
+                                    <span class="txt">약관동의</span>
+                                </div>
+                                <div class="item active">
+                                    <span class="hidden">현재 페이지</span>
+                                    <span class="num">STEP 3</span>
+                                    <span class="txt">정보입력</span>
+                                </div>
+                                <div class="item">
+                                    <span class="num">STEP 4</span>
+                                    <span class="txt">신청완료</span>
                                 </div>
                             </div>
-                            <div class="learning-vdo-tit">학습명: [일반과정일 경우는 콘텐츠명 | 조합과정일 경우는 콘텐츠 내용 조회]</div>
-                            <div class="learning-vdo-wrap">
-                                <div class="vdo-box">
-                                    <div class="middle">
-                                        <!-- 영상 -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/vcfvNTig8ps?si=A9mw9ivxyUJDYxtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                                        <video></video>
-                                        <!-- // 영상 -->
+                            <div class="join-tit-wrap">
+                                <h3 class="bullet">정보입력</h3>
+                                <div class="right">
+                                    <p><span class="required">*</span> 는 필수 입력 사항입니다.</p>
+                                </div>
+                            </div>
+                            <!-- 입력영역 -->
+                            <div class="join-inp-wrap">
+                                <div class="inp-box-group">
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userId">아이디<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" placeholder="아이디를 입력하세요." id="userId" class="inp" required="required">
+                                                <button type="button" class="confirm-btn">중복확인</button>
+                                            </div>
+                                            <p class="inp-txt">5~20자의 영문 소문자 및 숫자를 혼합</p>
+                                        </div>
                                     </div>
-                                    <div class="bttom-btn-box">
-                                        <span class="txt">상호작용명</span>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
-                                        <button type="button" class="btn btn1">이동</button>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userPw1">비밀번호<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="password" placeholder="비밀번호를 입력하세요." id="userPw1" class="inp" required="required">
+                                            </div>
+                                            <p class="inp-txt">영문소문자/숫자/특수문자 포함 9자 이상 20자까지 입력해야 합니다.</p>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userPw2">비밀번호 확인<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="password" placeholder="비밀번호 확인을 입력하세요." id="userPw2" class="inp" required="required">
+                                            </div>
+                                            <p class="inp-txt">영문소문자/숫자/특수문자 포함 9자 이상 20자까지 입력해야 합니다.</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="vdo-list-wrap">
-                                    <div class="list-box-tit">차시 목록</div>
-                                    <div class="list-box">
-                                        <!-- parent -->
-                                        <ul class="parent">
-                                            <!-- 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit on" title="열기">
-                                                    <span class="section">1차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit on" title="선택됨">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <!-- // 열림 - button.unit에  on 클래스 추가 -->
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">2차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">3차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                            <li>
-                                                <button type="button" class="unit" title="열기">
-                                                    <span class="section">4차시</span>
-                                                    <span class="tit">직무별 협업소통 리더십의 이해</span>
-                                                    <span class="time">30:14</span>
-                                                </button>
-                                                <!-- child -->
-                                                <ul class="child">
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">intro</span>
-                                                            <span class="time">00:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">오늘의 차례</span>
-                                                            <span class="time">02:14</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">학습안내</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력1</span>
-                                                            <span class="time">04:23</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력2</span>
-                                                            <span class="time">05:31</span>
-                                                        </button>
-                                                    </li>
-                                                    <li>
-                                                        <button type="button" class="unit">
-                                                            <span class="tit">직장인의 능력3</span>
-                                                            <span class="time">04:30</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <!-- // child -->
-                                            </li>
-                                        </ul>
-                                        <!-- // parent -->
+                                <div class="inp-box-group">
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userName">이름</label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" id="userName" class="inp short" value="홍길동" readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userBirth">생년월일</label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" id="userBirth" class="inp short" value="2024/08/08" readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <span class="inp-tit">성별</span>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <div class="toggle-radio-box">
+                                                    <span class="radio">
+                                                        <input type="radio" id="male" name="userGender" checked disabled>
+                                                        <label for="male">남자</label>
+                                                    </span>
+                                                    <span class="radio">
+                                                        <input type="radio" id="female" name="userGender" disabled>
+                                                        <label for="female">여자</label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="inp-box-group">
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userPhone1">휴대폰번호<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <select id="userPhone1" title="휴대폰번호 - 첫번째 선택" class="inp phone-num">
+                                                    <option value="">선택</option>
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                                <input type="tel" id="userPhone2" title="휴대폰번호 - 두 번째 입력" class="inp phone-num" required="requred" maxlength="4">
+                                                <input type="tel" id="userPhone3" title="휴대폰번호 - 세 번째 입력" class="inp phone-num" required="required" maxlength="4">
+                                                <span class="checkbox">
+                                                    <input type="checkbox" id="agreeSms" name="">
+                                                    <label for="agreeSms">SMS 수신동의</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userTel1">전화번호</label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <select id="userTel1" title="전화번호 - 지역번호 선택" class="inp phone-num">
+                                                    <option value="">선택</option>
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                    <option value="033">033</option>
+                                                    <option value="041">041</option>
+                                                    <option value="042">042</option>
+                                                    <option value="043">043</option>
+                                                    <option value="051">051</option>
+                                                    <option value="052">052</option>
+                                                    <option value="053">053</option>
+                                                    <option value="054">054</option>
+                                                    <option value="055">055</option>
+                                                    <option value="061">061</option>
+                                                    <option value="062">062</option>
+                                                    <option value="063">063</option>
+                                                    <option value="064">064</option>
+                                                    <option value="064">070</option> 
+                                                </select>
+                                                <input type="tel" id="userTel2" title="전화번호 - 두 번째 입력" class="inp phone-num" required="requred" maxlength="4">
+                                                <input type="tel" id="userTel3" title="전화번호 - 세 번째 입력" class="inp phone-num" required="required" maxlength="4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userAddress1">주소<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" placeholder="우편번호" id="userAddress1" title="주소 - 우편번호" class="inp" required="required" readonly="readonly">
+                                                <button type="button" class="confirm-btn">우편번호</button>
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" placeholder="기본주소" id="userAddress2" title="주소 - 기본" class="inp" required="required" readonly="readonly">
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" placeholder="상세주소" id="userAddress3" title="주소 - 상세" class="inp" required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 240423 이메일 변경 (ej) -->
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userEmail1">이메일<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input long">
+                                                <input type="email" id="userEmail1" title="이메일 - 첫 번째 입력" class="inp email">
+                                                <span class="mg">@</span>
+                                                <input type="email" id="userEmail2" title="이메일 - 두 번째 입력" class="inp email" disabled>
+                                                <select id="userEmail3" title="이메일 선택" class="inp email">
+                                                    <option value="">선택</option>
+                                                    <option value="">naver.com</option>
+                                                    <option value="">직접입력</option>
+                                                </select>
+                                                <span class="checkbox">
+                                                    <input type="checkbox" id="agreeEmail" name="">
+                                                    <label for="agreeEmail">이메일 수신동의</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 240423 이메일 변경 (ej) -->
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <span class="inp-tit">회원유형</span>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <div class="toggle-radio-box">
+                                                    <span class="radio">
+                                                        <input type="radio" id="userMember1" name="userMember" disabled>
+                                                        <label for="userMember1">임직원</label>
+                                                    </span>
+                                                    <span class="radio">
+                                                        <input type="radio" id="userMember2" name="userMember" checked disabled>
+                                                        <label for="userMember2">기업</label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userCompany">기관명</label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" placeholder="회사명, 기관명 등 소속된 단체의 명을 입력해주세요." id="userCompany" class="inp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userTeam">사업자등록증<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                
+                                                <div class="filebox type2">
+                                                    <div>
+                                                        <label for="fileSmp1" class="file-btn">파일선택</label> 
+                                                        <span class="file-inp inp">사업자등록증 첨부 시 용량은 2MB이내 파일을 첨부해주세요.</span>
+                                                        <input type="file" id="fileSmp1" class="change-file" title="파일1 선택">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-box">
+                                        <div class="inp-left">
+                                            <label for="userTeam">부서명<span class="required">필수입력</span></label>
+                                        </div>
+                                        <div class="inp-right">
+                                            <div class="input">
+                                                <input type="text" placeholder="부서명을 입력하세요." id="userTeam" class="inp" required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //입력영역 -->
+                            <div class="btn-box">
+                                <button type="button" class="btn btn1 long">다음</button>
                             </div>
                         </div>
                     </div>
-                    <!-- // 나의 강의실 - home -->
+                    <!-- // 회원가입 - 정보입력 -->
                 </div>
                 <!-- // contents -->
             </div>

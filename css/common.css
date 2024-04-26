@@ -12,10 +12,9 @@
 
 
 @font-face {
-	font-family: 'Gmarket Sans'; font-style: normal;    font-weight: 300;
-	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
-	url('../font/GmarketSansLight.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../font/GmarketSansLight.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	font-family: 'ds'; font-style: normal;    font-weight: 300;
+	src: local('DS-Digital'), local('DS-Digital'),
+	url('../font/DS-Digital.woff') format('woff'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 @font-face {
 	font-family: 'Gmarket Sans'; font-style: normal;    font-weight: 500;
@@ -84,7 +83,7 @@ input[type="submit"], input[type="reset"]{}
 input[type="text"]:read-only, input[type="tel"]:read-only, input[type="email"]:read-only, input[type="number"]:read-only { background-color: #f5f5f5; color: #333; }
 input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="number"], input[type="email"] { box-sizing: border-box; height: 40px; padding: 10px 20px;  border: 1px solid #ccc; }
 
-input::placeholder { }
+input::placeholder { color: #999; }
 textarea::placeholder { color: #999; font-size: 16px; }
 .readonly { background-color: #f5f5f5 !important; color: #999 !important; }
 .readonly2 { background-color: #fff !important; color: #767676 !important }
@@ -122,12 +121,11 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 /*인풋 박스 백그라운드*/
 
 
-.required {color: #ed5221; position: relative; font-weight: 400; vertical-align: middle; font-size: 16px;}
-/* .required::before { margin-left: -8px; font-weight: 300; margin-right: -6px; content: '＊'; color: #ed5221; font-size: 30px; top:7px; position: relative; vertical-align: middle; font-family: 'Gmarket Sans'; display: inline-block; height: 13px; line-height: 13px;} */
+.required {color: #d90a23; position: relative; font-weight: 400; vertical-align: middle; font-size: 0;}
+.required::before {  font-weight: 300; margin-right: 0; content: '*'; color: #d90a23; font-size: 20px; top:-2px; margin-left: 3px; position: relative; vertical-align: middle; display: inline-block;}
 
 .inp-tit {  display: inline;}
-.inp-tit .required { background-color: #ed5221; display: inline-block; width: 3px; height: 3px; text-indent: -99999px; border-radius: 10px; position: absolute; right: -6px; top: -1px;}
-.inp-tit .required::before { display: none;}
+.inp-tit .required { background-color: #d90a23; display: inline-block; width: 3px; height: 3px; text-indent: -99999px; border-radius: 10px; position: absolute; right: -6px; top: -1px;}
 
 .checkbox {display: inline-block; margin-right: 30px; position: relative;}
 .checkbox input { padding: 0; height: 1px; width: 1px; margin-bottom: 0; position: absolute; top: 0; height: 0; white-space: nowrap; cursor: pointer; }
@@ -192,8 +190,8 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 .c_aaa {color:#aaa !important;}
 .c_red {color:#d90a23 !important;}
 .c_gray {color:#777;}
-.bg_gr {background:#099340;}
-.bg_darkgr {background:#016452;}
+.bg_gr {background:#f5f5f5;}
+.bg_darkgr {background:#555;}
 .underline { text-decoration:underline;}
 
 .indent { text-indent: -99999px; display: inline-block;}

@@ -292,12 +292,20 @@
                         <h3>h3스타일 <span class="small">(작은텍스트 small)</span></h3>
                         <p class="basic">기본 텍스트 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         <p class="wrn-txt">회원가입 시 등록한 개인정보를 정확하게 입력해 주세요.</p>
-                        <h3 class="type2">h3스타일 타입2 <span class="small">(작은텍스트 small)</span></h3>
+                        <p class="wrn-txt2">회원가입 시 등록한 개인정보를 정확하게 입력해 주세요.</p>
+                        <h3 class="type2">h3스타일 타입2(margin-top 90px) <span class="small">(작은텍스트 small)</span></h3>
+                        <h3 class="bullet">h3스타일 타입3 <span class="small">(작은텍스트 small)</span></h3>
                         <p class="basic">사업주는 훈련비 중 정부지원금을 제외한 자기부담금을 훈련기관에 납부하여 재직근로자 등을 대상으로 (줄바꿈) <span class="pc_block">직업훈련을 실시하는 경우 고용노동부에서 훈련비 등을 지원합니다.</span></p>
                         
                         <div class="title-wrap">
-                            <h3 class="tit">h3스타일 - 제목 우측 텍스트 있는 경우</h3>
+                            <h3 class="tit">h3스타일 - 제목 텍스트 옆 요소</h3>
                             <span class="sub-txt">2023.01.01</span>
+                        </div>
+                        <div class="title-wrap">
+                            <h3 class="tit">h3스타일 - 오른쪽에 요소</h3>
+                            <div class="right">
+                                <span>오른쪽 텍스트</span>
+                            </div>
                         </div>
                         <h4>h4스타일 <span class="small">(작은텍스트 small)</span></h4>
                         <h3>검색</h3>
@@ -452,6 +460,8 @@
                             <button type="button" class="btn write">문의하기</button>
                             <button type="button" class="btn search">검색</button>
                             <button type="button" class="btn details modal-btn" data-popup="eduModal"><span class="ico"><i></i><i></i><i></i></span>상세검색 열기</button>
+                            <button type="button" class="btn phone">휴대폰 인증</button>
+                            
                         </div>
                         <h4>버튼 small</h4>
                         <div class="btn-box left mat15">
@@ -527,6 +537,32 @@
                             </div>
                         </div>
 
+                        <h3>첨부파일</h3>
+                        <h4>기본</h4>
+                        <!-- 첨부파일 -->
+                        <div class="filebox">
+                            <div>
+                                <label for="fileSmp1" class="file-btn">파일선택</label> 
+                                <span class="file-inp inp">파일 첨부 시 용량은 파일 당 2MB, 전체 5MB 이내 업로드 첨부해주세요.</span>
+                                <input type="file" id="fileSmp1" class="change-file" title="파일1 선택">
+                            </div>
+                        </div>
+                        <!-- // 첨부파일 -->
+                        <h4>버전2 (type2)</h4>
+                        <!-- 첨부파일 -->
+                        <div class="filebox type2">
+                            <div>
+                                <label for="fileSmp2" class="file-btn">파일선택</label> 
+                                <span class="file-inp inp">파일 첨부 시 용량은 파일 당 2MB, 전체 5MB 이내 업로드 첨부해주세요.</span>
+                                <input type="file" id="fileSmp2" class="change-file" title="파일2 선택">
+                            </div>
+                            <div>
+                                <label for="fileSmp3" class="file-btn">파일선택</label> 
+                                <span class="file-inp inp">파일 첨부 시 용량은 파일 당 2MB, 전체 5MB 이내 업로드 첨부해주세요.</span>
+                                <input type="file" id="fileSmp3" class="change-file" title="파일3 선택">
+                            </div>
+                        </div>
+                        <!-- // 첨부파일 -->
                         <h3>체크박스, 라디오</h3>
                         <div class="a-box mat30">
                             <h4 class="mat0">라디오</h4>
@@ -587,7 +623,7 @@
                                     <label for="smpChk32">온라인교육</label>
                                 </span>
                             </div>
-                            <h4>동의 체크박스</h4>
+                            <h4>동의 체크박스 (텍스트 + 우측 체크박스)</h4>
                             <div class="agree-box">
                                 <div class="item">
                                     <span class="txt">1. 교육과정을 신청 후 별도 연락없이 교육에 참석하지 않은 경우 미등록자로 분류되어 추후 불이익이 발생할 수 있으며 이에 동의합니다.</span>
@@ -625,65 +661,154 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <h4>동의 체크박스3 (우측 체크박스)</h4>
+                            <div class="agree-box type2">
+                                <span class="checkbox">
+                                    <input type="checkbox" id="agreeSmp3" name="agreeSmp3">
+                                    <label for="agreeSmp3">이용약관에 동의 <span class="c_red">(필수)</span></label>
+                                </span>
+                            </div>
                         </div>
                         
 
                         <h4 class="type2">h4 스타일2 <span class="pur">포인트 컬러 .pur</span><span class="pur small">(작은텍스트 small)</span>입니다</h4>
                         
                         <h4>테이블</h4>
-                        <h5>목록형1</h5>
-                        <!-- <table class="tbl-list flicking"> 
-                            <caption>고용보험 환급과정 지원내용을 안내하며 기관명, 대표자, 전화번호, 사업자번호 항목을 포함한 표입니다.</caption>
+                        <h5>목록형</h5>
+                        <table class="board-list flicking"> 
+                            <caption>학습현황 목록을 안내하며 번호, 교육방법, 교육구분, 과정명, 교육기간, 학습상태, 학습 평가 비율 기준(수료점수, 출결, 학습진도, 시험, 과제, 토론, 비대면) 정보 제공</caption>
                             <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
+                                <col style="width:50px">
+                                <col>
+                                <col>
+                                <col style="width:15%">
+                                <col style="width:10%">
+                                <col>
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
+                                <col style="width: 6.4%;">
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th scope="col">기관명</th>
-                                    <th scope="col">대표자</th>
-                                    <th scope="col">전화번호</th>
-                                    <th scope="col">사업자번호</th>
+                                    <th scope="col" rowspan="2" class="bottom">번호</th>
+                                    <th scope="col" rowspan="2" class="bottom">교육방법</th>
+                                    <th scope="col" rowspan="2" class="bottom">과정구분</th>
+                                    <th scope="col" rowspan="2" class="bottom">과정명</th>
+                                    <th scope="col" rowspan="2" class="bottom">교육기간</th>
+                                    <th scope="col" rowspan="2" class="bottom borderR">학습상태</th>
+                                    <th scope="col" colspan="7">학습 평가 비율 기준</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">수료점수</th>
+                                    <th scope="col">출결</th>
+                                    <th scope="col">학습진도</th>
+                                    <th scope="col">시험</th>
+                                    <th scope="col">과제</th>
+                                    <th scope="col">토론</th>
+                                    <th scope="col">비대면</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>에이아이아카데미</td>
-                                    <td>홍길동</td>
-                                    <td>02-1234-5678</td>
-                                    <td>123-45-67890</td>
+                                    <td>1</td>
+                                    <td>집합교육</td>
+                                    <td>공통역량</td>
+                                    <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
+                                    <td><span class="date">2024. 00. 00 ~<br>
+                                        2024. 00. 00</span></td>
+                                    <td>학습중</td>
+                                    <td>NN점</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>-</td>
+                                    <td>NN%</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>온라인교육</td>
+                                    <td>공통역량</td>
+                                    <td><a href="#none" class="list-tit">직무별 협업소통</a></td>
+                                    <td><span class="date">2024. 00. 00 ~<br>
+                                        2024. 00. 00</span></td>
+                                    <td>대기중</td>
+                                    <td>NN점</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>-</td>
+                                    <td>NN%</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>집합교육</td>
+                                    <td>공통역량</td>
+                                    <td><a href="#none" class="list-tit">직무별 협업소통 리더십</a></td>
+                                    <td><span class="date">2024. 00. 00 ~<br>
+                                        2024. 00. 00</span></td>
+                                    <td>종료</td>
+                                    <td>NN점</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>NN%</td>
+                                    <td>-</td>
+                                    <td>NN%</td>
                                 </tr>
                             </tbody>
-                        </table> -->
-                        <h5>목록형2 (class type2)</h5>
-                        <!-- <table class="tbl-list type2 flicking"> 
-                            <caption>고용보험 환급과정 지원내용을 안내하며 기관명, 대표자, 전화번호, 사업자번호 항목을 포함한 표입니다.</caption>
+                        </table>
+                        <table class="board-list flicking"> 
+                            <caption>학습현황 목록을 안내하며 번호, 교육방법, 교육구분, 과정명, 교육기간, 학습상태, 학습 평가 비율 기준(수료점수, 출결, 학습진도, 시험, 과제, 토론, 비대면) 정보 제공</caption>
                             <colgroup>
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
-                                <col style="width:25%">
+                                <col style="width:50px">
+                                <col>
+                                <col>
+                                <col style="width:15%">
+                                <col style="width:10%">
+                                <col>
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th scope="col">기관명</th>
-                                    <th scope="col">대표자</th>
-                                    <th scope="col">전화번호</th>
-                                    <th scope="col">사업자번호</th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">교육방법</th>
+                                    <th scope="col">과정구분</th>
+                                    <th scope="col">과정명</th>
+                                    <th scope="col">교육기간</th>
+                                    <th scope="col">학습상태</th>
+                                    <th scope="col">학습 평가 비율 기준</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>에이아이아카데미</td>
-                                    <td>홍길동</td>
-                                    <td>02-1234-5678</td>
-                                    <td>123-45-67890</td>
+                                    <td>1</td>
+                                    <td>집합교육</td>
+                                    <td>공통역량</td>
+                                    <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
+                                    <td><span class="date">2024. 00. 00 ~<br>
+                                        2024. 00. 00</span></td>
+                                    <td>학습중</td>
+                                    <td>NN점</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>집합교육</td>
+                                    <td>공통역량</td>
+                                    <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
+                                    <td><span class="date">2024. 00. 00 ~<br>
+                                        2024. 00. 00</span></td>
+                                    <td>학습중</td>
+                                    <td>NN점</td>
                                 </tr>
                             </tbody>
-                        </table> -->
-                        
+                        </table>
                         <!-- 검색결과 -->
                         <!-- <div class="scroll-box mat20">
                             <table class="tbl-list flicking"> 
@@ -760,127 +885,32 @@
                             </tbody>
                         </table> -->
                         <h5>VIEW 테이블(div) - 모바일 최적화</h5>
-                        <!-- <div class="tbl-view">
-                            <div class="tbl-group">
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_id">아이디1 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="inp-group">
-                                            <input type="text" id="join_id" class="inp" placeholder="아이디를 입력해 주세요.">
-                                            <button type="button" class="id-chk-btn">중복확인</button>
-                                        </div>
-                                        <p class="required">필수항목</p>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_id2">아이디2 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="inp-group">
-                                            <input type="text" id="join_id2" class="inp" placeholder="readonly" readonly>
-                                            <input type="text" id="join_id3" class="inp readonly2" placeholder="readonly2" readonly>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_pw">비밀번호 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <input type="password" id="join_pw" class="inp" placeholder="비밀번호를 입력해 주세요.">
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_pw">생년월일 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <input type="text" class="datepicker" placeholder="datepicker">
-                                        <input type="text" class="birth"  placeholder="생년월일">
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">  
-                                        <label for="join_gender1">라디오박스 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="radio">
-                                            <input type="radio" name="join_gender" id="join_gender1">
-                                            <label for="join_gender1">남자</label>
-                                        </div>
-                                        <div class="radio">
-                                            <input type="radio" name="join_gender" id="join_gender2">
-                                            <label for="join_gender2">여자</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="lgn_remeber">체크박스 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="lgn_remeber">
-                                            <label for="lgn_remeber">아이디 저장1</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="lgn_remeber2">
-                                            <label for="lgn_remeber2">아이디 저장2</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_birth">날짜선택 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <input type="text" id="join_birth" class="inp datepicker">
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_birth">셀렉트박스 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <select id="com_emai3" class="select">
-                                            <option value="">-선택-</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_tel1">휴대폰번호</label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="inp-group tel">
-                                            <input type="tel" id="join_tel1" class="inp tel" placeholder="">
-                                            <span class="mg"></span>
-                                            <input type="tel" id="join_tel2" class="inp tel" placeholder="">
-                                            <span class="mg"></span>
-                                            <input type="tel" id="join_tel3" class="inp tel" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="th">
-                                        <label for="join_email1">이메일 <span class="required">필수입력</span></label>
-                                    </div>
-                                    <div class="td">
-                                        <div class="inp-group email">
-                                            <input type="tel" id="join_email1" class="inp text" placeholder="">
-                                            <span class="mg">@</span>
-                                            <input type="text" id="join_email2" class="inp tel" placeholder="">
-                                            <select id="join_email3" class="select">
-                                                <option value="">-선택-</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-tb-wrap">
+                            <div class="col-item">
+                                <div class="tb-tit">출석</div>
+                                <div class="tb-txt">00점</div>
                             </div>
-                        </div> -->
+                            <div class="col-item">
+                                <div class="tb-tit">교과목</div>
+                                <div class="tb-txt">00점</div>
+                            </div>
+                            <div class="col-item">
+                                <div class="tb-tit">과제</div>
+                                <div class="tb-txt">00점</div>
+                            </div>
+                            <div class="col-item">
+                                <div class="tb-tit">토론</div>
+                                <div class="tb-txt">00점</div>
+                            </div>
+                            <div class="col-item">
+                                <div class="tb-tit">설문</div>
+                                <div class="tb-txt">00점</div>
+                            </div>
+                            <div class="col-item">
+                                <div class="tb-tit">수료기준점수</div>
+                                <div class="tb-txt">00점 이상</div>
+                            </div>
+                        </div>
                         <h5>list 테이블(div) - 모바일 최적화</h5>
                         <!-- <div class="tbl-list">
                             <div class="tbl-group">
