@@ -299,7 +299,7 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">HOME</h2>
+                                <h2 class="subpage-tit">나의 강의실</h2>
                             </div>
                         </div>
                     </div>
@@ -308,23 +308,16 @@
                         <div class="inner">
                             <div class="mypage-list-wrap">
                                 <div class="mypage-profile-box">
-                                    <span class="profile-img">
-                                        <img src="../../images/sub/img_profile_sample.jpg" alt="프로필 샘플">
-                                    </span>
                                     <div class="profile-info">
                                         <div class="info-txt">
                                             <div class="item">
                                                 <span class="left"><i class="big">김지수</i>님</span>
                                                 <span class="right">한국산업인력공단</span>
                                             </div>
-                                            <div class="item">
-                                                <span class="left">해외취업기획부</span>
-                                                <span class="right">선임연구원</span>
-                                            </div>
                                         </div>
                                         <div class="info-btn-box">
                                             <a href="#none" class="btn btn5">회원정보수정</a>
-                                            <a href="#none" class="btn btn1">1:1문의</a>
+                                            <a href="#none" class="btn btn1">고객문의</a>
                                         </div>
                                     </div>
                                     <div class="col-dotted-box">
@@ -350,118 +343,258 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <p class="tit">학습종료</p>
+                                            <p class="tit">수료</p>
                                             <div class="txt">
-                                                <span>과제 <i class="point">00</i>건</span>
-                                                <span>토론 <i class="point">00</i>건</span>
-                                                <span>설문 <i class="point">00</i>건</span>
+                                                <span>수료 <i class="point">00</i>건</span>
+                                                <span>수료증 <i class="point">00</i>건</span>
                                             </div>
                                             <div class="btn-box">
-                                                <a href="#none" class="btn btn6">학습현황내역 바로가기</a>
+                                                <a href="#none" class="btn btn6">수료증 출력 바로가기</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 교육신청 -->
                                 <div class="board-list-wrap">
                                     <div class="title-wrap">
-                                        <h3>교육신청 현황</h3>
-                                        <a href="#none" class="more-btn type2">더보기</a>
+                                        <h3>교육신청</h3>
+                                        <a href="#none" class="more-btn type2"><span class="indent">교육신청 목록</span> 더보기</a>
                                     </div>
-                                    <table class="board-list mobile"> 
-                                        <caption>교육신청 현황 목록을 안내하며 번호, 제목, 작성일 정보 제공</caption>
+                                    <table class="board-list flicking"> 
+                                        <caption>교육신청 목록을 안내하며 번호, 교육방법, 교육구분, 과정명, 교육기간, 신청기간, 취소기간, 상태, 비고 정보 제공</caption>
                                         <colgroup>
                                             <col style="width:60px">
+                                            <col>
                                             <col>
                                             <col style="width:20%">
                                             <col>
                                             <col>
                                             <col>
-                                            <col>
-                                            <col>
+                                            <col style="width:8%;">
                                             <col>
                                         </colgroup>
                                         <thead>
                                             <tr>
                                                 <th scope="col">번호</th>
+                                                <th scope="col">교육방법</th>
                                                 <th scope="col">교육구분</th>
                                                 <th scope="col">과정명</th>
-                                                <th scope="col">과정분류</th>
-                                                <th scope="col">신청기간</th>
                                                 <th scope="col">교육기간</th>
+                                                <th scope="col">신청기간</th>
+                                                <th scope="col">취소기간</th>
                                                 <th scope="col">상태</th>
-                                                <th scope="col">숙박여부</th>
                                                 <th scope="col">비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="9">조회 내역이 없습니다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청</td>
+                                                <!-- 취소버튼 클릭 시 하단 팝업 open -->
+                                                <td><button type="button" class="btn btn1 modal-btn" data-popup="alertModal">취소 (팝업O)</button></td>
+                                                <!-- // 취소버튼 클릭 시 하단 팝업 open -->
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>신청</td>
+                                                <td><button type="button" class="btn btn1">취소</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>온라인교육</td>
+                                                <td>리더십 역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>취소</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>혼합교육</td>
+                                                <td>직무 역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>반려</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>혼합교육</td>
+                                                <td>직무 역량</td>
+                                                <td>직무별 협업소통 리더십</td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td><span class="date">2024. 00. 00 ~<br>
+                                                        2024. 00. 00</span></td>
+                                                <td>승인</td>
+                                                <td><span class="learning">학습 중</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- // 교육신청 -->
+                                <!-- 학습현황 -->
+                                <div class="board-list-wrap">
+                                    <div class="title-wrap">
+                                        <h3>학습현황</h3>
+                                        <a href="#none" class="more-btn type2"><span class="indent">학습현황 목록</span> 더보기</a>
+                                    </div>
+                                    <table class="board-list flicking"> 
+                                        <caption>학습현황 목록을 안내하며 번호, 교육방법, 교육구분, 과정명, 교육기간, 학습상태, 학습 평가 비율 기준(수료점수, 출결, 학습진도, 시험, 과제, 토론, 비대면) 정보 제공</caption>
+                                        <colgroup>
+                                            <col style="width:50px">
+                                            <col>
+                                            <col>
+                                            <col style="width:15%">
+                                            <col style="width:10%">
+                                            <col>
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                            <col style="width: 6.4%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2" class="bottom">번호</th>
+                                                <th scope="col" rowspan="2" class="bottom">교육방법</th>
+                                                <th scope="col" rowspan="2" class="bottom">과정구분</th>
+                                                <th scope="col" rowspan="2" class="bottom">과정명</th>
+                                                <th scope="col" rowspan="2" class="bottom">교육기간</th>
+                                                <th scope="col" rowspan="2" class="bottom borderR">학습상태</th>
+                                                <th scope="col" colspan="7">학습 평가 비율 기준</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">수료점수</th>
+                                                <th scope="col">출결</th>
+                                                <th scope="col">학습진도</th>
+                                                <th scope="col">시험</th>
+                                                <th scope="col">과제</th>
+                                                <th scope="col">토론</th>
+                                                <th scope="col">비대면</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
                                                 <td>집합교육</td>
-                                                <td>직무별 협업소통 리더십</td>
-                                                <td>법정의무교육</td>
+                                                <td>공통역량</td>
+                                                <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
                                                 <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td>신청완료</td>
-                                                <td>숙박신청</td>
-                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                                    2024. 00. 00</span></td>
+                                                <td>학습중</td>
+                                                <td>NN점</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>-</td>
+                                                <td>NN%</td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>온라인교육</td>
-                                                <td>직무별 협업소통 리더십</td>
-                                                <td>직무교육</td>
+                                                <td>공통역량</td>
+                                                <td><a href="#none" class="list-tit">직무별 협업소통</a></td>
                                                 <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td>신청완료</td>
-                                                <td>없음</td>
-                                                <td><button type="button" class="btn btn1">신청취소</button></td>
+                                                    2024. 00. 00</span></td>
+                                                <td>대기중</td>
+                                                <td>NN점</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>-</td>
+                                                <td>NN%</td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>혼합교육</td>
-                                                <td>직무별 협업소통 리더십</td>
+                                                <td>집합교육</td>
                                                 <td>공통역량</td>
+                                                <td><a href="#none" class="list-tit">직무별 협업소통 리더십</a></td>
                                                 <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td>신청취소완료</td>
-                                                <td>미신청</td>
-                                                <td><button type="button" class="btn btn6">재신청</button></td>
+                                                    2024. 00. 00</span></td>
+                                                <td>종료</td>
+                                                <td>NN점</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>-</td>
+                                                <td>NN%</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>온라인교육</td>
-                                                <td>직무별 협업소통 리더십</td>
-                                                <td>법정의무교육</td>
+                                                <td>집합교육</td>
+                                                <td>공통역량</td>
+                                                <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
                                                 <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td>신청취소완료</td>
-                                                <td>없음</td>
-                                                <td><button type="button" class="btn btn6">재신청</button></td>
+                                                    2024. 00. 00</span></td>
+                                                <td>대기중</td>
+                                                <td>NN점</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
                                             </tr>
                                             <tr>
-                                                <td>4</td>
-                                                <td>온라인교육</td>
-                                                <td>직무별 협업소통 리더십</td>
-                                                <td>법정의무교육</td>
+                                                <td>5</td>
+                                                <td>혼합교육</td>
+                                                <td>공통역량</td>
+                                                <td><a href="#none" class="list-tit">직무별 협업소통 리더십직무별 협업소통 리더십</a></td>
                                                 <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td><span class="date">2024. 00. 00 ~<br>
-                                                        2024. 00. 00</span></td>
-                                                <td>신청취소완료</td>
-                                                <td>없음</td>
-                                                <td><span class="learning">학습 중</span></td>
+                                                    2024. 00. 00</span></td>
+                                                <td>종료</td>
+                                                <td>NN점</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
+                                                <td>NN%</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- // 학습현황 -->
+                                
                                 <div class="edu-tit-box">
                                     <p class="txt">김지수<span class="small">님 추천 교육과정</span></p>
                                 </div>
@@ -649,43 +782,24 @@
             </footer>
             <!--............. //footer .............-->
 
-            
             <!-- modal-popup -->
-            <!-- 1. 대상 사업자(PG사,일반 사업자) 비밀번호 찾기 -->
-            <div id="pw_popup" class="modal-wrap">
-                <div class="modal-head">
-                    <h2>대상 사업자(PG사,일반 사업자) 비밀번호 찾기</h2>
-                </div>
+            <!-- 팝업 - modal-wrap small-->
+            <div id="alertModal" class="modal-wrap alert">
                 <div class="modal-cont-wrap">
                     <!-- cont -->
                     <div class="modal-cont">
-                        
-                        <div class="contbox">
-                            <div class="inp-box mat0">
-                                <label for="businessNum2_1">사업자번호</label>
-                                <div class="inp-group">
-                                    <input type="tel" id="businessNum2_1" class="inp" title="사업자등록번호 앞자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_2" class="inp" title="사업자등록번호 중간자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_3" class="inp" title="사업자등록번호 뒷자리">
-                                </div>
-                            </div>
-                            <div class="inp-box">
-                                <label for="searchEmail1">담당자 이메일</label>
-                                <input type="email" id="searchEmail1" class="inp">
-                            </div>
-                            <div class="btn-box mat30">
-                                <a href="#none" class="btn btn1">취소</a>
-                                <button type="button" class="btn btn2">확인</button>
-                            </div>
-                        </div>
+                        <p>수강취소를 하시겠습니까?</p>
                     </div>
                     <!-- //cont -->
                 </div>
-                <button type="button" class="modal-close b-close">닫기</button>
+                <div class="btn-box">
+                    <button type="button" class="btn b-close">닫기</button>
+                    <button type="button" class="btn confirm">확인</button>
+                </div>
             </div>
+            <!-- // 팝업 -->
             <!-- // modal-popup -->
+
 
         </div>
     </body>

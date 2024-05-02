@@ -441,6 +441,42 @@ body.pc #header.hover .quick-list { display: block; }
 
 .modal-wrap:not(.bubble-pop) .btn-box .btn { height: 40px; padding: 7px 10px; max-width: 160px; font-weight: 600; }
 
+.modal-wrap.small .modal-cont-wrap { max-height: 360px; }
+
+.modal-wrap.small .f_wrapper { max-width: 300px; }
+
+.modal-wrap.small .modal-head { height: 48px; background-color: #003586; background-color: #003586; color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 20px; font-size: 24px; text-align: left; font-weight: 600; padding-right: 30px; }
+
+.modal-wrap.small .modal-head > *, .modal-wrap.small .modal-head h2 { color: #fff; font-size: 24px; font-weight: 600; }
+
+.modal-wrap.small .modal-cont { border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; line-height: 130%; color: #333; padding: 20px; }
+
+.modal-wrap.small .modal-cont > * { font-size: 16px; line-height: 130%; }
+
+.modal-wrap.small .modal-close { position: absolute; right: 14px; top: 13px; width: 21px; height: 21px; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-indent: -99999px; background: url("../images/common/ico_close.png") no-repeat center; background-size: 21px; }
+
+.modal-wrap.alert .modal-cont-wrap { max-height: 360px; }
+
+.modal-wrap.alert .f_wrapper { max-width: 440px; border-radius: 8px; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; }
+
+.modal-wrap.alert .modal-head { height: 48px; background-color: #003586; background-color: #003586; color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 20px; font-size: 24px; text-align: left; font-weight: 600; padding-right: 30px; }
+
+.modal-wrap.alert .modal-head > *, .modal-wrap.alert .modal-head h2 { color: #fff; font-size: 24px; font-weight: 600; }
+
+.modal-wrap.alert .modal-cont { -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 130%; color: #333; padding: 30px; font-size: 20px; }
+
+.modal-wrap.alert .modal-cont > * { font-size: 20px; line-height: 130%; }
+
+.modal-wrap.alert .modal-close { position: absolute; right: 14px; top: 13px; width: 21px; height: 21px; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-indent: -99999px; background: url("../images/common/ico_close.png") no-repeat center; background-size: 21px; }
+
+.modal-wrap.alert .btn-box { display: block; text-align: right; border-top: 1px solid #ccc; position: relative; margin-top: 0; margin: 0; }
+
+.modal-wrap.alert .btn-box .btn { height: 60px; margin: 0; min-width: 147px; text-align: center; background-color: transparent; padding: 17px 10px; font-size: 20px; position: relative; }
+
+.modal-wrap.alert .btn-box .btn::before { content: ''; display: inline-block; width: 1px; height: 40px; background-color: #eee; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.modal-wrap.alert .btn-box .btn.confirm { color: #ee2418; }
+
 .modal-wrap.privcy .f_wrapper { -webkit-box-shadow: 2px 15px 20px 0 rgba(0, 0, 0, 0.2); box-shadow: 2px 15px 20px 0 rgba(0, 0, 0, 0.2); max-width: 600px; background-color: #fff; }
 
 .modal-wrap.privcy .modal-head { height: 66px; padding: 22px 80px 22px 30px; }

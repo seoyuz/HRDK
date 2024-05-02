@@ -303,7 +303,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 나의 강의실 - 과제 -->
+                    <!-- 나의 강의실 - 공지사항 -->
                     <div class="page-mypage">
                         <div class="inner">
                             <div class="tab-col-wrap">
@@ -315,7 +315,7 @@
                                         <li><a href="#none">출결</a></li>
                                         <li><a href="#none">학습</a></li>
                                         <li><a href="#none">시험</a></li>
-                                        <li><a href="#none" class="on" title="선택됨">과제</a></li>
+                                        <li><a href="#none">과제</a></li>
                                         <li><a href="#none">토론</a></li>
                                         <li><a href="#none">비대면</a></li>
                                         <li><a href="#none">만족도</a></li>
@@ -323,7 +323,7 @@
                                         <!-- 고정 버튼 -->
                                         <li class="fixed"><a href="#none">과정 문의</a></li>
                                         <li class="fixed"><a href="#none">과정 자료실</a></li>
-                                        <li class="fixed"><a href="#none">과정 공지</a></li>
+                                        <li class="fixed"><a href="#none" class="on" title="선택됨">과정 공지</a></li>
                                         <!-- // 고정 버튼 -->
                                     </ul>
                                 </div>
@@ -332,100 +332,69 @@
                             <div class="tab-cont-wrap">
                                 <div class="subject-box">
                                     <div class="ico-box">
-                                        <!-- <span class="i-type gather">집합</span> -->
-                                        <!-- <span class="i-type online">온라인</span> -->
-                                        <span class="i-type mix">혼합</span>
+                                        <span class="i-type gather">집합</span>
+                                        <!-- <span class="i-type online">온라인</span>
+                                        <span class="i-type mix">혼합</span> -->
                                     </div>
                                     <p class="tit">[교육구분]실과정명</p>
                                     <span class="right">학습기간 : YYYY-MM-DD ~ YYYY-MM-DD</span>
                                 </div>
                                 <div class="title-wrap type2">
-                                    <h3 class="tit">과제</h3>
-                                    <div class="right">
-                                        <span class="m-border">평가비율 : <i class="c_red">NN</i> % / 100% </span><span class="m-border">과락기준 : 전체 진도율 <i class="c_red">NN</i> %</span>
+                                    <h3 class="tit">과정 공지사항</h3>
+                                </div>
+                                <!-- 게시판 상세 -->
+                                <div class="board-detail-wrap mat20">
+                                    <div class="board-top">
+                                        <span class="date" title="등록날짜">2022-04-25</span>
+                                        <span class="view" title="조회수">14407</span>
+                                    </div>
+                                    <p class="board-tit">2024년도 패키지 구독형 원격훈련(HRD FLEX)운영 훈련기관 선정 결과 공고</p>
+                                    <div class="board-cont">
+                                        <!-- 내용 -->
+                                        공고번호) 제2024-025호    <br>             
+                                        <br>
+                                                        <br>
+                                        <br>
+                                        2024년도 패키지 구독형 원격훈련(HRDFLEX)<br>
+                                        <br>
+                                        운영 훈련기관 선정 결과 공고<br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        2024년 사업주직업능력개발훈련 패키지 구독형 원격훈련 시범사업<br>
+                                        <br>
+                                        훈련기관으로 아래와 같이 최종 선정되었음을 공고합니다.<br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        2024년 2월 16일<br>
+                                        <!-- // 내용 -->
+                                    </div>
+                                    <div class="board-bottom">
+                                        <a href="#none" class="btn file2" title="새 창 열기" target="_blank">v2_240205_만족도 조사.hwp</a>
+                                        <a href="#none" class="btn file2" title="새 창 열기" target="_blank">시간표.jpg</a>
                                     </div>
                                 </div>
-                                <table class="board-list flicking"> 
-                                    <caption>과제 목록을 안내하며 시험지 과제 제목, 제출기간, 제출, 추가제출, 점수 정보 제공</caption>
-                                    <colgroup>
-                                        <col>
-                                        <col style="width:30%">
-                                        <col style="width:10%">
-                                        <col style="width:10%">
-                                        <col style="width:15%">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">과제 제목</th>
-                                            <th scope="col">제출기간</th>
-                                            <th scope="col">제출</th>
-                                            <th scope="col">추가제출</th>
-                                            <th scope="col">점수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>등록제목1</td>
-                                            <td><span class="date">2024. 00. 00 ~  2024. 00. 00</span></td>
-                                            <!-- 제출 버튼 클릭 시 하단 팝업 open -->
-                                            <td><button type="button" class="btn btn1 modal-btn" data-popup="taskModal">제출 (팝업O)</button></td>
-                                            <!-- // 제출 버튼 클릭 시 하단 팝업 open -->
-                                            <td><button type="button" class="btn btn1">제출</button></td>
-                                            <td><span class="c_red">NN</span>%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>등록제목2</td>
-                                            <td><span class="date">2024. 00. 00 ~  2024. 00. 00</span></td>
-                                            <td><button type="button" class="btn btn1">제출</button></td>
-                                            <td><button type="button" class="btn btn1">제출</button></td>
-                                            <td><span class="c_red">NN</span>%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>등록제목3</td>
-                                            <td><span class="date">2024. 00. 00 ~  2024. 00. 00</span></td>
-                                            <td>제출완료</td>
-                                            <td><button type="button" class="btn btn1">제출</button></td>
-                                            <td><span class="c_red">NN</span>%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>등록제목4</td>
-                                            <td><span class="date">2024. 00. 00 ~  2024. 00. 00</span></td>
-                                            <td>제출완료</td>
-                                            <td><button type="button" class="btn btn1">제출</button></td>
-                                            <td><span class="c_red">NN</span>%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>등록제목5</td>
-                                            <td><span class="date">2024. 00. 00 ~  2024. 00. 00</span></td>
-                                            <td>제출완료</td>
-                                            <td>제출완료</td>
-                                            <td><span class="c_red">NN</span>%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="subject-box">
-                                    <!-- <div class="ico-box">
-                                        <span class="i-type gather">집합</span>
-                                        <span class="i-type online">온라인</span>
-                                        <span class="i-type mix">혼합</span>
-                                    </div> -->
-                                    <p class="tit">[과제 제목. 등록제목1]</p>
-                                    <span class="right">재응시 기간 : YYYY-MM-DD ~ YYYY-MM-DD</span>
+                                <div class="board-prev-box">
+                                    <div class="item">
+                                        <div class="tit prev"><a href="#none">이전 글</a></div>
+                                        <div class="txt">이전 글이 없습니다.</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="tit next"><a href="#none">다음 글</a></div>
+                                        <div class="txt"><a href="#none">2022년 6월 1일 개강 안내</a></div>
+                                    </div>
                                 </div>
-                                <div class="subject-box">
-                                    <!-- <div class="ico-box">
-                                        <span class="i-type gather">집합</span>
-                                        <span class="i-type online">온라인</span>
-                                        <span class="i-type mix">혼합</span>
-                                    </div> -->
-                                    <p class="tit">[과제 제목. 등록제목2]</p>
-                                    <span class="right">재응시 기간 : YYYY-MM-DD ~ YYYY-MM-DD</span>
+                                <div class="btn-box">
+                                    <a href="#none" class="btn more-board"><span class="indent">공지사항</span>목록</a>
                                 </div>
-
+                                <!-- // 게시판 상세 -->
                             </div>
                         </div>
                     </div>
-                    <!-- // 나의 강의실 - 과제 -->
+                    <!-- // 나의 강의실 - 공지사항 -->
                 </div>
                 <!-- // contents -->
             </div>
@@ -496,123 +465,80 @@
 
             
             <!-- modal-popup -->
-            <!-- 과제 팝업 -->
-            <div id="taskModal" class="modal-wrap">
+            <!-- 설문 참여 팝업 -->
+            <div id="surveyModal" class="modal-wrap">
                 <div class="modal-head">
-                    <h2>과제</h2>
+                    <h2>설문지</h2>
                 </div>
                 <div class="modal-cont-wrap">
                     <!-- cont -->
                     <div class="modal-cont">
                         <form>
                             <div class="survey-div-box">
-                                <div class="b-box mat0">
+                                <div class="item">
+                                    <div class="inp-box">
+                                        <span class="search-label type2">만족도 안내</span>
+                                    </div>
+                                </div>
+                                <div class="b-box">
                                     <div class="info-list col">
                                         <div class="item">
-                                            <span class="tit">과정명</span>
-                                            <div class="txt">실과정명</div>
+                                            <span class="tit">설문지명</span>
+                                            <div class="txt">교육만족도</div>
                                         </div>
                                         <div class="item">
-                                            <span class="tit">과제명</span>
-                                            <div class="txt">시험지명</div>
-                                        </div>
-                                        <div class="item">
-                                            <span class="tit">성명</span>
-                                            <div class="txt">응시자명</div>
+                                            <span class="tit">설문지 설명</span>
+                                            <div class="txt">교육만족도 조사</div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 과제 table -->
-                                <div class="tbl-view-wrap">
-                                    <table class="tbl-view">
-                                        <caption>과제를 안내하며 과제 문제명, 과제 문제 내용, 과제 문제 파일, 과제 정답, 과제 정답 파일 정보 제공</caption>
-                                        <colgroup>
-                                            <col style="width:15%">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">과제 문제명</th>
-                                                <td>과제문제명</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 문제 내용</th>
-                                                <td>과제 문제 내용</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 문제 파일</th>
-                                                <td><a href="#none" class="btn file2" title="새 창 열기" target="_blank">시간표.jpg</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 정답</th>
-                                                <td>
-                                                    <textarea placeholder="내용을 입력하세요." class="inp write-txt" maxlength="2000"></textarea>
-                                                    <p class="inp-txt">* 최대 2000자</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 정답 파일</th>
-                                                <td>
-                                                    <!-- 첨부파일 -->
-                                                    <div class="filebox">
-                                                        <div>
-                                                            <label for="fileSmp1" class="file-btn">파일선택</label> 
-                                                            <span class="file-inp inp">파일 첨부 시 용량은 파일 당 2MB, 전체 5MB 이내 업로드 첨부해주세요.</span>
-                                                            <input type="file" id="fileSmp1" class="change-file" title="파일1 선택">
-                                                        </div>
-                                                    </div>
-                                                    <!-- // 첨부파일 -->
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <table class="tbl-view">
-                                        <caption>과제를 안내하며 과제 문제명, 과제 문제 내용, 과제 문제 파일, 과제 정답, 과제 정답 파일 정보 제공</caption>
-                                        <colgroup>
-                                            <col style="width:15%">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">과제 문제명</th>
-                                                <td>과제문제명</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 문제 내용</th>
-                                                <td>과제 문제 내용</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 문제 파일</th>
-                                                <td><a href="#none" class="btn file2" title="새 창 열기" target="_blank">시간표.jpg</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 정답</th>
-                                                <td>
-                                                    <textarea placeholder="내용을 입력하세요." class="inp write-txt" maxlength="2000"></textarea>
-                                                    <p class="inp-txt">* 최대 2000자</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">과제 정답 파일</th>
-                                                <td>
-                                                    <!-- 첨부파일 -->
-                                                    <div class="filebox">
-                                                        <div>
-                                                            <label for="fileSmp2" class="file-btn">파일선택</label> 
-                                                            <span class="file-inp inp">파일 첨부 시 용량은 파일 당 2MB, 전체 5MB 이내 업로드 첨부해주세요.</span>
-                                                            <input type="file" id="fileSmp2" class="change-file" title="파일1 선택">
-                                                        </div>
-                                                    </div>
-                                                    <!-- // 첨부파일 -->
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- q -->
+                                <div class="question-div">
+                                    <div class="q-tit">
+                                        <span class="num">01</span>
+                                        <p class="tit">교육내용은 업무 또는 개인발전에 도움이 되었다. [5점척도]</p>
+                                    </div>
+                                    <div class="q-txt">
+                                        <div class="srh-check-box mat15">
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk1" name="surveyChk">
+                                                <label for="surveyChk1">1. 매우 그렇다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk2" name="surveyChk">
+                                                <label for="surveyChk2">2. 그렇다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk3" name="surveyChk">
+                                                <label for="surveyChk3">3. 보통이다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk4" name="surveyChk">
+                                                <label for="surveyChk4">4. 아니다.</label>
+                                            </span>
+                                            <span class="radio">
+                                                <input type="radio" id="surveyChk5" name="surveyChk">
+                                                <label for="surveyChk5">5. 전혀 아니다.</label>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- // 과제 table -->
+                                <!-- // q -->
+                                <!-- q -->
+                                <div class="question-div">
+                                    <div class="q-tit">
+                                        <span class="num">02</span>
+                                        <p class="tit">교육내용은 업무 또는 개인발전에 도움이 되었다. [서술형]</p>
+                                    </div>
+                                    <div class="q-txt">
+                                        <textarea title="서술형 입력" class="inp"></textarea>
+                                    </div>
+                                </div>
+                                <!-- // q -->
                                 <div class="btn-box">
-                                    <button type="button" class="btn btn4">제출</button>
+                                    <button type="button" class="btn btn4">완료</button>
                                 </div>
+                                <p class="page-num">-1 PAGE-</p>
                             </div>
                         </form>
                     </div>
@@ -620,7 +546,7 @@
                 </div>
                 <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
             </div>
-            <!-- //과제 팝업 -->
+            <!-- //설문 참여 팝업 -->
             <!-- // modal-popup -->
 
         </div>

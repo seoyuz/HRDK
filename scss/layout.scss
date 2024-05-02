@@ -465,6 +465,45 @@ body.pc #header.hover {
 
 }
 
+// 나의 강의실 - 토론
+.modal-wrap.small {  
+
+    .modal-cont-wrap { max-height: 360px;}
+    .f_wrapper { max-width: 300px;}
+    .modal-head { height: 48px;background-color: #003586; background-color: #003586; color: #fff; box-sizing: border-box; padding: 10px 20px; font-size: 24px;text-align: left;  font-weight: 600; padding-right: 30px;
+    
+        > *, h2 { color: #fff; font-size: 24px; font-weight: 600;  }
+    }
+    .modal-cont { border: 1px solid #ccc; box-sizing: border-box; font-size: 16px; line-height: 130%; color: #333; padding: 20px;
+    
+        > * { font-size: 16px; line-height: 130%;}
+    }
+    .modal-close {  position: absolute; right: 14px; top: 13px; width: 21px; height: 21px; box-sizing: border-box; display: inline-block; text-indent: -99999px; background: url($common + "ico_close.png") no-repeat center; background-size: 21px;}
+}
+
+// 나의 강의실 
+.modal-wrap.alert { 
+
+    .modal-cont-wrap { max-height: 360px; } 
+    .f_wrapper { max-width: 440px; border-radius: 8px; box-sizing: border-box; overflow: hidden;}
+    .modal-head { height: 48px;background-color: #003586; background-color: #003586; color: #fff; box-sizing: border-box; padding: 10px 20px; font-size: 24px;text-align: left;  font-weight: 600; padding-right: 30px;
+    
+        > *, h2 { color: #fff; font-size: 24px; font-weight: 600;  }
+    }
+    .modal-cont { box-sizing: border-box; line-height: 130%; color: #333; padding: 30px; font-size: 20px;
+    
+        > * { font-size: 20px; line-height: 130%;}
+    }
+    .modal-close {  position: absolute; right: 14px; top: 13px; width: 21px; height: 21px; box-sizing: border-box; display: inline-block; text-indent: -99999px; background: url($common + "ico_close.png") no-repeat center; background-size: 21px;}
+    .btn-box { display: block; text-align: right; border-top: 1px solid #ccc; position: relative; margin-top: 0; margin: 0;
+    
+        .btn { height: 60px; margin: 0; min-width: 147px; text-align: center; background-color: transparent; padding: 17px 10px; font-size: 20px; position: relative;}
+        .btn::before { content: ''; display: inline-block; width: 1px; height: 40px; background-color: #eee; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+        .btn.confirm { color: #ee2418;}
+    }  
+}
+
+
 //개인정보처리방침 팝업
 .modal-wrap.privcy {
     .f_wrapper { box-shadow: 2px 15px 20px 0 rgba(0,0,0,.2);  max-width: 600px; background-color: #fff;}
