@@ -44,6 +44,8 @@ select option { color: #333;}
 select::-ms-expand{ display:none;}/* 화살표 없애기 for IE10, 11*/
 input:not([type=checkbox],[type=radio]) { border: 1px solid #ddd; padding: 10px; box-sizing: border-box;}
 input.inp {  height: 40px; padding: 17px 15px; font-size: 14px;}
+input.inp.type2 { width: 80px;} 
+input.inp.type3 { width: 160px;} 
 select:not(.ui-datepicker-year):not(.ui-datepicker-month), .select {min-width: 275px; border: 1px solid #ccc; padding: 3px 15px; height: 40px; box-sizing: border-box; color: #666; background:#fff url("../images/common/ico_select.png") no-repeat right 10px top 50%; background-size: 10px 5px; padding-right: 35px; font-size: 14px; color: #333;}
 select.type2, .select.type2 { border: 1px solid #666; background-color: #fafafa; background-image: url("../images/common/ico_select2.png");}
 select.type3, .select.type3 { background-image: url("../images/common/ico_select3.png");}
@@ -81,7 +83,7 @@ select.type3, .select.type3 { background-image: url("../images/common/ico_select
 
 input[type="submit"], input[type="reset"]{}
 input[type="text"]:read-only, input[type="tel"]:read-only, input[type="email"]:read-only, input[type="number"]:read-only { background-color: #f5f5f5; color: #767676; }
-input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="number"], input[type="email"] { box-sizing: border-box; height: 40px; padding: 10px 15px;  border: 1px solid #ccc;  font-weight: 500;}
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"], input[type="number"], input[type="email"] { box-sizing: border-box; height: 40px; padding: 10px 15px;  border: 1px solid #ddd;  font-weight: 500;}
 
 input::placeholder { color: #999; }
 textarea::placeholder { color: #999; }
@@ -98,8 +100,8 @@ input[type="text"]::-ms-clear, input[type="password"]::-ms-clear {
 	display: none;
 }
 
-input.datepicker, input.datepicker2, input.inp-date, input.birth { box-sizing: border-box; background: url("../images/sub/ico_date.png") no-repeat right 30px top 50%; cursor: pointer; padding-right: 60px; box-sizing: border-box; font-size: 18px;}
-textarea {width:100%; min-height:100px; padding: 14px; border:1px solid #ddd; box-sizing: border-box; font-size: 14px; color: #333;} 
+input.datepicker, input.datepicker2, input.inp-date, input.birth { box-sizing: border-box; background: url("../images/sub/ico_date.png") no-repeat right 15px top 50%; cursor: pointer; padding-right: 30px; box-sizing: border-box; font-size: 18px; width: 160px; font-size: 14px; color: #666;}
+textarea {width:100%; min-height:100px; padding: 14px; border:1px solid #ddd; box-sizing: border-box; font-size: 14px; color: #333; resize: none;} 
 
 p, li, span, input, a { /*transform: skew(-0.03deg);*/ line-height:120%;}
 .sub_contents p { /*transform: skew(-0.03deg);*/ line-height:160%;}
@@ -137,6 +139,19 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 
 .checkbox.right label { padding-right: 34px; position: relative;}
 .checkbox.right label::before { margin-right: 0; position: absolute; right: 0; top: 4px; left: auto;}
+
+/* 작은 체크박스*/
+.checkbox.type2 label::before { margin-right: 5px;  width: 16px; height: 16px;  background: #fff url("../images/sub/ico_check2.png") no-repeat center; background-size: 10px;  }
+.checkbox.type2 input:checked + label::before { background-size: 10px; }
+
+/* 텍스트 없을 때 */
+.checkbox.none { margin-right: 0;}
+.checkbox.none label { font-size: 0; }
+.checkbox.none label::before { margin-right: 0; }
+
+
+.checkbox input:disabled + label::before { background-color: #eee; border-color: #ccc; }
+
 
 .radio { position: relative; display: inline-block; margin-right: 30px;}
 .radio input { padding: 0; height: 1px; width: 1px; margin-bottom: 0; position: absolute; top: 0; height: 0; white-space: nowrap; cursor: pointer; }
@@ -183,7 +198,7 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 .fw9{ font-weight:900;}
 .bold { font-weight:600;}
 .black { font-weight:800;}
-.c_blue {color:#01247F !important;}
+.c_blue {color:#1647aa !important;}
 .c_333 {color:#333 !important;}
 .c_fff {color:#fff !important;}
 .c_eee {color:#eee !important;}
@@ -191,6 +206,7 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 .c_red {color:#d90a23 !important;}
 .c_gray {color:#777;}
 .bg_gr {background:#f5f5f5;}
+.bg_blue {background:#003586; color: #fff;}
 .bg_darkgr {background:#555;}
 .underline { text-decoration:underline;}
 

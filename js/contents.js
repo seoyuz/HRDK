@@ -143,7 +143,7 @@ $('.business-tab-box .ui-tab-list').each(function (index, element) {
 
 
 
-// 시설안내 작업 중
+// 시설안내
 slider(); //슬라이드 실행
 function slider() {
 	var swiperArr = []; //swiper 슬라이드 변수
@@ -311,6 +311,35 @@ $(".vdo-list-wrap .parent > li > .unit").each(function() {
 		$(this).attr("title", "닫기");
 		$(this).siblings(".child").slideDown();
     }
+});
+
+
+
+// 개인정보처리방침
+$("a.label-box").each(function(index) {
+	$(this).on("mouseover focus", function() {
+		$("#label-layer-" + index).css("display", "block");
+		$(this).css({"border":"1px solid #1647aa"});
+	});
+	$(this).on("mouseout focusout", function() {
+		$("#label-layer-" + index).css("display", "none");
+		$(this).css({"border":"1px solid #fff"});
+	});
+});
+
+$(function(){
+	$(".cnt-list li a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
+		}
+	});
+
 });
 
 

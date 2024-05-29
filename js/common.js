@@ -401,37 +401,18 @@ $(document).ready(function(){
 
 
 
-    //첨부파일 커스텀
-    var $fileBox = null;
-  
-    $(function() {
-        init();
-    })
-    
-    function init() {
-        $fileBox = $('.filebox');
-        fileLoad();
-    }
-    
-    function fileLoad() {
-        $.each($fileBox, function(idx){
-            var $this = $fileBox.eq(idx),
-                $btnUpload = $this.find('[type="file"]'),
-                $label = $this.find('.file-btn');
+    //첨부파일 커스텀 - 240510 동적팝업 이슈 수정
+    $(document).on('change', '.filebox [type="file"]', function() {
+        var $target = $(this),
+            fileName = $target.val(),
+            $fileText = $target.siblings('.file-inp');
+        $fileText.text(fileName);
+    });
 
-            $btnUpload.on('change', function() {
-                var $target = $(this),
-                    fileName = $target.val(),
-                    $fileText = $target.siblings('.file-inp');
-                $fileText.text(fileName);
-            })
-
-            $btnUpload.on('focusin focusout', function(e) {
-                e.type == 'focusin' ?
-                $(this).siblings('.file-btn').addClass('file-focus') : $(this).siblings('.file-btn').removeClass('file-focus'); // 240418 버튼 선택자 변경
-            })
-        })
-    }
+    $(document).on('focusin focusout', '.filebox [type="file"]', function(e) {
+        e.type == 'focusin' ?
+            $(this).siblings('.file-btn').addClass('file-focus') : $(this).siblings('.file-btn').removeClass('file-focus');
+    });
 
 
 

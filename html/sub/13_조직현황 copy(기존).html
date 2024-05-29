@@ -1,0 +1,767 @@
+<style>
+    .organizationUl {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    position: relative;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    /* background-size: 74%; */
+    background-position-y: 70px;
+    font-size: 7px;
+    padding: 20px 5px 60px 5px;
+    letter-spacing: -1px;
+    /* background-image: url("../images/line1.png"); */
+}
+
+.organizationUl .org6 ul {
+    border-color: #00a396;
+    background-color: white;
+}
+
+.organizationUl .org6 .orgUL>li>a {
+    border-color: #00a396;
+    background-color: #eff9f8;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #00a396;
+    /* border-top-left-radius: 3px;
+    border-top-right-radius: 3px; */
+    /* background-color: transparent; */
+    padding: 3px 0 4px 0;
+    /* padding: 3px 0 4px 0; */
+}
+.organizationUl .org6 .orgUL>li>a:hover {
+    background-color: #00a396;
+    color: white;
+}
+.organizationUl .org6 .orgUL ul a:hover {
+    color: #00a396;
+    border-bottom: 1px solid #00a396;
+}
+.organizationUl .org6 .top40 {
+    margin-top: 60px;
+}
+
+.organizationUl .right{
+    top: -38px;
+}
+
+.organizationUl .org6 .top40 a {
+    letter-spacing: -2px;
+}
+
+.organizationUl a {
+    width: 100%;
+}
+.orgUL {
+    margin-top: 7px;
+    border: 1px solid #137fd2;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+.orgUL>li>a {
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #137fd2;
+    background-color: #f2f8fe;
+    padding: 4px 0 4px 0;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.orgUL>li>a:hover {
+    background-color: #137fd2;
+    color: white;
+    font-weight: normal;
+    border-radius: 0;
+}
+.orgUL>li>ul {
+    padding: 4px 0;
+}
+.orgUL>li>ul>li {
+    margin-bottom: 5px;
+}
+.orgUL>li>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.organizationUl>li {
+    width: 24%;
+    /* width: 22%; */
+    /* width: 183.03px; */
+}
+
+.organizationUl .org2:hover {
+    color: white;
+}
+.organizationUl a:hover {
+    color: #003586;
+    border-bottom: 1px solid #003586;
+}
+.organizationUl .top40 {
+    margin-top: 20px;
+}
+.organizationUl .org1 {
+    margin: 0 auto;
+}
+.organizationUl .org1 a {
+    display: block;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    font-size: 12px;
+    background-color: #003586;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.organizationUl .org1 a:hover {
+    background-color: #137fd2;
+    border-bottom: none
+}
+.organizationUl .org2 {
+    display: block;
+    background-color: #137fd2;
+    color: white;
+    padding: 4px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+.organizationUl a.org2:hover {
+    background-color: #003586;
+    border-bottom: none;
+}
+.organizationUl .org3 {
+    border: 1px solid #003586;
+    color: #003586;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+.organizationUl .org3:hover {
+    color: #003586;
+}
+.organizationUl .org4 {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.organizationUl .org7 {
+    position: absolute;
+    top: 110px;
+    left: 27%;
+    width: 42%;
+    display: flex;
+}
+
+/*비서실 버튼 앞쪽에 하나 더 사용할 경우*/
+/* .organizationUl .org7 span:first-child { background-color: #137fd2; border:1px solid #137fd2 }
+.organizationUl .org7 span:first-child a { color: #fff;}
+.organizationUl .org7 span:first-child:hover {
+    background-color: #003586;
+    border-bottom: none;
+} */
+
+
+.organizationUl .org7 .org7group::before  {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -14px;
+    left: 50%;
+    width: 1px;
+    height: 14px;
+    background-color: #137fd2;
+}
+
+.organizationUl .org7 .org7group { 
+    width: 50% !important; 
+    margin: 0 5px 0 0;
+    word-break: break-all;
+}
+
+/* .organizationUl .org7 .org7group:first-child { background-color: #137fd2 !important } */
+.text-white { color: #fff;}
+.organizationUl .org5 {
+    box-sizing: border-box;
+    float: left;
+    margin-right: 1.333333333333333%;
+    margin-top:100px;
+    position: relative;
+}
+
+
+
+.organizationUl .org1 {
+    position: relative;
+    z-index: 2;
+}
+
+.organizationUl .org4::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #137fd2;
+}
+.organizationUl .org1::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    width: 1px;
+    height: 80px;
+    background-color: #137fd2;
+}
+.organizationUl .org1::after {
+    content: "";
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    width: 151%;
+    margin-left: -151%;
+    height: 1px;
+    background-color: #137fd2;
+}
+.organizationUl .org5::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -22px;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #137fd2;
+}
+.organizationUl::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 74%;
+    margin-left: -37%;
+    height: 1px;
+    background-color: #137fd2;
+}
+.organizationUl .org6 .orgUL::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 1px;
+    height: 20px;
+    background-color: #00a396;
+}
+.organizationUl .org6::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 1px;
+    height: 25px;
+    background-color: #00a396;
+}
+.organizationUl .org6 .ul3::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 111%;
+    height: 1px;
+    background-color: #00a396;
+}
+.organizationUl .org6::before {
+    content: "";
+    display: block;
+    height: 30px;
+}
+.organizationUl .org6 {
+    /* border: 1px solid green; */
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    /* float: left; */
+}
+
+.organizationUl .org6 .org2 {
+    margin: 0 auto;
+    width: 24%;
+    background-color: #00a396;
+}
+.organizationUl .org6 .orgUL {
+    width: 24%;
+    display: inline-block;
+}
+.organizationUl .org8 {
+    position: relative;
+    top: -20px;
+    left: -5px;
+}
+
+.organizationUl .orgUL {
+    background-color: white;
+}
+.organizationUl .marginNo {
+    margin-right: 0;
+}
+.organizationUl .solo {
+    border-bottom: none;
+    border-radius: 5px;
+}
+.organizationUl .solo:hover {
+    border-bottom: none;
+
+}
+.organizationUl .ul1 {
+    height: 152px;
+}
+.organizationUl .ul2 {
+    height: 190px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .organizationUl .org1 a {
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        font-size: 20px;
+    }
+    .organizationUl {
+        letter-spacing: -1px;
+        padding: 38px 28px 60px 28px;
+        font-size: 16px;
+        /* background-position-y: 150px;
+        background-image: url("../images/line1.png"); */
+    }
+    .organizationUl .org5 {
+        margin-top: 145px;
+    }
+    .organizationUl .ul1 {
+        height: 265px;
+    }
+    .organizationUl .ul2 {
+        height: 330px;
+    }
+    .orgUL>li>ul>li {
+        margin-bottom: 10px;
+    }
+    .orgUL>li>ul {
+        padding: 16px 0;
+    }
+    .organizationUl .org2 {
+        padding: 8px 0;
+    }
+    .orgUL>li>span {
+        padding: 7px 0 8px 0;
+    }
+  
+    /*비서실과 T/F팀영역.org7  */
+    .organizationUl .org7 {
+        top: 230px;
+        left: 25%;
+        width: 45%;
+        display: flex;
+    }
+    .organizationUl .org7 .org7group::before  {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -23px;
+        left: 50%;
+        width: 1px;
+        height: 23px;
+        background-color: #137fd2;
+    }
+   
+    .organizationUl .org7 .org7group { width: 50% !important; margin: 0 4% 0 0;}
+
+    .organizationUl .org2 
+
+    .organizationUl .org4 {
+        top: 64px;
+        right: 28px;
+    }
+    .organizationUl .org6::before {
+        height: 63px;
+    }
+    .organizationUl .org8 {
+        position: relative;
+        top: -35px;
+        left: -5px;
+    }
+    .organizationUl .top40 {
+        margin-top: 40px;
+    }
+    .organizationUl .org6 .top40 {
+        margin-top: 113px;
+    }
+    .organizationUl .right {
+        top: -69px;
+    }
+    .organizationUl>li {
+        width: 22%;
+    }
+    .organizationUl .org6 .org2 {
+        width: 22%;
+        background-color: #00a396;
+    }
+    .organizationUl .org6 .orgUL {
+        width: 22%;
+    }
+    .organizationUl .org6 .ul3 {
+        margin-left: 8px;
+    }
+
+    .organizationUl .org6 .ul4 {
+        margin-left: 27px;
+    }
+    .organizationUl .org5 {
+        margin-right: 4%;
+    }
+    .organizationUl .marginNo {
+        margin-right: 0;
+    }
+    .organizationUl .org5::before {
+        top: -28px;
+    }
+    .organizationUl::before {
+        top: 294px;
+        width: 73.2%;
+        margin-left: -36.6%;
+    }
+    .organizationUl .org1::before {
+        top: 140px;
+        height: 118px;
+    }
+    .organizationUl .org1::after {
+        top: 170px;
+        width: 66%;
+        margin-left: -66%;
+    }
+    .organizationUl .org6 .ul3::after {
+        top: -40px;
+        width: 121%;
+    }
+    .organizationUl .org6 .orgUL::before {
+        top: -37px;
+        height: 37px;
+    }
+    .organizationUl .org6::after {
+        top: 100px;
+        height: 40px;
+    }
+
+    .organization .subMenuSet {
+        margin-top: 60px;
+    }
+    .table4 {
+        margin-top: 60px;
+    }
+
+    #organizationTable1 td {
+        padding: 20px;
+    }
+    #organizationTable1 th:nth-child(1) {
+        width: 130px;
+    }
+    #organizationTable1 th:nth-child(2) {
+        width: 500px;
+    }
+    #organizationTable1 th:nth-child(4) {
+        width: 80px;
+    }
+
+    #organizationTable2 td {
+        padding: 20px;
+    }
+    #organizationTable2 td:nth-child(1) {
+        /* width: 170px; */
+    }
+    #organizationTable2 th:nth-child(2) {
+        width: 130px;
+    }
+    #organizationTable2 th:nth-child(3) {
+        width: 495px !important;
+    }
+    #organizationTable2 th:nth-child(4) {
+        width: 90px !important;
+    }
+    .mapIcon {
+        width: 50px;
+        height: 50px;
+    }
+    .orgUL>li>a {
+        padding: 8px 0 8px 0;
+    }
+    .orgUL>li>a:hover {
+        border-radius: 0;
+        border-bottom: 1px solid #137fd2;
+    }
+    .organizationUl .org6 span.org2 {
+        padding: 8px 0 8px 0;
+    }
+    .organizationUl .org6 .orgUL>li>a {
+        padding: 7px 0 8px 0;
+    }
+    #searchSet.organiSearch {
+        margin-top: 60px !important;
+        max-width: 100% !important;
+        width: 540px !important;
+    }
+    #searchSet.organi8 {
+        float: left;
+    }
+    .sub .subContentSet #searchSet.organiSearch select {
+        width: 180px !important;
+    }
+    .organization1 img {
+        margin-top: 20px;
+    }
+    .organization1 h4 {
+        font-size: 24px !important;
+        padding-left: 0 !important;
+        margin-top: 50px;
+    }
+    .organiUl1 {
+        margin-top: 20px;
+        padding: 35px 30px;
+    }
+    .organiUl1 li{
+        margin-bottom: 20px;
+    }
+    .organiUl2>li>b {
+        width: 22%;
+    }
+    .organiUl2>li>span {
+        width: 78%;
+    }
+    #organization8Table td {
+        padding: 20px !important;
+    }
+    #employeeTable td.alignLeft { /*20240521 수정 (4 -> 2)*/
+        /*width: 320px;*/
+        padding: 20px !important;
+    }
+    /*#employeeTable td:nth-child(5) { 20240521 삭제
+        width: 165px;
+    }*/
+}
+@media screen and (min-width: 1200px) {
+    .organizationUl::before {
+        width: 74.4%;
+        margin-left: -37.2%;
+    }
+    .organizationUl .org1::after {
+        width: 66%;
+        margin-left: -66%;
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .organizationUl .org1::after {
+        width: 66.5%;
+        margin-left: -66.5%;
+    }
+
+    .organizationUl::before {
+        top: 295px;
+        width: 73.2%;
+        margin-left: -36.6%;
+    }
+}
+</style>
+<ul class="organizationUl">
+    <li class="org1"><a href="/4/1/1/1">이사장</a></li>
+    <li class="org7">
+        <span class="org7group org2 org3"><a href="#" onclick="return false;">비서실</a></span>
+    </li>
+    <li class="org4"><a class="org2" href="/4/1/2/1?k=-1&amp;parDeptId=000001308">감사</a>
+        <ul class="orgUL">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000001030">감사실</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000011637">감사부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010015039">청렴감사부</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="org5"><a class="org2" href="/4/1/2/1?k=-1&amp;parDeptId=000012038">기획운영이사</a>
+        <ul class="orgUL ul1">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000012039">기획조정실</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019701">전략기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000012042">예산부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019702">성과관리부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020400">고객지원부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=010020402">안전경영지원국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020403">ESG운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020404">인재경영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020405">회계자산부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020406">안전보건부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=010020408">디지털정보국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000017700">정보화기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019703">자격정보화부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019704">정보화사업부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014000">정보보안부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL top40">
+            <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019705" class="solo">홍보미디어실</a></li>
+        </ul>
+        <ul class="orgUL top40">
+            <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020407" class="solo">HRDK미래교육원</a></li>
+        </ul>
+    </li>
+
+    <li class="org5"><a class="org2" href="/4/1/2/1?k=-1&amp;parDeptId=000012051">능력개발이사</a>
+        <ul class="orgUL ul1">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000015106">직업능력국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015107">능력개발기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019204">기업훈련지원부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019706">컨소시엄운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019206">지역산업지원부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000015111">일학습지원국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015112">일학습기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015113">일학습운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019708">훈련과정개발센터</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000019709">훈련품질관리국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019710">훈련품질기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019711">원격훈련관리부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019712">훈련성과평가부</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="org5"><a class="org2" href="/4/1/2/1?k=-1&amp;parDeptId=000013477">능력평가이사</a>
+        <ul class="orgUL ul1">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000015121">능력평가국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010016102">능력평가기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010016105">과정평가운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019713">필기시험운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019714">실기시험운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020409">자격운영지원부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=010020410">자격품질관리국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020412">자격품질기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010020411">자격기준관리부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019719">국가자격채점센터</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul2 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000014448">기술자격출제실</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014449">신성장산업출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014450">응용공학출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014451">IT융합출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014452">기간산업출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014453">생활과학출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010018103">안전서비스출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019717">과정평가출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019718">일학습출제부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=010016108">전문자격국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010016111">전문자격운영부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019720">인문교육출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019721">사회과학출제부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019722">국가자격발간센터</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL top40">
+            <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019790" class="solo">국가자격제도시스템개편팀</a></li>
+        </ul>
+    </li>
+    <li class="org5 marginNo"><a class="org2" href="/4/1/2/1?k=-1&amp;parDeptId=000011638">국제인력본부</a>
+        <ul class="orgUL ul1">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000012074">외국인력국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015125">외국인력기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000013117">외국인력선발부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015126">외국인력도입부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000012079">고용체류지원부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 top40">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000017606">해외취업국</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000017607">해외취업기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000017608">해외취업연수부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019210">해외취업지원부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000017610">서울해외취업센터</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000017611">부산해외취업센터</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="org6"><span class="org2">부설기관</span>
+        <ul class="orgUL ul1 ul3 top40 org8">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000015206">국가직무능력표준원</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010016112">NCS기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015208">NCS개발개선부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015209">NCS활용지원부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010018105">NCS품질관리부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000019723">공정채용지원부</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="orgUL ul1 ul4 top40 right">
+            <li><a href="/4/1/2/1?k=-1&amp;parDeptId=000014432">글로벌숙련기술진흥원</a>
+                <ul>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000015131">숙련기술기획부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014434">숙련기술진흥부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=000014435">기능경기부</a></li>
+                    <li><a href="/4/1/2/1?k=-1&amp;teamDeptId=010016113">글로벌 HRD협력부</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>

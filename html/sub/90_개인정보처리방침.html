@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HRDK 미래교육원</title>
+        <link rel="shortcut icon" href="../../images/common/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <script src="../../js/jquery.easing.min.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <script src="../../js/ScrollMagic.min.js"></script>
+        <script src="../../js/animation.gsap.js"></script>
+        <script src="../../js/jquery.bpopup.min.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <!-- sub -->
+        <link type="text/css" rel="stylesheet" href="../../css/sub.css">
+        <link type="text/css" rel="stylesheet" href="../../css/contents.css">
+        <script src="../../js/contents.js"></script>
+    </head>
+    <body>
+        <div class="skiptoContent">
+            <a href="#container">본문내용 바로가기</a>
+            <a href="#gnbA1">메인메뉴 바로가기</a>
+        </div>
+        <div id="wrap" class="sub">
+            <!--............. header .............-->
+            <header id="header" class="header">
+                <div class="hd-bottom">
+                    <h1 id="logo"><a href="#none">HRDK 미래교육원</a></h1>
+                    <nav id="gnb" class="gnb">
+                        <ul>
+                            <li class="gnbA gnbA1"><a href="#none" id="gnbA1">소개</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                            <li><a href="#none">조직현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA2"><a href="#none" id="gnbA2">시설안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">시설정보</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">대관신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA3"><a href="#none" id="gnbA3">알림마당</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">FAQ</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA4"><a href="#none" id="gnbA4">교육과정 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">전체 교육과정</a></li>
+                                    <li><a href="#none">집합 교육과정</a></li>
+                                    <li><a href="#none">온라인 교육과정</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA5"><a href="#none" id="gnbA5">나의 강의실</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">교육신청</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청내역</a></li>
+                                            <li><a href="#none">취소내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">학습현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">학습중</a></li>
+                                            <li><a href="#none">대기중</a></li>
+                                            <li><a href="#none">학습완료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">수료증 출력</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA6"><a href="#none" id="gnbA6">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">회원정보 수정</a></li>
+                                            <li><a href="#none">회원탈퇴</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">대관신청 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청현황</a></li>
+                                            <li><a href="#none">신청취소 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">결제/환불 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">결제현황</a></li>
+                                            <li><a href="#none">환불현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">나의문의 현황</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-list">
+                        <ul>
+                            <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                            <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                            <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                            <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="mobile-menu" title="전체메뉴 열기">
+                        <span class="ico">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </button>
+                    <div class="hd-bottom-dim"></div>
+                </div>
+                <ul class="right-btn-box">
+                    <li><a href="#none" class="join">회원가입</a></li>
+                    <li><a href="#none" class="login">로그인</a></li>
+                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                </ul>
+                <!-- mobile -->
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb">
+                        <div class="quick-list">
+                            <ul>
+                                <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                                <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                                <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                                <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                            </ul>
+                        </div>
+                        <nav class="gnb">
+                            <ul>
+                                <li class="gnbA gnbA1"><a href="#none">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">미래교육원 소개</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">교육원 소개</a></li>
+                                                <li><a href="#none">인사말</a></li>
+                                                <li><a href="#none">비전</a></li>
+                                                <li><a href="#none">조직현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA2"><a href="#none">시설안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">시설정보</a></li>
+                                        <li><a href="#none">이용안내</a></li>
+                                        <li><a href="#none">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA3"><a href="#none">알림마당</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">자료실</a></li>
+                                        <li><a href="#none">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA4"><a href="#none">교육과정 안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">전체 교육과정</a></li>
+                                        <li><a href="#none">집합 교육과정</a></li>
+                                        <li><a href="#none">온라인 교육과정</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA5"><a href="#none">나의 강의실</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">나의 강의실</a></li>
+                                        <li><a href="#none">교육신청</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청내역</a></li>
+                                                <li><a href="#none">취소내역</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">학습현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">학습중</a></li>
+                                                <li><a href="#none">대기중</a></li>
+                                                <li><a href="#none">학습완료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">수료증 출력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA6"><a href="#none">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">회원정보 수정</a></li>
+                                                <li><a href="#none">회원탈퇴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">대관신청 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청현황</a></li>
+                                                <li><a href="#none">신청취소 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">결제/환불 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">결제현황</a></li>
+                                                <li><a href="#none">환불현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">나의문의 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="right-btn-box">
+                            <li><a href="#none" class="join">회원가입</a></li>
+                            <li><a href="#none" class="login">로그인</a></li>
+                            <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                        </ul>
+                        <!-- <button type="button" class="gnb-close">메뉴 닫기</button> -->
+                    </div>
+                </div>
+                <!-- //mobile -->
+            </header>
+            <!--.............//header .............-->
+            <div id="container">
+                <!-- subpage title -->
+                <div class="breadcrumb-wrap">
+                    <div class="inner">
+                        <div class="breadcrumb-box">
+                            <a href="#none" class="home">메인으로 바로가기</a>
+                            <div class="bc-depth depth1">
+                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <ul class="depth2-list">
+                                    <li><a href="#none">소개</a></li>
+                                    <li><a href="#none">시설안내</a></li>
+                                    <li><a href="#none">알림마당</a></li>
+                                    <li><a href="#none" class="active" title="선택됨">교육과정 안내</a></li>
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">마이페이지</a></li>
+                                </ul>
+                            </div>
+                            <div class="bc-depth depth2">
+                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // subpage title -->
+                <!-- contents -->
+                <div class="contents" id="contents">
+                    <div class="sub-tit-box">
+                        <div class="inner">
+                            <div class="title-box">
+                                <h2 class="subpage-tit">개인정보처리방침</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 개인정보처리방침 -->
+                    <div class="page-idsearch"> 
+                        <div class="inner">
+                            <!-- s -->
+                            <h3 class="mat0">주요 개인정보 처리 표시(라벨링)</h3>
+                            <div class="label-box-wrap">
+                                <div class="label-wrap">
+                                    <a href="#none" class="label-box" title="일반 개인정보 수집">
+                                        <img src="../../images/contents/pi_collect.png" alt="일반 개인정보 수집">
+                                        <p class="label-cnt">일반 개인정보 수집</p>
+                                        <div id="label-layer-0" class="label-layer num0" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>일반 개인정보 수집</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>서비스 별로 수집하는 개인정보 항목이 다릅니다.</p>
+                                                <ul class="desc-wrap">
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">회원정보</p>
+                                                        <p class="desc-cnt">성명, ID, 비밀번호, 생년월일, 성별, 휴대폰번호, 내/외국인, 이메일, 기관구분, 기관명, 부서, 직급, 직렬 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">수강생 정보</p>
+                                                        <p class="desc-cnt">회원유형, 성명, ID, 휴대전화 번호, 내/외국인 정보, 국적, 이메일, 기관명(기업명), 부서, 근무지역 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">전문가(강사 등) 정보</p>
+                                                        <p class="desc-cnt">회사/기관명, 부서, 직급, 휴대전화번호, 사무실번호, 이메일, 근무지주소, 부문, 권역, 증빙서류 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">의료통역능력검정시험 응시자정보</p>
+                                                        <p class="desc-cnt">차수정보, 회원ID, 응시번호,  한글이름, 영문 이름,응시언어, 생년월일, 성별, 일반전화번호, 내/외국인 구분, 국적, 휴대폰번호, 이메일, 주소, 증명사진 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">아동안전교육 수강생 정보</p>
+                                                        <p class="desc-cnt">신청자명, 소속기관정보, 주소, 전화번호, 이메일, 지역정보 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">바이오헬스넷 JOB매칭을 위한 인재정보</p>
+                                                        <p class="desc-cnt">성명, 생년월일, 성별, 내/외국인(국적, 비자종류), 휴대전화번호, 이메일, 재직여부, 재직상세 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">사회복무요원 수강생 정보</p>
+                                                        <p class="desc-cnt">휴대전화 번호, 계좌번호, 이메일, 관리자 이메일, 근무기관명, 근무기관 주소, 근무기관 전화번호</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">개인거래처</p>
+                                                        <p class="desc-cnt">성명, 내/외국인 정보, 주소, 소속기관, 소속부서, 거주자구분, 거주지국가 등</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">임직원 인사정보</p>
+                                                        <p class="desc-cnt">성명, 생년월일, 성별, 휴대전화번호, 회사 전화번호, 이메일, 주소, 고유식별정보 및 개인 인사정보 등</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#none" class="label-box" title="개인정보의 처리 목적">
+                                        <img src="../../images/contents/pi_object.png" alt="개인정보의 처리 목적">
+                                        <p class="label-cnt">개인정보의 처리 목적</p>
+                                        <div id="label-layer-1" class="label-layer num1" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>개인정보의 처리 목적</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>개인정보 보호법 제32조에 따라 등록·공개하는 개인정보파일의 처리목적은 다음과 같습니다.</p>
+                                                <ul class="desc-wrap">
+                                                        <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">회원 정보</p>
+                                                        <p class="desc-cnt">회원가입 및 관리, 교육서비스 제공</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">수강생 정보</p>
+                                                        <p class="desc-cnt">교육과정 서비스 제공</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">전문가(강사 등) 정보</p>
+                                                        <p class="desc-cnt">강사 등록 및 관리</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">의료통역능력검정시험 응시자정보</p>
+                                                        <p class="desc-cnt">의료 통역능력 검정시험 응시자 관리</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">아동안전교육 수강생 정보</p>
+                                                        <p class="desc-cnt">교육 서비스 제공 교육 운영 및 수강생 관리</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">바이오헬스넷 Job매칭을 위한 인재정보</p>
+                                                        <p class="desc-cnt">JOB매칭 및 교육 서비스 제공</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">사회복무요원 수강생 정보</p>
+                                                        <p class="desc-cnt">회원가입 및 관리, 교육서비스 제공, 현업적용도 조사</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">개인거래처</p>
+                                                        <p class="desc-cnt">지출을 위한 거래처 관리</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">임직원 인사정보</p>
+                                                        <p class="desc-cnt">임직원 인사관리 및 급여지급</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#none" class="label-box" title="개인정보의 보유기간">
+                                        <img src="../../images/contents/pi_period.png" alt="개인정보의 보유기간">
+                                        <p class="label-cnt">개인정보의 보유기간</p>
+                                        <div id="label-layer-2" class="label-layer num2" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>개인정보의 보유기간</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p>
+                                                <ul class="desc-wrap">
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">회원 정보</p>
+                                                        <p class="desc-cnt">회원탈퇴시까지 (2년 주기 회원유지 재동의 확인)</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">수강생 정보</p>
+                                                        <p class="desc-cnt">준영구</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">전문가(강사 등) 정보</p>
+                                                        <p class="desc-cnt">준영구</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">의료통역능력검정시험 응시자정보</p>
+                                                        <p class="desc-cnt">준영구</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">아동안전교육 수강생 정보</p>
+                                                        <p class="desc-cnt">준영구</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">바이오헬스넷 Job매칭을 위한 인재정보</p>
+                                                        <p class="desc-cnt">회원탈퇴시까지 (2년 주기 회원유지 재동의 확인)</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">사회복무요원 수강생 정보</p>
+                                                        <p class="desc-cnt">2년</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">개인거래처</p>
+                                                        <p class="desc-cnt">최종사용일로부터 10년</p>
+                                                    </li>
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">임직원 인사정보</p>
+                                                        <p class="desc-cnt">준영구</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#none" class="label-box" title="개인정보 처리위탁">
+                                        <img src="../../images/contents/pi_consignment.png" alt="개인정보 처리위탁">
+                                        <p class="label-cnt">개인정보 처리위탁</p>
+                                        <div id="label-layer-3" class="label-layer num3" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>개인정보 처리위탁</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.</p>
+                                                <ul class="desc-wrap">
+                                                    <ul class="desc-wrap">
+                                                        <li class="desc-box">
+                                                            <p class="desc-tit desc-icon edu">(주)케이지이니시스</p>
+                                                            <p class="desc-cnt">숙박비 및 교육비 전자결제 대행</p>
+                                                        </li>
+                                                        <li class="desc-box">
+                                                            <p class="desc-tit desc-icon edu">㈜오파스넷</p>
+                                                            <p class="desc-cnt">2023년 정보시스템 통합유지보수</p>
+                                                        </li>
+                                                        <li class="desc-box">
+                                                            <p class="desc-tit desc-icon edu">㈜메일플러그</p>
+                                                            <p class="desc-cnt">메일 클라우드 서비스</p>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#none" class="label-box" title="개인정보의 제공">
+                                        <img src="../../images/contents/pi_supply.png" alt="개인정보의 제공">
+                                        <p class="label-cnt">개인정보의 제공</p>
+                                        <div id="label-layer-4" class="label-layer num4" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>개인정보의 제공</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>열람등요구 처리를 위해 해당 개인정보파일의 보유기관에 신청인의 개인정보를 제공하고 있습니다.</p>
+                                                
+                                                <ul class="desc-wrap">
+                                                    
+                                                        <li class="desc-box">
+                                                            <p class="desc-tit desc-icon edu">제공하는 항목</p>
+                                                            <p class="desc-cnt">성명, 생년월일, 전화번호, 주소, 이메일</p>
+                                                        </li>
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#none" class="label-box" title="개인정보 열람 청구">
+                                        <img src="../../images/contents/pi_browse.png" alt="개인정보 열람 청구">
+                                        <p class="label-cnt">개인정보 열람 청구</p>
+                                        <div id="label-layer-5" class="label-layer num5" style="display: none;">
+                                            <div class="label-desc-top">
+                                                <p>개인정보 열람 청구</p>
+                                            </div>
+                                            <div class="label-desc-btm">
+                                                <p>개인정보보호위원회는 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.</p>
+                                                <ul class="desc-wrap">
+                                                    <li class="desc-box">
+                                                        <p class="desc-tit desc-icon edu">처리부서</p>
+                                                        <p class="desc-cnt">정보화전략부</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="wrn-txt p0 c_blue">기호에 마우스 커서를 대시면 세부 사항을 확인할 수 있으며, 자세한 내용은 아래의 개인정보 처리방침을 확인하시기 바랍니다.</p>
+                            </div>
+                            <h3>목차</h3>
+                            <ul class="move">
+                                <li>
+                                    <a href="#pri1">
+                                        <span class="priv_ico priv_ico1">개인정보의 처리 목적</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri2">
+                                        <span class="priv_ico priv_ico2">개인정보의 처리 및 보유기간</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri3">
+                                        <span class="priv_ico priv_ico3">처리하는 개인정보의 항목</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri5">
+                                        <span class="priv_ico priv_ico5">개인정보 영향평가 수행 결과</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri6">
+                                        <span class="priv_ico priv_ico6">개인정보의 제3자 제공에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri7">
+                                        <span class="priv_ico priv_ico7">개인정보처리의 위탁에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri8">
+                                        <span class="priv_ico priv_ico8">개인정보의 파기절차 및 파기방법</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri9">
+                                        <span class="priv_ico priv_ico9">정보주체와 법정대리인의 권리•의무 및 행사방법에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri10">
+                                        <span class="priv_ico priv_ico10">개인정보의 안전성 확보조치에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri11">
+                                        <span class="priv_ico priv_ico11">개인정보를 자동으로 수집하는 장치의 설치•운영 및 그 거부에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri13">
+                                        <span class="priv_ico priv_ico13">개인정보 보호책임자에 관한 사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri14">
+                                        <span class="priv_ico priv_ico14">개인정보의 열람청구를 접수•처리하는 부서</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri15">
+                                        <span class="priv_ico priv_ico15">정보주체의 권익침해에 대한 구제방법</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri16">
+                                        <span class="priv_ico priv_ico16">개인정보 관리수준진단 결과</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pri18">
+                                        <span class="priv_ico priv_ico18">개인정보 처리방침의 변경에 관한 사항</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <!-- e -->
+                        </div>
+                    </div>
+                    <!-- // 개인정보처리방침 -->
+                </div>
+                <!-- // contents -->
+            </div>
+            <!--............. footer .............-->
+            <footer id="footer">
+                <div class="foot-banner-wrap">
+                    <div class="inner">
+                        <!-- banner slide -->
+                        <div class="banner">
+                            <div class="foot-paging">
+                                <span class="paging-tit">배너존</span>
+                                <div class="swiper-btn-wrap">
+                                    <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                    <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                </div>
+                            </div>
+                            <div class="swiper-container banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://www.moel.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_moel.png" alt="고용노동부"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.hrdkorea.or.kr/" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_hrdkorea.png" alt="한국산업인력공단"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.work.go.kr/seekWantedMain.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_worknet.png" alt="워크넷"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ei.png" alt="고용보험"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ncs.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ncs.png" alt="국가직무능력표준"></a></div>
+                                    <div class="swiper-slide"><a href="https://c.q-net.or.kr/cmn/com/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_cq.png" alt="CQ넷"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // banner slide -->
+                    </div>
+                </div>
+                <div class="foot-txt-wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="foot-logo"><img src="../../images/common/foot_logo.png" alt="HRDK 미래교육원"></div>
+                        </div>
+                        <div class="right">
+                            <ul class="link-list">
+                                <li><a href="#none" class="privcy">개인정보처리방침</a></li>
+                                <li><a href="#none">저작권보호정책</a></li>
+                                <li><a href="#none">이메일무단수집거부</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">시설 대관 규정</a></li>
+                                <li><a href="#none">도움말</a></li>
+                            </ul>
+                            <div class="txt-box">
+                                <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
+                                </address>
+                                <p>TEL : 033-000-0000    FAX : 033-000-0000</p>
+                                <p>운영시간 일 09 : 00 ~ 18 : 00</p>
+                                <p class="copy">Copyright©2024 All rights reserved. Human Resources Development Service of Korea</p>
+                            </div>
+                        </div>
+                        <div class="family-site">
+                            <button type="button" class="family-btn" title="열기">Family Site</button>
+                            <ul class="list">
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--............. //footer .............-->
+
+            
+            <!-- modal-popup -->
+            <!-- 아이디찾기 팝업1(인증번호 발송) -->
+            <div id="requestModal1" class="modal-wrap type2">
+                <div class="modal-head">
+                    <h2>아이디찾기</h2>
+                </div>
+                <div class="modal-cont-wrap">
+                    <!-- cont -->
+                    <div class="modal-cont">
+                        <form>
+                            <div class="pop-idsearch">
+                                <p class="search-txt">요청하신 아이디 찾기 결과는 아래와 같습니다</p>
+                                <div class="round-box">Idididi***d</div>
+                                <p class="search-txt">SMS 인증 후 아이디 전체 확인이 가능합니다. <br>인증번호는 회원정보에 등록된 휴대폰번호로 발송됩니다.</p>
+                                <div class="certifi-box">
+                                    <button type="button" class="btn btn1 certifi-btn">인증번호 발송</button>
+
+                                    <!-- 인증번호 입력창 -->
+                                    <!-- 
+                                    <div class="certifi-inp">
+                                        <div class="focus-inp-box">
+                                            <div class="inp-item">
+                                                <input type="text" id="searchNum" placeholder="인증번호를 입력해주세요" class="inp">
+                                                <label for="searchNum">인증번호</label>
+                                                <div class="right">
+                                                    <button type="button" class="txt-btn">재전송</button>
+                                                    <button type="button" class="btn btn1">확인</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     -->
+                                    <!-- //인증번호 입력창 -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
+            </div>
+            <!-- // 아이디찾기 팝업1(인증번호 발송) -->
+            <!-- 아이디찾기 팝업2(인증번호) -->
+            <div id="requestModal2" class="modal-wrap type2">
+                <div class="modal-head">
+                    <h2>아이디찾기</h2>
+                </div>
+                <div class="modal-cont-wrap">
+                    <!-- cont -->
+                    <div class="modal-cont">
+                        <form>
+                            <div class="pop-idsearch">
+                                <p class="search-txt">요청하신 아이디 찾기 결과는 아래와 같습니다</p>
+                                <div class="round-box">Idididi***d</div>
+                                <p class="search-txt">SMS 인증 후 아이디 전체 확인이 가능합니다. <br>인증번호는 회원정보에 등록된 휴대폰번호로 발송됩니다.</p>
+                                <div class="certifi-box">
+                                    <!-- 인증번호 입력창 -->
+                                    <div class="certifi-inp">
+                                        <div class="focus-inp-box">
+                                            <div class="inp-item">
+                                                <input type="text" id="searchNum" placeholder="인증번호를 입력해주세요" class="inp">
+                                                <label for="searchNum">인증번호</label>
+                                                <!-- 재전송 -> 확인 -->
+                                                <div class="right">
+                                                    <!-- <button type="button" class="txt-btn">재전송</button> -->
+                                                    <button type="button" class="btn btn1">확인</button>
+                                                </div>
+                                                <!-- // 재전송 -> 확인 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //인증번호 입력창 -->
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
+            </div>
+            <!-- // 아이디찾기 팝업2(인증번호) -->
+            <!-- 아이디찾기 팝업3(결과) -->
+            <div id="requestModal3" class="modal-wrap type2">
+                <div class="modal-head">
+                    <h2>아이디찾기</h2>
+                </div>
+                <div class="modal-cont-wrap">
+                    <!-- cont -->
+                    <div class="modal-cont">
+                        <form>
+                            <div class="pop-idsearch">
+                                <p class="search-txt">요청하신 아이디 찾기 결과는 아래와 같습니다</p>
+                                <div class="round-box">Idididi***d</div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
+            </div>
+            <!-- // 아이디찾기 팝업3(결과) -->
+            <!-- 비밀번호 찾기-->
+            <div id="requestModal4" class="modal-wrap type2">
+                <div class="modal-head">
+                    <h2>비밀번호 찾기</h2>
+                </div>
+                <div class="modal-cont-wrap">
+                    <!-- cont -->
+                    <div class="modal-cont">
+                        <form>
+                            <div class="pop-idsearch">
+                                <div class="certifi-box mat0">
+                                    <!-- 인증번호 입력창 -->
+                                    <div class="certifi-inp">
+                                        <div class="focus-inp-box">
+                                            <div class="inp-item">
+                                                <input type="password" id="searchPwNew1" placeholder="새로운 비밀번호를 입력하세요" class="inp">
+                                                <label for="searchPwNew1" class="long">새 비밀번호 입력</label>
+                                            </div>
+                                            <div class="inp-item">
+                                                <input type="password" id="searchPwNew1" placeholder="새로운 비밀번호를 입력하세요" class="inp">
+                                                <label for="searchPwNew1" class="long">새 비밀번호 확인</label>
+                                            </div>
+                                            <p class="inp-txt">영문소문자/숫자/특수문자 포함 9자 이상 20자까지 입력해야 합니다.</p>
+                                        </div>
+                                        <div class="certifi-btn-box">
+                                            <button type="button" class="btn btn1 certifi-btn">확인</button>
+                                        </div>
+                                    </div>
+                                    <!-- //인증번호 입력창 -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //cont -->
+                </div>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
+            </div>
+            <!-- // 비밀번호 찾기 -->
+            <!-- // modal-popup -->
+
+        </div>
+    </body>
+</html>

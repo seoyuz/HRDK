@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HRDK 미래교육원</title>
+        <link rel="shortcut icon" href="../../images/common/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <script src="../../js/jquery.easing.min.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <script src="../../js/ScrollMagic.min.js"></script>
+        <script src="../../js/animation.gsap.js"></script>
+        <script src="../../js/jquery.bpopup.min.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <!-- sub -->
+        <link type="text/css" rel="stylesheet" href="../../css/sub.css">
+        <link type="text/css" rel="stylesheet" href="../../css/contents.css">
+        <script src="../../js/contents.js"></script>
+    </head>
+    <body>
+        <div class="skiptoContent">
+            <a href="#container">본문내용 바로가기</a>
+            <a href="#gnbA1">메인메뉴 바로가기</a>
+        </div>
+        <div id="wrap" class="sub">
+            <!--............. header .............-->
+            <header id="header" class="header">
+                <div class="hd-bottom">
+                    <h1 id="logo"><a href="#none">HRDK 미래교육원</a></h1>
+                    <nav id="gnb" class="gnb">
+                        <ul>
+                            <li class="gnbA gnbA1"><a href="#none" id="gnbA1">소개</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                            <li><a href="#none">조직현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA2"><a href="#none" id="gnbA2">시설안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">시설정보</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">대관신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA3"><a href="#none" id="gnbA3">알림마당</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">FAQ</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA4"><a href="#none" id="gnbA4">교육과정 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">전체 교육과정</a></li>
+                                    <li><a href="#none">집합 교육과정</a></li>
+                                    <li><a href="#none">온라인 교육과정</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA5"><a href="#none" id="gnbA5">나의 강의실</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">교육신청</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청내역</a></li>
+                                            <li><a href="#none">취소내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">학습현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">학습중</a></li>
+                                            <li><a href="#none">대기중</a></li>
+                                            <li><a href="#none">학습완료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">수료증 출력</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA6"><a href="#none" id="gnbA6">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">회원정보 수정</a></li>
+                                            <li><a href="#none">회원탈퇴</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">대관신청 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청현황</a></li>
+                                            <li><a href="#none">신청취소 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">결제/환불 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">결제현황</a></li>
+                                            <li><a href="#none">환불현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">나의문의 현황</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-list">
+                        <ul>
+                            <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                            <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                            <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                            <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="mobile-menu" title="전체메뉴 열기">
+                        <span class="ico">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </button>
+                    <div class="hd-bottom-dim"></div>
+                </div>
+                <ul class="right-btn-box">
+                    <li><a href="#none" class="join">회원가입</a></li>
+                    <li><a href="#none" class="login">로그인</a></li>
+                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                </ul>
+                <!-- mobile -->
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb">
+                        <div class="quick-list">
+                            <ul>
+                                <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                                <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                                <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                                <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                            </ul>
+                        </div>
+                        <nav class="gnb">
+                            <ul>
+                                <li class="gnbA gnbA1"><a href="#none">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">미래교육원 소개</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">교육원 소개</a></li>
+                                                <li><a href="#none">인사말</a></li>
+                                                <li><a href="#none">비전</a></li>
+                                                <li><a href="#none">조직현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA2"><a href="#none">시설안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">시설정보</a></li>
+                                        <li><a href="#none">이용안내</a></li>
+                                        <li><a href="#none">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA3"><a href="#none">알림마당</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">자료실</a></li>
+                                        <li><a href="#none">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA4"><a href="#none">교육과정 안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">전체 교육과정</a></li>
+                                        <li><a href="#none">집합 교육과정</a></li>
+                                        <li><a href="#none">온라인 교육과정</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA5"><a href="#none">나의 강의실</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">나의 강의실</a></li>
+                                        <li><a href="#none">교육신청</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청내역</a></li>
+                                                <li><a href="#none">취소내역</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">학습현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">학습중</a></li>
+                                                <li><a href="#none">대기중</a></li>
+                                                <li><a href="#none">학습완료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">수료증 출력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA6"><a href="#none">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">회원정보 수정</a></li>
+                                                <li><a href="#none">회원탈퇴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">대관신청 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청현황</a></li>
+                                                <li><a href="#none">신청취소 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">결제/환불 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">결제현황</a></li>
+                                                <li><a href="#none">환불현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">나의문의 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="right-btn-box">
+                            <li><a href="#none" class="join">회원가입</a></li>
+                            <li><a href="#none" class="login">로그인</a></li>
+                            <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                        </ul>
+                        <!-- <button type="button" class="gnb-close">메뉴 닫기</button> -->
+                    </div>
+                </div>
+                <!-- //mobile -->
+            </header>
+            <!--.............//header .............-->
+            <div id="container">
+                <!-- subpage title -->
+                <div class="breadcrumb-wrap">
+                    <div class="inner">
+                        <div class="breadcrumb-box">
+                            <a href="#none" class="home">메인으로 바로가기</a>
+                            <div class="bc-depth depth1">
+                                <button type="button" class="tit-btn" title="메뉴 열기">마이페이지</button>
+                                <ul class="depth2-list">
+                                    <li><a href="#none">소개</a></li>
+                                    <li><a href="#none">시설안내</a></li>
+                                    <li><a href="#none" class="active" title="선택됨">알림마당</a></li>
+                                    <li><a href="#none">교육과정 안내</a></li>
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">마이페이지</a></li>
+                                </ul>
+                            </div>
+                            <div class="bc-depth depth2">
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 문의현황</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // subpage title -->
+                <!-- contents -->
+                <div class="contents" id="contents">
+                    <div class="sub-tit-box">
+                        <div class="inner">
+                            <div class="title-box">
+                                <h2 class="subpage-tit">나의 문의현황</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 마이페이지 - 나의 문의현황 -->
+                    <div class="page-mypage">
+                        <div class="inner">
+                            <div class="input-cont-wrap">
+                                <!-- s -->
+                                <form>
+                                    <div class="box-wrap">
+                                        <div class="contbox">
+                                            <div class="inp-box mat0 pat0">
+                                                <div class="input">
+                                                    <label for="inquireType">문의유형</label>
+                                                    <select id="inquireType" class="inp type2">
+                                                        <option value="">선택</option>
+                                                        <option value="">교육과정 안내</option>
+                                                        <option value="">교육과정 안내</option>
+                                                        <option value="">교육과정 안내</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="inp-box">
+                                                <div class="input">
+                                                    <label for="inquireTitle">제목</label>
+                                                    <input type="text" placeholder="제목을 입력해주세요." id="inquireTitle" class="inp type2" required>
+                                                    <button type="button" class="form-control-clear">지우기</button>
+                                                </div>
+                                            </div>
+                                            <div class="inp-box">
+                                                <div class="input">
+                                                    <label for="inquireTxt">문의내용</label>
+                                                    <textarea id="inquireTxt" placeholder="내용울 입력해주세요." class="inp" required></textarea>
+                                                    <button type="button" class="form-control-clear">지우기</button>
+                                                </div>
+                                            </div>
+                                            <div class="inp-box">
+                                                <div class="filebox type2">
+                                                    <div>
+                                                        <label for="fileSmp1" class="file-btn">파일선택</label> 
+                                                        <span class="file-inp inp">첨부파일을 선택하세요.</span>
+                                                        <input type="file" id="fileSmp1" class="change-file" title="파일1 선택">
+                                                    </div>
+                                                    <div>
+                                                        <label for="fileSmp2" class="file-btn">파일선택</label> 
+                                                        <span class="file-inp inp">첨부파일을 선택하세요.</span>
+                                                        <input type="file" id="fileSmp2" class="change-file" title="파일2 선택">
+                                                    </div>
+                                                    <div>
+                                                        <label for="fileSmp3" class="file-btn">파일선택</label> 
+                                                        <span class="file-inp inp">첨부파일을 선택하세요.</span>
+                                                        <input type="file" id="fileSmp3" class="change-file" title="파일3 선택">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="btn-box">
+                                                <button type="button" class="btn btn2">취소</button>
+                                                <button type="button" class="btn write">문의하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- e -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- // 마이페이지 - 나의 문의현황 -->
+                </div>
+                <!-- // contents -->
+            </div>
+            <!--............. footer .............-->
+            <footer id="footer">
+                <div class="foot-banner-wrap">
+                    <div class="inner">
+                        <!-- banner slide -->
+                        <div class="banner">
+                            <div class="foot-paging">
+                                <span class="paging-tit">배너존</span>
+                                <div class="swiper-btn-wrap">
+                                    <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                    <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                </div>
+                            </div>
+                            <div class="swiper-container banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://www.moel.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_moel.png" alt="고용노동부"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.hrdkorea.or.kr/" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_hrdkorea.png" alt="한국산업인력공단"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.work.go.kr/seekWantedMain.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_worknet.png" alt="워크넷"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ei.png" alt="고용보험"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ncs.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ncs.png" alt="국가직무능력표준"></a></div>
+                                    <div class="swiper-slide"><a href="https://c.q-net.or.kr/cmn/com/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_cq.png" alt="CQ넷"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // banner slide -->
+                    </div>
+                </div>
+                <div class="foot-txt-wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="foot-logo"><img src="../../images/common/foot_logo.png" alt="HRDK 미래교육원"></div>
+                        </div>
+                        <div class="right">
+                            <ul class="link-list">
+                                <li><a href="#none" class="privcy">개인정보처리방침</a></li>
+                                <li><a href="#none">저작권보호정책</a></li>
+                                <li><a href="#none">이메일무단수집거부</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">시설 대관 규정</a></li>
+                                <li><a href="#none">도움말</a></li>
+                            </ul>
+                            <div class="txt-box">
+                                <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
+                                </address>
+                                <p>TEL : 033-000-0000    FAX : 033-000-0000</p>
+                                <p>운영시간 일 09 : 00 ~ 18 : 00</p>
+                                <p class="copy">Copyright©2024 All rights reserved. Human Resources Development Service of Korea</p>
+                            </div>
+                        </div>
+                        <div class="family-site">
+                            <button type="button" class="family-btn" title="열기">Family Site</button>
+                            <ul class="list">
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--............. //footer .............-->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HRDK 미래교육원</title>
+        <link rel="shortcut icon" href="../../images/common/favicon.ico">
+        <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.theme.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="../../css/common.css">
+        <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+        <script src="../../js/jquery-1.12.4.min.js"></script>
+        <script src="../../js/jquery-ui.min.js"></script>
+        <script src="../../js/jquery.easing.min.js"></script>
+        <script src="../../js/TweenMax.min.js"></script>
+        <script src="../../js/ScrollMagic.min.js"></script>
+        <script src="../../js/animation.gsap.js"></script>
+        <script src="../../js/jquery.bpopup.min.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <!-- sub -->
+        <link type="text/css" rel="stylesheet" href="../../css/sub.css">
+        <link type="text/css" rel="stylesheet" href="../../css/contents.css">
+        <script src="../../js/contents.js"></script>
+    </head>
+    <body>
+        <div class="skiptoContent">
+            <a href="#container">본문내용 바로가기</a>
+            <a href="#gnbA1">메인메뉴 바로가기</a>
+        </div>
+        <div id="wrap" class="sub">
+            <!--............. header .............-->
+            <header id="header" class="header">
+                <div class="hd-bottom">
+                    <h1 id="logo"><a href="#none">HRDK 미래교육원</a></h1>
+                    <nav id="gnb" class="gnb">
+                        <ul>
+                            <li class="gnbA gnbA1"><a href="#none" id="gnbA1">소개</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                            <li><a href="#none">조직현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA2"><a href="#none" id="gnbA2">시설안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">시설정보</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">대관신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA3"><a href="#none" id="gnbA3">알림마당</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">FAQ</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA4"><a href="#none" id="gnbA4">교육과정 안내</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">전체 교육과정</a></li>
+                                    <li><a href="#none">집합 교육과정</a></li>
+                                    <li><a href="#none">온라인 교육과정</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA5"><a href="#none" id="gnbA5">나의 강의실</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">교육신청</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청내역</a></li>
+                                            <li><a href="#none">취소내역</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">학습현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">학습중</a></li>
+                                            <li><a href="#none">대기중</a></li>
+                                            <li><a href="#none">학습완료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">수료증 출력</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnbA gnbA6"><a href="#none" id="gnbA6">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">회원정보 수정</a></li>
+                                            <li><a href="#none">회원탈퇴</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">대관신청 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">신청현황</a></li>
+                                            <li><a href="#none">신청취소 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">결제/환불 현황</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">결제현황</a></li>
+                                            <li><a href="#none">환불현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#none">나의문의 현황</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-list">
+                        <ul>
+                            <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                            <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                            <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                            <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="mobile-menu" title="전체메뉴 열기">
+                        <span class="ico">
+                            <i></i>
+                            <i></i>
+                        </span>
+                    </button>
+                    <div class="hd-bottom-dim"></div>
+                </div>
+                <ul class="right-btn-box">
+                    <li><a href="#none" class="join">회원가입</a></li>
+                    <li><a href="#none" class="login">로그인</a></li>
+                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                </ul>
+                <!-- mobile -->
+                <div class="mobile-gnb-wrap">
+                    <div class="mobile-gnb">
+                        <div class="quick-list">
+                            <ul>
+                                <li><a href="https://www.hrdkorea.or.kr/" target="_blank" title="새 창 열기">한국산업인력공단</a></li>
+                                <li><a href="https://www.ncs.go.kr/index.do" target="_blank" title="새 창 열기">NCS</a></li>
+                                <li><a href="https://www.hrd.go.kr/hrdp/ma/pmmao/newIndexRenewal.do" target="_blank" title="새 창 열기">HRD-Net</a></li>
+                                <li><a href="https://www.q-net.or.kr/man001.do?imYn=Y&gSite=Q" target="_blank" title="새 창 열기">Q-Net</a></li>
+                            </ul>
+                        </div>
+                        <nav class="gnb">
+                            <ul>
+                                <li class="gnbA gnbA1"><a href="#none">소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">미래교육원 소개</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">교육원 소개</a></li>
+                                                <li><a href="#none">인사말</a></li>
+                                                <li><a href="#none">비전</a></li>
+                                                <li><a href="#none">조직현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA2"><a href="#none">시설안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">시설정보</a></li>
+                                        <li><a href="#none">이용안내</a></li>
+                                        <li><a href="#none">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA3"><a href="#none">알림마당</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">자료실</a></li>
+                                        <li><a href="#none">고객문의</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA4"><a href="#none">교육과정 안내</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">전체 교육과정</a></li>
+                                        <li><a href="#none">집합 교육과정</a></li>
+                                        <li><a href="#none">온라인 교육과정</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA5"><a href="#none">나의 강의실</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">나의 강의실</a></li>
+                                        <li><a href="#none">교육신청</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청내역</a></li>
+                                                <li><a href="#none">취소내역</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">학습현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">학습중</a></li>
+                                                <li><a href="#none">대기중</a></li>
+                                                <li><a href="#none">학습완료</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">수료증 출력</a></li>
+                                    </ul>
+                                </li>
+                                <li class="gnbA gnbA6"><a href="#none">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">회원정보 수정</a></li>
+                                                <li><a href="#none">회원탈퇴</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">대관신청 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">신청현황</a></li>
+                                                <li><a href="#none">신청취소 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">결제/환불 현황</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">결제현황</a></li>
+                                                <li><a href="#none">환불현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#none">나의문의 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="right-btn-box">
+                            <li><a href="#none" class="join">회원가입</a></li>
+                            <li><a href="#none" class="login">로그인</a></li>
+                            <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                        </ul>
+                        <!-- <button type="button" class="gnb-close">메뉴 닫기</button> -->
+                    </div>
+                </div>
+                <!-- //mobile -->
+            </header>
+            <!--.............//header .............-->
+            <div id="container">
+                <!-- subpage title -->
+                <div class="breadcrumb-wrap">
+                    <div class="inner">
+                        <div class="breadcrumb-box">
+                            <a href="#none" class="home">메인으로 바로가기</a>
+                            <div class="bc-depth depth1">
+                                <button type="button" class="tit-btn" title="메뉴 열기">시설안내</button>
+                                <ul class="depth2-list">
+                                    <li><a href="#none">소개</a></li>
+                                    <li><a href="#none">시설안내</a></li>
+                                    <li><a href="#none">알림마당</a></li>
+                                    <li><a href="#none" class="active" title="선택됨">교육과정 안내</a></li>
+                                    <li><a href="#none">나의 강의실</a></li>
+                                    <li><a href="#none">마이페이지</a></li>
+                                </ul>
+                            </div>
+                            <div class="bc-depth depth2">
+                                <button type="button" class="tit-btn" title="메뉴 열기">이용안내</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // subpage title -->
+                <!-- contents -->
+                <div class="contents" id="contents">
+                    <div class="sub-tit-box">
+                        <div class="inner">
+                            <div class="title-box">
+                                <h2 class="subpage-tit">이용안내</h2>
+                                <p class="subpage-txt">각 시설에 대한 안내를 숙지하시고 이용해주시기 바랍니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 시설안내 - 이용안내 -->
+                    <div class="page-facilities">
+                        <div class="bg facilities"></div>
+                        <div class="inner">
+                            <div class="info-txt-box">
+                                <h3 class="mat0">시설 사용 시 준수사항</h3>
+                                <ul class="basic">
+                                    <li>시설 사용 시 산업인력공단 미래교육원 운영안을 준수하여야 합니다. </li>
+                                    <li>사용 중 사용자의 귀책사유로 인한 사고에 대해서는 사용자가 책임을 집니다. </li>
+                                    <li>시설 및 각종 집기의 손상이 있을 때에는 변상하여야 합니다. </li>
+                                    <li>허가사항 이외의 타 목적으로 사용할 수 없습니다. </li>
+                                    <li>이용시간을 준수하고 사용 후에는 시설을 원상복구해야 합니다. </li>
+                                    <li>시설물 내부에 음식물 반입 및 취식은 정해진 시설에서만 가능합니다.</li>
+                                    <li>대관 신청 및 결제는 온라인을 통해서 이루어집니다. </li>
+                                    <li>대관 신청 및 결제는 회원가입이 필요한 서비스입니다. 로그인 이후 [대관신청] 메뉴를 이용해주세요.</li>
+                                </ul>
+                                <div class="absolute-btn-box right bottom">
+                                    <a href="#none" class="btn btn1 long">대관신청 바로가기</a>
+                                </div>
+                            </div>
+                            <!-- tab button -->
+                            <div class="faq-sort-wrap">
+                                <ul class="faq-sort center type2">
+                                    <li><button type="button" class="sort-btn">강의시설</button></li>
+                                    <li><button type="button" class="sort-btn on" title="선택됨">숙소</button></li>
+                                    <li><button type="button" class="sort-btn">부대시설</button></li>
+                                </ul>
+                            </div>
+                            <!-- // tab button -->
+                            <!-- tab cont -->
+                            <div class="sort-tab-cont">
+                                <h3>시설 이용료</h3>
+                                <table class="board-list td-pad0 type2 flicking"> 
+                                    <caption>시설 이용료 목록을 안내하며 시설명, 위치, 수용인원, 이용자, 사용료, 비고 정보 제공</caption>
+                                    <colgroup>
+                                        <col style="width:170px">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col style="width:250px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시설명</th>
+                                            <th scope="col">위치</th>
+                                            <th scope="col">수용인원</th>
+                                            <th scope="col">이용자</th>
+                                            <th scope="col">사용료</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1인실</td>
+                                            <td>2층, 3층, 4층</td>
+                                            <td>1명</td>
+                                            <!-- 이용자 -->
+                                            <td>
+                                                <div class="dd">집합교육 수강생</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">일반</div> <!-- 일반 -->
+                                                <div class="dd">임직원</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 이용자 -->
+                                            <!-- 사용료 -->
+                                            <td>
+                                                <div class="dd">100,000</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">100,000</div> <!-- 일반 -->
+                                                <div class="dd">100,000</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 사용료 -->
+                                            <!-- 비고 -->
+                                            <td rowspan="3">
+                                                <div class="pa10 inline-block">1박 사용 요금</div>
+                                            </td>
+                                            <!-- // 비고 -->
+                                        </tr>
+                                        <tr>
+                                            <td>2인실</td>
+                                            <td>2층, 3층, 4층</td>
+                                            <td>2명</td>
+                                            <!-- 이용자 -->
+                                            <td>
+                                                <div class="dd">집합교육 수강생</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">일반</div> <!-- 일반 -->
+                                                <div class="dd">임직원</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 이용자 -->
+                                            <!-- 사용료 -->
+                                            <td>
+                                                <div class="dd">100,000</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">100,000</div> <!-- 일반 -->
+                                                <div class="dd">100,000</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 사용료 -->
+                                        </tr>
+                                        <tr>
+                                            <td>4인실</td>
+                                            <td>2층</td>
+                                            <td>4명</td>
+                                            <!-- 이용자 -->
+                                            <td>
+                                                <div class="dd">집합교육 수강생</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">일반</div> <!-- 일반 -->
+                                                <div class="dd">임직원</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 이용자 -->
+                                            <!-- 사용료 -->
+                                            <td>
+                                                <div class="dd">100,000</div> <!-- 집합교육 수강생 -->
+                                                <div class="dd">100,000</div> <!-- 일반 -->
+                                                <div class="dd">100,000</div> <!-- 임직원 -->
+                                            </td>
+                                            <!-- // 사용료 -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3>시설 이용시간</h3>
+                                <table class="board-list td-pad0 type2 flicking"> 
+                                    <caption>시설 이용시간 목록을 안내하며 시설명, 이용시간(평일, 주말 동일), 비고 정보 제공</caption>
+                                    <colgroup>
+                                        <col style="width:25%">
+                                        <col style="width:30%">
+                                        <col style="width:45%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">시설명</th>
+                                            <th scope="col">이용시간(평일, 주말 동일)</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1인실, 2인실, 4인실</td>
+                                            <td>입실 : 15:00  / 퇴실 : 11:00</td>
+                                            <!-- 비고 -->
+                                            <td>
+                                                <div class="pa10 inline-block align_left">
+                                                    휴관일은 시설을 이용할 수 없습니다.<br>
+                                                    미래교육원 사정에 따라 이용시간이 변동될 수 있습니다.
+                                                </div>
+                                            </td>
+                                            <!-- // 비고 -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- // tab cont -->
+                            
+                            <!-- 문의 -->
+                            <div class="contact-box">
+                                <span class="tit">문의</span>
+                                <span class="txt">한국산업인력공단 미래교육원 / 전화: 000-0000-0000</span>
+                            </div>
+                            <!-- //문의 -->
+                            
+                        </div>
+
+                    </div>
+                    <!-- // 시설안내 - 이용안내 -->
+                </div>
+                <!-- // contents -->
+            </div>
+            <!--............. footer .............-->
+            <footer id="footer">
+                <div class="foot-banner-wrap">
+                    <div class="inner">
+                        <!-- banner slide -->
+                        <div class="banner">
+                            <div class="foot-paging">
+                                <span class="paging-tit">배너존</span>
+                                <div class="swiper-btn-wrap">
+                                    <button type="button" class="swiper-btn swiper-button-prev">이전 슬라이드</button>
+                                    <button type="button" class="swiper-btn swiper-button-next">다음 슬라이드</button>
+                                </div>
+                            </div>
+                            <div class="swiper-container banner-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://www.moel.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_moel.png" alt="고용노동부"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.hrdkorea.or.kr/" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_hrdkorea.png" alt="한국산업인력공단"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.work.go.kr/seekWantedMain.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_worknet.png" alt="워크넷"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ei.go.kr/ei/eih/cm/hm/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ei.png" alt="고용보험"></a></div>
+                                    <div class="swiper-slide"><a href="https://www.ncs.go.kr/index.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_ncs.png" alt="국가직무능력표준"></a></div>
+                                    <div class="swiper-slide"><a href="https://c.q-net.or.kr/cmn/com/main.do" title="새 창 열기" target="_blank"><img src="../../images/contents/banner_cq.png" alt="CQ넷"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // banner slide -->
+                    </div>
+                </div>
+                <div class="foot-txt-wrap">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="foot-logo"><img src="../../images/common/foot_logo.png" alt="HRDK 미래교육원"></div>
+                        </div>
+                        <div class="right">
+                            <ul class="link-list">
+                                <li><a href="#none" class="privcy">개인정보처리방침</a></li>
+                                <li><a href="#none">저작권보호정책</a></li>
+                                <li><a href="#none">이메일무단수집거부</a></li>
+                                <li><a href="#none">찾아오시는 길</a></li>
+                                <li><a href="#none">시설 대관 규정</a></li>
+                                <li><a href="#none">도움말</a></li>
+                            </ul>
+                            <div class="txt-box">
+                                <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
+                                </address>
+                                <p>TEL : 033-000-0000    FAX : 033-000-0000</p>
+                                <p>운영시간 일 09 : 00 ~ 18 : 00</p>
+                                <p class="copy">Copyright©2024 All rights reserved. Human Resources Development Service of Korea</p>
+                            </div>
+                        </div>
+                        <div class="family-site">
+                            <button type="button" class="family-btn" title="열기">Family Site</button>
+                            <ul class="list">
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                                <li><a href="#none" title="새 창 열기">관련사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--............. //footer .............-->
+        </div>
+    </body>
+</html>

@@ -272,31 +272,9 @@ body.pc #header.hover {
 }
   
 /* footer */
-#footer { font-size: 0; border-top: 1px solid #e1e1e1; box-sizing: border-box; color: #333; position: relative;  font-size: 16px; font-weight: 500;
+#footer { font-size: 0; box-sizing: border-box; color: #333; position: relative;  font-size: 16px; font-weight: 500;
 
-    .foot-banner-wrap { border-bottom: 1px solid #e1e1e1; height: 80px; background-color: #f9f9f9;
-        .banner {height: 100%;} 
-        .inner { height: 100%;}
-        .foot-paging { height: 100%; display: inline-flex; align-items: center; vertical-align: middle; margin-right: 45px;} 
-        .paging-tit { color: #333; font-weight: 600; font-size: 18px; vertical-align: middle;}
-        .swiper-btn-wrap { display: inline-block; position: relative; vertical-align: middle; margin-left: 20px; background-color: #fff; width:62px; height: 25px; border-radius: 100px;overflow: hidden; border: 1px solid #ccc; box-sizing: border-box; font-size: 0;
-        
-            .swiper-btn { display: inline-block;position: relative;bottom: 0; text-indent: -99999px; margin-top: 0; padding: 0; top: 0; background-color: transparent; width: 50%; height: 100%; font-size: 16px; right: auto; left: auto;}   
-            .swiper-button-prev { background: url($common + "ico_banner_prev.png") no-repeat center;}
-            .swiper-button-next { background: url($common + "ico_banner_next.png") no-repeat center;}
-            .swiper-button-next::before { content: ''; display: inline-block; position: absolute; left: 0; top: 5px; width: 1px; background-color: #ccc; height: 14px;}
-
-        }
-        .banner-swiper { display: inline-block; vertical-align: middle;width:calc(100% - 180px);
-        
-            .swiper-wrapper { align-items: center;}
-            .swiper-slide { display: inline-block;vertical-align: middle; }
-            a { width: 100%; display: block; height: 100%;}
-            img { max-width: none; filter: grayscale(1); opacity: .8; transition: .3s ease;}
-            a:hover img { filter: grayscale(0); opacity: 1; }
-        }
-    }
-    .foot-txt-wrap { padding: 40px 0; background-color: #f5f5f5; }
+    .foot-txt-wrap { padding: 40px 0; border-top: 1px solid #e1e1e1;  background-color: #f5f5f5; }
     
     .foot-logo { display: inline-block; vertical-align: middle;}
     .left { display: inline-block; text-align: left; vertical-align: middle;}
@@ -347,6 +325,29 @@ body.pc #header.hover {
 
 }
 
+.foot-banner-wrap { border-top: 1px solid #e1e1e1; height: 80px; background-color: #f9f9f9;
+    .banner {height: 100%;} 
+    .inner { height: 100%;}
+    .foot-paging { height: 100%; display: inline-flex; align-items: center; vertical-align: middle; margin-right: 45px;} 
+    .paging-tit { color: #333; font-weight: 600; font-size: 18px; vertical-align: middle;}
+    .swiper-btn-wrap { display: inline-block; position: relative; vertical-align: middle; margin-left: 20px; background-color: #fff; width:62px; height: 25px; border-radius: 100px;overflow: hidden; border: 1px solid #ccc; box-sizing: border-box; font-size: 0;
+    
+        .swiper-btn { display: inline-block;position: relative;bottom: 0; text-indent: -99999px; margin-top: 0; padding: 0; top: 0; background-color: transparent; width: 50%; height: 100%; font-size: 16px; right: auto; left: auto;}   
+        .swiper-button-prev { background: url($common + "ico_banner_prev.png") no-repeat center;}
+        .swiper-button-next { background: url($common + "ico_banner_next.png") no-repeat center;}
+        .swiper-button-next::before { content: ''; display: inline-block; position: absolute; left: 0; top: 5px; width: 1px; background-color: #ccc; height: 14px;}
+
+    }
+    .banner-swiper { display: inline-block; vertical-align: middle;width:calc(100% - 180px);
+    
+        .swiper-wrapper { align-items: center;}
+        .swiper-slide { display: inline-block;vertical-align: middle; }
+        a { width: 100%; display: block; height: 100%;}
+        img { max-width: none; filter: grayscale(1); opacity: .8; transition: .3s ease;}
+        a:hover img { filter: grayscale(0); opacity: 1; }
+    }
+}
+
 
 .bnner-quick { position: absolute; background-color: #fff; right: 150px; top: 848px; z-index: 10; text-align: center; width: 80px; box-shadow: 15px 15px 20px 2px rgba(0,0,0,.3); border-radius: 17px; overflow: hidden;
 
@@ -381,7 +382,7 @@ body.pc #header.hover {
 .modal-wrap:not(.bubble-pop) { position:fixed !important; left: 0; top: 0 !important; width: 100%; height: 100%; z-index: 100; background-color: rgba(0,0,0,0.5); display:none; 
     .f_wrapper { border-radius: 2px; margin: auto; width: 95%;top:50% !important; left:50% !important;   background-color: #f9f9f9; max-width:1230px;  transform: translateY(-50%) translateX(-50%); max-height: 95vh; position: absolute; }
     &.type2 .f_wrapper {max-width:600px;} //아이디 비밀번호찾기 팝업
-    &.type3 .f_wrapper {max-width:720px;} //fix
+    &.type3 .f_wrapper {max-width:700px;} //환불요청 팝업
     &.type4 .f_wrapper {max-width:1080px;}
     &.type5 .f_wrapper {max-width:845px;} //fix
     &.type6 .f_wrapper {max-width:800px;}
@@ -398,6 +399,7 @@ body.pc #header.hover {
 	.modal-head {height:76px; box-sizing: border-box; padding:22px 80px 22px 30px; position: relative;
 
 		h2 { font-size:30px;font-weight:700; color: #555;}
+		h2.type2 { font-size:24px;}
 	}
 
     .modal-cont-wrap { box-sizing: border-box; border-radius: 2px; overflow: hidden; max-height: calc(95vh - 76px);  overflow-y: auto; border-radius: 2px; //padding-bottom: 20px;
