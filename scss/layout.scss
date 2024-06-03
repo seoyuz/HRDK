@@ -407,6 +407,7 @@ body.pc #header.hover {
 	.modal-cont { min-height: 160px; box-sizing: border-box; padding: 0 30px 40px; height: 100%; font-size: 17px;  
 		.cont-top { margin-bottom: 12px;}
 		.btn-block {margin-top:30px;}
+        .cont-txt { font-size: 18px; font-weight: 700; color: #333; margin-top: 40px;}
         .search-box { font-size: 14px;
             label { color: #333;}
         }
@@ -512,6 +513,25 @@ body.pc #header.hover {
     .modal-head { height: 66px; padding: 22px 80px 22px 30px;
         h2 { font-size: 20px;}
     } 
+}
+
+// 챗봇 팝업
+.modal-wrap.chatbot {
+    .f_wrapper { box-shadow: 2px 15px 20px 0 rgba(0,0,0,.2);  max-width: 360px; overflow: hidden; background-color: #fff; border-radius: 36px;}
+    .modal-head { font-family: 'jalnan'; text-align: center; height: 190px; padding: 50px 0 0 0 ; background-color: #1d4bb4;  color: #fff;
+        
+        .chat-tit {color: #fff; display: inline-block; padding-left: 60px; text-align: center; font-size: 23px; background: url($common + "ico_chat_tit.png") no-repeat left 0 bottom 0; padding-top: 19px;}
+        .chat-txt { margin-top: 10px; color: #a5b7e1; font-size: 15px; letter-spacing: 0;}
+    } 
+    .modal-cont-wrap {  max-height: calc(90vh - 190px);}
+    .modal-cont { padding: 0;}
+}
+// 챗봇
+.chat-cont-wrap { }
+.question-box {padding: 20px 30px; height: calc(100% - 110px); overflow-y: auto;}
+.quick-btn-box {padding: 10px 30px; height: 100%; max-height: 110px; font-size: 0; box-sizing: border-box; margin: 0 -4px; overflow-y: auto;
+ 
+    .btn { padding: 4px 10px; background-color: #fff; border: 2px solid #1d4bb4; box-sizing: border-box; border-radius: 100px; height: 40px;min-width: calc(33.3% - 8px);  margin: 5px 4px; width: auto;   font-family: 'jalnan'; font-size: 12px; color: #1d4bb4; word-break: keep-all; max-width: none;}
 }
 
 

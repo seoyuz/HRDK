@@ -868,6 +868,7 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px;}
     .inp-box {  width: calc(100% - 80px); height: 100%; display: flex; margin: 0 30px;}
     .inp-box label + .inp { margin-top: 0;}
 
+    .inp-box .flex-column { font-size: 18px;} // 정보 제공이용동의 체크박스
     // .inp-box + .inp-box { margin-left: 80px;}
     .srh-check-box {margin: 0 -10px;}
     .checkbox { margin: 0 10px; width: 100%; max-width: 118px;}
@@ -883,7 +884,7 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px;}
 .search-label + * { width: 100%; display: flex; align-items: center; font-size: 18px;}
 
 
-.flex-column {flex-direction: column; width: 100%; display: flex; align-items: center; font-size: 18px;
+.flex-column {flex-direction: column; width: 100%; display: flex; align-items: center; 
     
     // 과정신청 팝업 체크박스
     > .checkbox, .radio { margin-top: 15px; max-width: none; width: 100%;}
@@ -893,13 +894,13 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px;}
 
 
 // 체크박스 커스텀
-.srh-check-box {
+.search-div-box .srh-check-box, .check-border-box {
 
     // 체크박스 너비 고정
     .checkbox {
-        label { box-sizing: border-box; min-width: 120px;  border: 1px solid #666; text-align: center; font-size: 18px; color: #666; line-height: 40px; display: inline-block; height: 40px; background-color: #fff;font-weight: 600;}
+        label { box-sizing: border-box; min-width: 120px;  border: 1px solid #666; text-align: center; font-size: 18px; color: #666; line-height: 40px; display: inline-block; height: 40px; background-color: #fff; font-weight: 600; padding: 0 10px;}
         label::before { display: none;}
-        input:checked + label { color: #fff; background-color: #666; border-color: #666665;}
+        input:checked + label { color: #fff; background-color: #666; border-color: #665;}
     }
 
     // 체크박스 너비 auto
@@ -909,6 +910,25 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px;}
     // 체크박스 너비 100%
     &.type3 .checkbox { max-width: none;}
 }
+
+
+// 시험 팝업
+.srh-check-box .none { margin-right: 30px;}
+.srh-check-box.tbl { display: table;
+    .tr { display: table-row-group;}
+    .checkbox, .radio { display: table-cell; padding: 0 30px 10px 0;}
+}
+div.row { display: flex; flex-direction: column;
+ 
+    .checkbox, .radio { margin-bottom: 10px; padding: 9px 0; }
+    input[type="text"] { margin: -9px 0; height: 35px;}
+}
+div.col { }
+.checkbox, .radio {
+
+    .answer-img { display: inline-block; vertical-align: top;}
+}
+.answer-img img { max-width: 150px;}
 
 
 // 체크박스 커스텀

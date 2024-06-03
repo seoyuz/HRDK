@@ -246,7 +246,7 @@
                         <div class="breadcrumb-box">
                             <a href="#none" class="home">메인으로 바로가기</a>
                             <div class="bc-depth depth1">
-                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 강의실</button>
                                 <ul class="depth2-list">
                                     <li><a href="#none">소개</a></li>
                                     <li><a href="#none">시설안내</a></li>
@@ -257,7 +257,24 @@
                                 </ul>
                             </div>
                             <div class="bc-depth depth2">
-                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">학습현황</button>
+                                <!-- depth2 -->
+                                <ul class="depth2-list">
+                                    <li><a href="#none">미래교육원 소개</a>
+                                        <!-- depth3 -->
+                                        <ul class="depth3-list">
+                                            <li><a href="#none" class="active" title="선택됨">교육원 소개</a></li>
+                                            <li><a href="#none">인사말</a></li>
+                                            <li><a href="#none">비전</a></li>
+                                        </ul>
+                                        <!-- // depth3 -->
+                                    </li>
+                                    <li><a href="#none">오시는 길</a></li>
+                                </ul>
+                                <!-- // depth2 -->
+                            </div>
+                            <div class="bc-depth depth3">
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 학습실</button>
                                 <!-- depth2 -->
                                 <ul class="depth2-list">
                                     <li><a href="#none">미래교육원 소개</a>
@@ -282,44 +299,19 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">회원가입 신청</h2>
-                                <p class="subpage-txt">본인확인 이후 회원가입을 신청할 수 있습니다.</p>
+                                <h2 class="subpage-tit">도움말(챗봇 팝업)</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- 회원가입 - 본인인증 -->
-                    <div class="page-joinus">
+                    <!-- 도움말 -->
+                    <div class="page-mypage">
                         <div class="inner">
-                            <div class="step-list">
-                                <div class="item active">
-                                    <span class="hidden">현재 페이지</span>
-                                    <span class="num">STEP 1</span>
-                                    <span class="txt">본인인증</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 2</span>
-                                    <span class="txt">약관동의</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 3</span>
-                                    <span class="txt">정보입력</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 4</span>
-                                    <span class="txt">신청완료</span>
-                                </div>
-                            </div>
-                            <div class="certify-ico-box">
-                                <i class="ico"></i>
-                                <button type="button" class="btn join-p-btn">휴대폰 인증</button>
-                                <p class="basic align_center">최초 로그인 시에는 본인인증 후 서비스를 이용할 수 있습니다.<br>본인인증이 완료된 이후 이용해주세요.</p>
-                                <div class="btn-box type4">
-                                    <a href="#none" class="btn underline">홈으로 돌아가기</a>
-                                </div>
+                            <div class="btn-box">
+                                <button type="button" class="btn btn1 modal-btn" data-popup="chatbot">챗봇</button>
                             </div>
                         </div>
                     </div>
-                    <!-- // 회원가입 - 본인인증 -->
+                    <!-- // 도움말 -->
                 </div>
                 <!-- // contents -->
             </div>
@@ -362,7 +354,7 @@
                                 <li><a href="#none">이메일무단수집거부</a></li>
                                 <li><a href="#none">찾아오시는 길</a></li>
                                 <li><a href="#none">시설 대관 규정</a></li>
-                                <li><a href="#none">도움말</a></li>
+                                <li><a href="#none" class="modal-btn" data-popup="chatbot">도움말</a></li>
                             </ul>
                             <div class="txt-box">
                                 <address class="addrss">강릉시 사천면 방동길 60, HRD 교육훈련센터
@@ -390,40 +382,53 @@
 
             
             <!-- modal-popup -->
-            <!-- 1. 대상 사업자(PG사,일반 사업자) 비밀번호 찾기 -->
-            <div id="pw_popup" class="modal-wrap">
+            <!-- 도움말 챗봇 팝업 -->
+            <div id="chatbot" class="modal-wrap chatbot">
                 <div class="modal-head">
-                    <h2>대상 사업자(PG사,일반 사업자) 비밀번호 찾기</h2>
+                    <h2 class="chat-tit">CHAT.BOT</h2>
+                    <p class="chat-txt">안녕하세요. 미래교육원 답변이입니다.</p>
                 </div>
                 <div class="modal-cont-wrap">
                     <!-- cont -->
                     <div class="modal-cont">
-                        
-                        <div class="contbox">
-                            <div class="inp-box mat0">
-                                <label for="businessNum2_1">사업자번호</label>
-                                <div class="inp-group">
-                                    <input type="tel" id="businessNum2_1" class="inp" title="사업자등록번호 앞자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_2" class="inp" title="사업자등록번호 중간자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_3" class="inp" title="사업자등록번호 뒷자리">
+                        <div class="chat-cont-wrap">
+                            <div class="question-box">
+                                <div class="qstion">
+                                    <p>미래교육원 ‘답변이’입니다.  <br>
+                                        무엇을 도와드릴까요? <br>
+                                        궁금한 주제를 선택해주세요.
+                                    </p>
+                                </div>
+                                <div class="answer">
+                                    <p>교육과정</p>
+                                </div>
+                                <div class="qstion">
+                                    <p>“시설” 주제를 선택하셨네요. <br>
+                                        교육과정 주제 중에 어떤 것이 
+                                        궁금한지 아래 내용 중에 선택해보세요.<br>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="inp-box">
-                                <label for="searchEmail1">담당자 이메일</label>
-                                <input type="email" id="searchEmail1" class="inp">
+                            <div class="quick-btn-box">
+                                <!-- <button type="button" class="btn">교육과정</button>
+                                <button type="button" class="btn">시설</button>
+                                <button type="button" class="btn">결제</button>
+                                <button type="button" class="btn">회원</button> -->
+                                <button type="button" class="btn">사이트 이용</button>
+                                <button type="button" class="btn">기타</button>
+                                <button type="button" class="btn">시설 이용시간이 어떻게 되나요?</button>
+                                <button type="button" class="btn">결제는 어떤 방식으로 이루어지나요?</button>
                             </div>
-                            <div class="btn-box mat30">
-                                <a href="#none" class="btn btn1">취소</a>
-                                <button type="button" class="btn btn2">확인</button>
+                            <div class="btn-box">
+                                <button type="button" class="btn btn1">1:1 문의 바로가기</button>
                             </div>
                         </div>
                     </div>
                     <!-- //cont -->
                 </div>
-                <button type="button" class="modal-close b-close">닫기</button>
+                <button type="button" class="modal-close b-close" data-close="eduModal">닫기</button>
             </div>
+            <!-- //도움말 챗봇 팝업 -->
             <!-- // modal-popup -->
 
         </div>

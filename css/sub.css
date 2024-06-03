@@ -771,6 +771,8 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px; }
 
 .search-div-box .inp-box label + .inp { margin-top: 0; }
 
+.search-div-box .inp-box .flex-column { font-size: 18px; }
+
 .search-div-box .srh-check-box { margin: 0 -10px; }
 
 .search-div-box .checkbox { margin: 0 10px; width: 100%; max-width: 118px; }
@@ -783,23 +785,41 @@ td .ico-answer::before { width: 15px; height: 12px; background-size: 12px; }
 
 .search-label + * { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 18px; }
 
-.flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 18px; }
+.flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .flex-column > .checkbox, .flex-column .radio { margin-top: 15px; max-width: none; width: 100%; }
 
 .flex-column > *:first-child { margin-top: 8px; }
 
-.srh-check-box .checkbox label { -webkit-box-sizing: border-box; box-sizing: border-box; min-width: 120px; border: 1px solid #666; text-align: center; font-size: 18px; color: #666; line-height: 40px; display: inline-block; height: 40px; background-color: #fff; font-weight: 600; }
+.search-div-box .srh-check-box .checkbox label, .check-border-box .checkbox label { -webkit-box-sizing: border-box; box-sizing: border-box; min-width: 120px; border: 1px solid #666; text-align: center; font-size: 18px; color: #666; line-height: 40px; display: inline-block; height: 40px; background-color: #fff; font-weight: 600; padding: 0 10px; }
 
-.srh-check-box .checkbox label::before { display: none; }
+.search-div-box .srh-check-box .checkbox label::before, .check-border-box .checkbox label::before { display: none; }
 
-.srh-check-box .checkbox input:checked + label { color: #fff; background-color: #666; border-color: #666665; }
+.search-div-box .srh-check-box .checkbox input:checked + label, .check-border-box .checkbox input:checked + label { color: #fff; background-color: #666; border-color: #665; }
 
-.srh-check-box.type2 .checkbox { width: auto; max-width: none; }
+.search-div-box .srh-check-box.type2 .checkbox, .check-border-box.type2 .checkbox { width: auto; max-width: none; }
 
-.srh-check-box.type2 .checkbox label { padding: 0 10px; min-width: 160px; }
+.search-div-box .srh-check-box.type2 .checkbox label, .check-border-box.type2 .checkbox label { padding: 0 10px; min-width: 160px; }
 
-.srh-check-box.type3 .checkbox { max-width: none; }
+.search-div-box .srh-check-box.type3 .checkbox, .check-border-box.type3 .checkbox { max-width: none; }
+
+.srh-check-box .none { margin-right: 30px; }
+
+.srh-check-box.tbl { display: table; }
+
+.srh-check-box.tbl .tr { display: table-row-group; }
+
+.srh-check-box.tbl .checkbox, .srh-check-box.tbl .radio { display: table-cell; padding: 0 30px 10px 0; }
+
+div.row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+div.row .checkbox, div.row .radio { margin-bottom: 10px; padding: 9px 0; }
+
+div.row input[type="text"] { margin: -9px 0; height: 35px; }
+
+.checkbox .answer-img, .radio .answer-img { display: inline-block; vertical-align: top; }
+
+.answer-img img { max-width: 150px; }
 
 .toggle-radio-box { font-size: 0; position: relative; }
 

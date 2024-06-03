@@ -131,11 +131,13 @@
                     </button>
                     <div class="hd-bottom-dim"></div>
                 </div>
-                <ul class="right-btn-box">
-                    <li><a href="#none" class="join">회원가입</a></li>
-                    <li><a href="#none" class="login">로그인</a></li>
-                    <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
-                </ul>
+                <div class="right-btn-box">
+                    <ul>
+                        <li><a href="#none" class="join">회원가입</a></li>
+                        <li><a href="#none" class="login">로그인</a></li>
+                        <!-- <li><a href="#none" class="logout">로그아웃</a></li> -->
+                    </ul>
+                </div>
                 <!-- mobile -->
                 <div class="mobile-gnb-wrap">
                     <div class="mobile-gnb">
@@ -246,18 +248,18 @@
                         <div class="breadcrumb-box">
                             <a href="#none" class="home">메인으로 바로가기</a>
                             <div class="bc-depth depth1">
-                                <button type="button" class="tit-btn" title="메뉴 열기">교육과정 안내</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">마이페이지</button>
                                 <ul class="depth2-list">
                                     <li><a href="#none">소개</a></li>
                                     <li><a href="#none">시설안내</a></li>
-                                    <li><a href="#none">알림마당</a></li>
-                                    <li><a href="#none" class="active" title="선택됨">교육과정 안내</a></li>
+                                    <li><a href="#none" class="active" title="선택됨">알림마당</a></li>
+                                    <li><a href="#none">교육과정 안내</a></li>
                                     <li><a href="#none">나의 강의실</a></li>
                                     <li><a href="#none">마이페이지</a></li>
                                 </ul>
                             </div>
                             <div class="bc-depth depth2">
-                                <button type="button" class="tit-btn" title="메뉴 열기">전체 교육과정</button>
+                                <button type="button" class="tit-btn" title="메뉴 열기">나의 문의현황</button>
                                 <!-- depth2 -->
                                 <ul class="depth2-list">
                                     <li><a href="#none">미래교육원 소개</a>
@@ -282,44 +284,17 @@
                     <div class="sub-tit-box">
                         <div class="inner">
                             <div class="title-box">
-                                <h2 class="subpage-tit">회원가입 신청</h2>
-                                <p class="subpage-txt">본인확인 이후 회원가입을 신청할 수 있습니다.</p>
+                                <h2 class="subpage-tit">비밀번호 변경팝업</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- 회원가입 - 본인인증 -->
-                    <div class="page-joinus">
+                    <!-- 비밀번호 변경 팝업 -->
+                    <div class="page-mypage">
                         <div class="inner">
-                            <div class="step-list">
-                                <div class="item active">
-                                    <span class="hidden">현재 페이지</span>
-                                    <span class="num">STEP 1</span>
-                                    <span class="txt">본인인증</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 2</span>
-                                    <span class="txt">약관동의</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 3</span>
-                                    <span class="txt">정보입력</span>
-                                </div>
-                                <div class="item">
-                                    <span class="num">STEP 4</span>
-                                    <span class="txt">신청완료</span>
-                                </div>
-                            </div>
-                            <div class="certify-ico-box">
-                                <i class="ico"></i>
-                                <button type="button" class="btn join-p-btn">휴대폰 인증</button>
-                                <p class="basic align_center">최초 로그인 시에는 본인인증 후 서비스를 이용할 수 있습니다.<br>본인인증이 완료된 이후 이용해주세요.</p>
-                                <div class="btn-box type4">
-                                    <a href="#none" class="btn underline">홈으로 돌아가기</a>
-                                </div>
-                            </div>
+                            <div class="btn-box"><button type="button" class="btn btn1 modal-btn" data-popup="changePassword">변경팝업</button></div>
                         </div>
                     </div>
-                    <!-- // 회원가입 - 본인인증 -->
+                    <!-- // 비밀번호 변경 팝업 -->
                 </div>
                 <!-- // contents -->
             </div>
@@ -387,45 +362,42 @@
                 </div>
             </footer>
             <!--............. //footer .............-->
-
+            
             
             <!-- modal-popup -->
-            <!-- 1. 대상 사업자(PG사,일반 사업자) 비밀번호 찾기 -->
-            <div id="pw_popup" class="modal-wrap">
+            <!-- 반려사유 조회 -->
+            <div id="changePassword" class="modal-wrap type2">
                 <div class="modal-head">
-                    <h2>대상 사업자(PG사,일반 사업자) 비밀번호 찾기</h2>
+                    <h2 class="type2">비밀번호 변경 안내</h2>
                 </div>
                 <div class="modal-cont-wrap">
                     <!-- cont -->
                     <div class="modal-cont">
-                        
-                        <div class="contbox">
-                            <div class="inp-box mat0">
-                                <label for="businessNum2_1">사업자번호</label>
-                                <div class="inp-group">
-                                    <input type="tel" id="businessNum2_1" class="inp" title="사업자등록번호 앞자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_2" class="inp" title="사업자등록번호 중간자리">
-                                    <span class="mg">-</span>
-                                    <input type="tel" id="businessNum2_3" class="inp" title="사업자등록번호 뒷자리">
-                                </div>
-                            </div>
-                            <div class="inp-box">
-                                <label for="searchEmail1">담당자 이메일</label>
-                                <input type="email" id="searchEmail1" class="inp">
-                            </div>
-                            <div class="btn-box mat30">
-                                <a href="#none" class="btn btn1">취소</a>
-                                <button type="button" class="btn btn2">확인</button>
-                            </div>
+                        <p class="ico-password">비밀번호를 변경해주세요.</p>
+                        <p class="cont-txt">회원님께서는 90일 동안 비밀번호를 변경하지 않았습니다. <br>
+                            개인정보를 보호하고 개인정보도용의 피해를 예방하기 위해 90일마다 주기적으로 비밀번호 변경을 안내하고 있습니다.</p>
+                        <div class="c-box">
+                            <h3 class="tit mat0">유의사항</h3>
+                            <ul class="basic mat5">
+                                <li>휴대폰번호/주민등록번호/생일 등의 개인정보와 관련 없는 번호로 변경해주세요.</li>
+                                <li>영문 또는 명문과 숫자를 혼용하여 8자 이상 14자 이하 로 등록해주세요.</li>
+                                <li>비밀번호 변경 후 기존 계정은 로그아웃됩니다.</li>
+                            </ul>
+                        </div>
+                        <div class="btn-box">
+                            <button type="button" class="btn btn3 b-close">나중에 변경하기</button>
+                            <button type="button" class="btn btn4">지금 변경하기</button>
                         </div>
                     </div>
                     <!-- //cont -->
                 </div>
                 <button type="button" class="modal-close b-close">닫기</button>
             </div>
+            <!-- // 반려사유 조회 -->
             <!-- // modal-popup -->
-
         </div>
     </body>
 </html>
+
+
+
